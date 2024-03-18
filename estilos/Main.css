@@ -55,7 +55,41 @@
         color: white;
     }
 
-    ul a:hover {
-        text-decoration: underline;
+    .load {
+        position: absolute;
+        bottom: 5px;
+        width: 0vw;
+        height: 2px;
+        background-color: rgb(192, 164, 38);
     }
+
+    .load.grow {
+        animation: grow 0.3s ease-in;
+        animation-fill-mode: forwards;
+    }
+
+    .load.shrink {
+        animation: shrink 0.1s linear;
+    }
+
+    @keyframes grow {
+        0% {
+            width: 0vw;
+        }
+
+        100% {
+            width: 11vw;
+        }
+    }
+
+    @keyframes shrink {
+        0% {
+            width: 11vw;
+        }
+
+        100% {
+            width: 0vw;
+        } 
+    }
+
     }

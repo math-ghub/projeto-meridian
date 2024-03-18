@@ -1,5 +1,6 @@
 var interativos = document.querySelectorAll(".interactive")
 var buttons = document.querySelectorAll(".button")
+var navButtons = document.querySelectorAll("nav li a")
 let wait = false
 
 window.addEventListener("scroll", () => {
@@ -19,6 +20,21 @@ buttons.forEach(element => {
         element.style.color = defaultColor
     })
 });
+
+navButtons.forEach(element => {
+    console.log(element)
+    element.addEventListener("mouseenter", () => {
+        loadBar = element.parentElement.getElementsByClassName("load")
+        loadBar[0].classList.remove("shrink")
+        loadBar[0].classList.add("grow")
+    })
+
+    element.addEventListener("mouseleave", () => {
+        loadBar = element.parentElement.getElementsByClassName("load")
+        loadBar[0].classList.remove("grow")
+        loadBar[0].classList.add("shrink")
+    })
+})
 
 function checkHeight() {
     interativos.forEach(element => {

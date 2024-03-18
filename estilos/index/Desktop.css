@@ -56,10 +56,6 @@
         color: white;
     }
 
-    ul a:hover {
-        text-decoration: underline;
-    }
-
     #main {
         background-size: cover;
         background-image: url(../../imagens/pexels-joshua-woroniecki-19877487.jpg);
@@ -188,8 +184,9 @@
     }
 
     #proced1 > div:nth-child(1) > div {
-    background-image: url(../../imagens/proced.jpg);
-    background-position: center;
+    background-image: url(../../imagens/foto-principal-1.jpeg);
+    background-position: center right;
+    background-size: cover;
     box-shadow: -3px 4px 6px rgba(0, 0, 0, 0.425);
     width: 100%;
     height: 100%;
