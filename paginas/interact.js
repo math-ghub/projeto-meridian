@@ -3,6 +3,7 @@ var buttons = document.querySelectorAll(".button")
 var nav = document.querySelector("nav")
 var navButtons = document.querySelectorAll("nav li a")
 var menuButton = document.getElementById("menu")
+let logo = document.getElementById("logodiv")
 let wait = false
 let menuOpened = false
 
@@ -14,12 +15,18 @@ menuButton.addEventListener("click", () => {
     if (!menuOpened) {
         nav.classList.remove("Closed")
         nav.classList.add("Open");
+        logo.style.zIndex = -1
     } else {
         nav.classList.remove("Open")
         nav.classList.add("Closed")
     }
     menuOpened = !menuOpened
 })
+
+nav.addEventListener("animationend", () => {
+    if (nav.classList.contains("Closed")) {
+    logo.style.zIndex = 1
+}})
 
 buttons.forEach(element => {
     defaultbgColor = element.style.backgroundColor
