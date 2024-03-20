@@ -95,7 +95,7 @@
     }
 
     nav.Open ul {
-        animation: openNav .4s ease-out;
+        animation: openNav .7s ease-out;
         animation-fill-mode: forwards;
     }
 
