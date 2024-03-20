@@ -6,61 +6,344 @@
     padding: 0;
 }
 
-@media screen and (min-width: 1020px) {
-    header {
-        background-color: rgba(0, 106, 122, 0.438);
-        position: fixed;
-        top: 0;
-        height: 5em;
-        width: 100%;
-        padding: 1px;
-        z-index: 5;
+
+@media screen and (max-width: 799px) {
+    #main {
+        background-size: cover;
+        background-image: url(../../imagens/floresta.jpg);
+        height: 35em;
+        padding: 0.1px;
     }
 
-    #logodiv {
+    #headText {
         width: 20em;
-        margin-left: 30px;
-        margin-top: 4px;
+        height: 23em;
+        margin: auto;
+        margin-top: 8.5em;
     }
 
-    nav {
-        width: 79%;
-        height: 4em;
-        margin-left: auto;
-        position: relative;
-        top: -4.3em
+    .button {
+        transition: 0.2s;
     }
 
-    nav ul {
-        list-style: none;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        align-items: center;
-        height: 100%;
-
+    #headText > p {
+        color: white;
+        font-size: 50px;
+        font-family: "Parisienne", "Arial";
+        text-align: center;
     }
 
-    nav li {
+    #headText > a {
         display: flex;
+        width: 12em;
+        height: 4em;
+        background-color: rgba(5, 68, 78, 0.707);
+        color: rgba(240, 255, 255, 0.864);
+        border: 1px solid black;
+        border-radius: 20px;
+        margin: auto;
+        margin-top: 3em;
         justify-content: center;
         align-items: center;
-        width: 12vw;
-        height: 70%;
+        text-decoration: none;
+        font-size: larger;
+    }
+
+    #sobre {
+        height: 42em;
+        padding: 1px;
+        overflow: hidden;
+    }
+
+    #sobre > div:nth-child(1) {
+        width: 80%;
+        height: 40em;
+        margin: auto;
+        margin-top: 7em;
+        display: grid;
+        grid-template-columns: 3fr 4fr;
+    }
+
+    #proced1 {
+        width: 45vw;
+    }
+
+    #proced1 > div {
+        min-width: 20vw;
+        max-width: 40vw;
+        transition: 1s;
+    }
+    
+}
+@media screen and (min-width: 800px) and (max-width: 1144px) {
+    #main {
+        background-size: cover;
+        background-image: url(../../imagens/floresta.jpg);
+        height: 35em;
+        padding: 0.1px;
+    }
+
+    #headText {
+        width: 30em;
+        height: 23em;
+        margin: auto;
+        margin-top: 8.5em;
+    }
+
+    .button {
+        transition: 0.2s;
+    }
+
+    #headText > p {
         color: white;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 60px;
+        font-family: "Parisienne", "Arial";
+        text-align: center;
+    }
+
+    #headText > a {
+        display: flex;
+        width: 12em;
+        height: 4em;
+        background-color: rgb(5, 68, 78);
+        color: azure;
+        border: 1px solid black;
+        border-radius: 20px;
+        margin: auto;
+        margin-top: 3em;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        font-size: larger;
+    }
+
+    #sobre {
+        height: 42em;
+        padding: 1px;
+        overflow: hidden;
+    }
+
+    #sobre > div:nth-child(1) {
+        width: 80%;
+        height: 40em;
+        margin: auto;
+        margin-top: 7em;
+        display: grid;
+        grid-template-columns: 3fr 4fr;
+    }
+
+    #proced1 {
+        width: 45vw;
+    }
+
+    #proced1 > div {
+        min-width: 20vw;
+        max-width: 40vw;
+        transition: 1s;
+    }
+
+    #proced1 > div > div:nth-child(1) {
+        transition: 1s;
+        opacity: 0;
+        min-width: 20vw;
+        max-width: 40vw;
+    }
+
+    #proced1 > div > div.animating {
+        animation: left-to-right 1s ease-in-out;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes left-to-right {
+        0% {
+            left: -20vw;
+            opacity: 0;
+        }
+
+        100% {
+            left: 1vw;
+            opacity: 1;
+        }
+    }
+
+    #proced1 > div:nth-child(1) {
+        background-color: rgb(0, 105, 122);
+        height: 22em;
+        width: 70vw;
+        position: absolute;
+        top: 50em;
+        left: 5em;
+    }
+
+    #proced1 > div:nth-child(1) > div {
+    background-image: url(../../imagens/foto-principal-1.jpeg);
+    background-position: center right;
+    background-size: cover;
+    box-shadow: -3px 4px 6px rgba(0, 0, 0, 0.425);
+    width: 100%;
+    height: 100%;
+    position: relative;
+    left: 4em;
+    bottom: 3em;
+    }
+
+    #proced1Text {
+        text-align: center;
+        width: 40vw;
+        position: relative;
+        padding-top: 2em;
+        transition: 1s;
+        opacity: 0;
+    }
+
+    #proced1Text {
+        text-align: center;
+        width: 40vw;
+        position: relative;
+        padding-top: 10em;
+        transition: 1s;
+        opacity: 0;
+    }
+
+    #proced1Text.animating {
+        animation: bottom-to-top 1s ease-out;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes bottom-to-top {
+        0% {
+            bottom: -20vh;
+            opacity: 0;
+        }
+
+        100% {
+            bottom: 1vh;
+            opacity: 1;
+        }
+    }
+
+    #proced1Text > h2 {
+        font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #proced1Text > p {
         font-size: 20px;
     }
 
-    a {
-        text-decoration: none;
-        color: white;
+    #sobre > div:nth-child(2) {
+        height: 40em;
+        width: 25em;
+        position: absolute;
+        top: 60em;
+        right: 0px;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
     }
 
+    .decoracao {
+        position: absolute;
+        rotate: 45deg;
+        height: 400px;
+        width: 400px;
+        right: -200px;
+        border: 20px solid rgba(128, 128, 128, 0.326);
+    }
+
+    .decoracao2 {
+        position: absolute;
+        rotate: 45deg;
+        height: 300px;
+        width: 300px;
+        right: -200px;
+        border: 20px solid rgba(128, 128, 128, 0.326);
+    }
+
+    #sobre2 {
+        height: 42em;
+        overflow: hidden;
+    }
+
+    #sobre2 > div {
+        width: 95%;
+        height: 40em;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 3fr);
+    }
+
+    #proced2Text {
+        text-align: center;
+        position: relative;
+        width: 30vw;
+        opacity: 0;
+        margin-top: 10em;
+        margin: auto;
+    }
+
+    #proced2Text.animating {
+        animation: bottom-to-top 1s ease-out;
+        animation-fill-mode: forwards;
+    }
+
+    #proced2Text > h2 {
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+
+    #proced2Text > p {
+        font-size: 20px;
+    }
+
+    #proced2 > div {
+        min-width: 15vw;
+        max-width: 40vw;
+        height: 30em;
+        background-color: rgb(0, 105, 122);
+        position: relative;
+        margin-top: 70px;
+        transition: 1s;
+    }
+
+    #proced2 > div > div {
+        background-image: url(../../imagens/proced2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        right: 2em;
+        top: 1.5em;
+        box-shadow: 4px -4px 6px rgba(0, 0, 0, 0.349);
+        transition: 1s;
+        opacity: 0;
+    }
+
+    #proced2 > div > div.animating {
+        animation: right-to-left 1s ease-in-out;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes right-to-left {
+        0% {
+            right: -15vw;
+            opacity: 0;
+        }
+
+        100% {
+            right: 1.5vw;
+            opacity: 1;
+        }
+    }
+}
+
+@media screen and (min-width: 1145px) {
     #main {
         background-size: cover;
-        background-image: url(../../imagens/pexels-joshua-woroniecki-19877487.jpg);
+        background-image: url(../../imagens/floresta.jpg);
         height: 35em;
-        width: 100%;
         padding: 0.1px;
     }
 
@@ -131,7 +414,7 @@
         overflow: hidden;
     }
 
-    #sobre > div {
+    #sobre > div:nth-child(1) {
         width: 80%;
         height: 40em;
         margin: auto;
@@ -150,7 +433,7 @@
         transition: 1s;
     }
 
-    #proced1 > div > div {
+    #proced1 > div > div:nth-child(1) {
         transition: 1s;
         opacity: 0;
         min-width: 20vw;
@@ -230,6 +513,35 @@
         font-size: 30px;
     }
 
+    #sobre > div:nth-child(2) {
+        height: 40em;
+        width: 25em;
+        position: absolute;
+        top: 60em;
+        right: 0px;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .decoracao {
+        position: absolute;
+        rotate: 45deg;
+        height: 400px;
+        width: 400px;
+        right: -200px;
+        border: 20px solid rgba(128, 128, 128, 0.326);
+    }
+
+    .decoracao2 {
+        position: absolute;
+        rotate: 45deg;
+        height: 300px;
+        width: 300px;
+        right: -200px;
+        border: 20px solid rgba(128, 128, 128, 0.326);
+    }
+
     #sobre2 {
         height: 42em;
         overflow: hidden;
@@ -278,6 +590,9 @@
 
     #proced2 > div > div {
         background-image: url(../../imagens/proced2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
         width: 100%;
         height: 100%;
         position: relative;

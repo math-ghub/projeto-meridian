@@ -1,10 +1,24 @@
 var interativos = document.querySelectorAll(".interactive")
 var buttons = document.querySelectorAll(".button")
+var nav = document.querySelector("nav")
 var navButtons = document.querySelectorAll("nav li a")
+var menuButton = document.getElementById("menu")
 let wait = false
+let menuOpened = false
 
 window.addEventListener("scroll", () => {
     throttle(checkHeight, 200)
+})
+
+menuButton.addEventListener("click", () => {
+    if (!menuOpened) {
+        nav.classList.remove("Closed")
+        nav.classList.add("Open");
+    } else {
+        nav.classList.remove("Open")
+        nav.classList.add("Closed")
+    }
+    menuOpened = !menuOpened
 })
 
 buttons.forEach(element => {
