@@ -1,0 +1,233 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&family=Parisienne&family=Sail&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+@media screen and (max-width: 799px) {
+    #main {
+        background-size: cover;
+        background-image: url(../../imagens/cachoeira.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 35em;
+        padding: 0.1px;
+    }
+
+    #headText {
+        width: 20em;
+        height: 23em;
+        margin: auto;
+        margin-top: 8.5em;
+    }
+
+    .button {
+        transition: 0.2s;
+    }
+
+    #headText > p {
+        color: white;
+        font-size: 50px;
+        font-family: "Parisienne", "Arial";
+        text-align: center;
+        text-shadow: 2px 2px 1px black;
+    }
+
+    #headText > a {
+        display: flex;
+        width: 12em;
+        height: 4em;
+        background-color: rgba(5, 68, 78, 0.707);
+        color: white;
+        border: 1px solid black;
+        border-radius: 20px;
+        margin: auto;
+        margin-top: 3em;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        font-size: larger;
+    }
+
+    #sobre {
+        height: 42em;
+        padding: 1px;
+        overflow: hidden;
+    }
+
+    #sobre > div:nth-child(1) {
+        width: 80%;
+        height: 38em;
+        margin: auto;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #proced1 {
+        margin: auto;
+        margin-top: 70px;
+        min-width: 280px;
+        width: 50vw;
+    }
+
+    #proced1 > div > div:nth-child(1) {
+        transition: 1s;
+        opacity: 0;
+    }
+
+    #proced1 > div > div.animating {
+        animation: left-to-right 1s ease-in-out;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes left-to-right {
+        0% {
+            left: -20vw;
+            opacity: 0;
+        }
+
+        100% {
+            left: 4vw;
+            opacity: 1;
+        }
+    }
+
+    #proced1 > div:nth-child(1) {
+        background-color: rgb(0, 105, 122);
+        height: 15em;
+        position: relative;
+    }
+
+    #proced1 > div:nth-child(1) > div {
+    background-image: url(../../imagens/foto-principal-1.jpeg);
+    background-position: center right;
+    background-size: cover;
+    box-shadow: -3px 4px 6px rgba(0, 0, 0, 0.425);
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: -2em;
+    }
+
+    #proced1Text {
+        text-align: center;
+        position: relative;
+        transition: 1s;
+    }
+
+    #proced1Text > h2 {
+        font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 10px;
+    }
+
+    #proced1Text > p {
+        font-size: 20px;
+    }
+    
+    #sobre > div:nth-child(2) {
+        height: 30em;
+        width: 15em;
+        position: absolute;
+        top: 60em;
+        right: 0px;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        z-index: -1;
+    }
+
+    .decoracao {
+        position: absolute;
+        rotate: 45deg;
+        height: 200px;
+        width: 200px;
+        right: -200px;
+        border: 20px solid rgba(128, 128, 128, 0.326);
+    }
+
+    .decoracao2 {
+        position: absolute;
+        rotate: 45deg;
+        height: 300px;
+        width: 300px;
+        right: -200px;
+        border: 20px solid rgba(128, 128, 128, 0.326);
+    }
+
+    #sobre2 {
+        height: 50em;
+        overflow: hidden;
+    }
+
+    #sobre2 > div {
+        width: 95%;
+        height: 40em;
+        margin: auto;
+        display: grid;
+        grid-template-rows: repeat(2, 3fr);
+    }
+
+    #proced2Text {
+        text-align: center;
+        position: relative;
+        width: 80vw;
+        margin-top: 10em;
+        margin: auto;
+    }
+
+
+    #proced2Text > h2 {
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+
+    #proced2Text > p {
+        font-size: 20px;
+    }
+
+    #proced2 > div {
+        height: 20em;
+        width: 70vw;
+        background-color: rgb(0, 105, 122);
+        position: relative;
+        margin: auto;
+        margin-top: 70px;
+        transition: 1s;
+    }
+
+    #proced2 > div > div {
+        background-image: url(../../imagens/proced2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 100%;
+        top: -20px;
+        position: relative;
+        box-shadow: 4px -4px 6px rgba(0, 0, 0, 0.349);
+        transition: 1s;
+        opacity: 0;
+    }
+
+    #proced2 > div > div.animating {
+        animation: right-to-left 1s ease-in-out;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes right-to-left {
+        0% {
+            right: -15vw;
+            opacity: 0;
+        }
+
+        100% {
+            right: -10vw;
+            opacity: 1;
+        }
+    }
+}
