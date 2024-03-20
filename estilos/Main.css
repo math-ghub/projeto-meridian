@@ -33,7 +33,8 @@
         position: absolute;
         right: 0em;
         width: 100px;
-        height: 80px;
+        height: 50px;
+        margin-top: 17px;
         background-image: url(../imagens/menu.png);
         background-size: 30px;
         background-repeat: no-repeat;
