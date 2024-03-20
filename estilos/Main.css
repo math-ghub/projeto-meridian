@@ -5,6 +5,11 @@
     padding: 0;
 }
 
+:root {
+    --menu-pos-initial: 1.2em;
+    --menu-pos-final: 5.4em;
+}
+
 @media screen and (max-width: 799px) {
     header {
         background-color: rgba(0, 106, 122, 0.438);
@@ -31,36 +36,42 @@
 
     #menu {
         position: absolute;
-        right: 0em;
-        width: 100px;
+        right: var(--menu-pos-initial);
+        width: 50px;
         height: 50px;
         margin-top: 17px;
+        border-radius: 35%;
         background-image: url(../imagens/menu.png);
         background-size: 30px;
         background-repeat: no-repeat;
         background-position: center;
     }
 
+    #menu:active {
+        background-color: rgba(0, 0, 0, 0.471);
+        backdrop-filter: blur(1px);
+    }
+
     nav.Open #menu {
         animation: menuOpen .8s ease-in-out;
         animation-fill-mode: forwards;
-        right: 3.8em;
+        right: var(--menu-pos-final);
     }
 
     nav.Closed #menu {
         animation: menuClose 1s ease-in-out;
         animation-fill-mode: forwards;
-        right: 0em;
+        right: var(--menu-pos-initial);
     }
 
     @keyframes menuOpen {
         0% {
             transform: rotate(0deg);
-            right: 0em;
+            right: var(--menu-pos-initial);
         }
 
         75% {
-            right: 3.8em;
+            right: var(--menu-pos-final);
         }
 
         100% {
@@ -71,11 +82,11 @@
     @keyframes menuClose {
         0% {
             transform: rotate(0deg);
-            right: 3.8em;
+            right: var(--menu-pos-final);
         }
 
         80% {
-            right: 0em;
+            right: var(--menu-pos-initial);
         }
 
         100% {
@@ -139,6 +150,11 @@
         display:flex;
         align-items: center;
         justify-content: center;
+    }
+
+    nav li:not(:empty):hover, nav li:hover a{
+        background-color: rgb(219, 219, 173);
+        color: black;
     }
 
     a {
