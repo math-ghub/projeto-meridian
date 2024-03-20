@@ -30,8 +30,7 @@
 
     #menu {
         position: absolute;
-        right: -4em;
-        width: 100%;
+        width: 100px;
         height: 80px;
         background-image: url(../imagens/menu.png);
         background-size: 30px;
@@ -40,25 +39,25 @@
     }
 
     nav.Open #menu {
-        right: 0vw;
         animation: menuOpen .8s ease-in-out;
-        animation-fill-mode:forwards;
+        animation-fill-mode: forwards;
+        right: 3.8em;
     }
 
     nav.Closed #menu {
-        right: -4em;
         animation: menuClose 1s ease-in-out;
         animation-fill-mode: forwards;
+        right: 0em;
     }
 
     @keyframes menuOpen {
         0% {
             transform: rotate(0deg);
-            right: -4em;
+            right: 0em;
         }
 
         75% {
-            right: 0vw;
+            right: 3.8em;
         }
 
         100% {
@@ -69,11 +68,11 @@
     @keyframes menuClose {
         0% {
             transform: rotate(0deg);
-            right: 0vw;
+            right: 3.8em;
         }
 
         80% {
-            right: -4em;
+            right: 0em;
         }
 
         100% {
@@ -88,7 +87,7 @@
         top: -9px;
         height: 105vh;
         right: -100vw;
-        background-color: rgb(9, 112, 113);
+        background-color: rgb(0, 105, 122);
         padding-top: 85px;
         text-align: center;
         z-index: -1;
