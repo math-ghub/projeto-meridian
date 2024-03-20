@@ -18,6 +18,7 @@
 
     #logodiv {
         position: absolute;
+        padding: 6px;
         z-index: -1;
     }
 
