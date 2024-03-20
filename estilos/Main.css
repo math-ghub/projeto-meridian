@@ -30,13 +30,21 @@
 
     #menu {
         position: absolute;
+        right: -4em;
         width: 100%;
-        height: 70px;
+        height: 80px;
         background-image: url(../imagens/menu.png);
         background-size: 30px;
         background-repeat: no-repeat;
         background-position: center;
-        border-bottom: 5px solid #00000062;
+    }
+
+    nav.Open #menu {
+        right: 0vw;
+    }
+
+    nav.Closed #menu {
+        right: -4em;
     }
 
     nav > ul {
@@ -46,7 +54,7 @@
         top: -9px;
         height: 105vh;
         right: -100vw;
-        background-image: linear-gradient(to bottom, rgb(0, 105, 122), rgb(10, 47, 47));
+        background-image: linear-gradient(to bottom, rgb(69, 153, 178)0%, rgb(158, 138, 56));
         padding-top: 85px;
         text-align: center;
         z-index: -1;
@@ -84,7 +92,7 @@
     }
 
     nav li:not(:empty) {
-        color: white;
+        color: rgb(221, 238, 235);
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 20px;
         margin-bottom: 20px;
@@ -99,7 +107,7 @@
 
     a {
         text-decoration: none;
-        color: white;
+        color: rgb(221, 238, 235);
     }
 }
 
