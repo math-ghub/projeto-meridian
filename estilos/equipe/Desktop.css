@@ -12,32 +12,8 @@
         height: 35em;
     }
 
-    #fotoEquipe > svg {
-        position: absolute;
-        bottom: -1px;
-    }
-
     #fotos {
         height: 50em;
-    }
-
-    p {
-        text-align: center;
-        margin-top: -20px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 25px;
-        color: rgb(39, 38, 38);
-        
-    }
-
-    .holder {
-        /* background-color: rgba(255, 0, 0, 0.315); */
-        height: 120%;
-        width: 100%;
-        border-radius: 0px 0px 50% 50%;
-        position: relative;
-        top: -44px;
-        overflow: hidden;
     }
 
     #fotos > h2 {
@@ -56,100 +32,85 @@
         
     }
 
-    svg {
-        margin-left: 510px;
-    }
-
-    #equipe-container {
-        width: 60%;
-        height: 40em;
-        margin: auto;
-        margin-top: 100px;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+    #bg {
+        background-color: rgba(255, 0, 0, 0.345);
+        display: flex;
         align-items: center;
         justify-content: center;
+        height: 40em;
     }
 
-    #equipe-container div {
-        margin-bottom: 130px;
+    #bg-container {
+        width: 90vw;
+        height: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
     }
 
-    .p {
-        background: linear-gradient(180deg, #57C2D3 0%, #22717D 100%);
-        backdrop-filter: blur(1.75px);
-        margin: auto;
-        border-radius: 50%;
+    #portrait {
+        position: relative;
+        overflow: hidden;
+        border: 1px solid black;
+        height: 100%;
+        width: 40em;
     }
 
-    #p1 {
-        position: relative;
-        width: 343px;
-        height: 308px;
-        }
-    
-    #p1 .foto{
-        position: relative;
-        width: 380px;
-        height: 416px;
-        border-radius: 50%;
-        top: -55px;
-        left: -18.5px;
-        background-image: url(../../imagens/WhatsApp_Image_2024-03-11_at_08.32.21-removebg-preview.png);
-    
-        }
-        
-    #p1 > p {
-            position: relative;
-            top: -180px;
-        }
-
-    #p2 {
-        position: relative;
-        width: 343px;
-        height: 308px;
-        }
-    
-    #p2 .foto {
-
-        position: relative;
-        width: 400px;
-        height: 450px;
-        border-radius: 49%;
-        top: -100px;
-        left: -28.34px;
-        background-image: url(../../imagens/WhatsApp_Image_2024-03-11_at_17.19.06-removebg-preview.png);
-
+    #img-list {
+        position: absolute;
+        background-color: green;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        width: fit-content;
+        z-index: 1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-20em, -50%);
     }
 
-    #p2 > p {
-        position: relative;
-        top: -220px;
-    }    
-
-
-    #p3 {
-        position: relative;
-        width: 343px;
-        height: 308px;
+    .portrait-img {
+        width: 40em;
+        height: 100%;
+        background-position: center;
+        background-color: lightblue;
+        background-repeat: no-repeat;
+        text-align: center;
     }
 
-    #p3 .foto{
+    #portrait-buttons {
         position: relative;
-        width: 400px;
-        height: 416px;
-        border-radius: 50%;
-        top: -66px;
-        left: -32px;
-        background-image: url(../../imagens/WhatsApp_Image_2024-03-13_at_14.23.09__2_-removebg-preview.png);
-
+        display: flex;
+        height: 100%;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 50px;
+        z-index: 2;
     }
     
-    #p3 > p {
-        position: relative;
-        top: -180px;
+    .portrait-button {}
+
+    .portrait-button:hover {
+        cursor: pointer;
+        user-select: none;
     }
 
+    #info {
+        text-align: center;
+        /* border: 1px solid black; */
+        width: 40em;
+        height: 90%;
+    }
 
+    h3 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 35px;
+    }
+
+    p {
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 20px;
+    }
 }
