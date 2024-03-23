@@ -97,6 +97,25 @@
         user-select: none;
     }
 
+    #portrait-cargo {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: linear-gradient(to right, transparent 5%, rgba(0, 106, 122, 0.729) 30% 70%, transparent 95%);
+        border-radius: 10px;
+        bottom: 50px;
+        left: 50%;
+        height: 4em;
+        width: 23em;
+        transform: translate(-50%, 0);
+        z-index: 3;
+    }
+
+    #portrait-cargo > p {
+        color: white;
+    }
+
     #info {
         text-align: center;
         /* border: 1px solid black; */
