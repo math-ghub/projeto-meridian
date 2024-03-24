@@ -44,7 +44,7 @@ function UpdatePortrait() {
     var selectedValues = Object.values(Infos)
     infoValues.children[0].innerHTML = selectedKey
     infoValues.children[1].innerHTML = selectedValues[Selected].conselho
-    Write(selectedValues[Selected].text, infoValues.children[2], 9)
+    Write(selectedValues[Selected].text, infoValues.children[2], 7)
     cargoVal.children[0].innerHTML = selectedValues[Selected].cargo
     ImageList.style.transform = `translate(${-(Selected * 40) - 20}em, -50%)`
 }
