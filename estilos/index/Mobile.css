@@ -230,4 +230,8 @@
             opacity: 1;
         }
     }
+
+    iframe {
+        width: 200px;
+    }
 }
