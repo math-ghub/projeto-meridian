@@ -1,14 +1,10 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&family=Parisienne&family=Sail&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lora:ital,wght@0,400..700 ;1.400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap ');
 
 * {
     margin: 0;
     padding: 0;
-}
-
-:root {
-    --ProcedText-h2: "Josefin Sans";
 }
 
 @media screen and (min-width: 800px) and (max-width: 1144px) {
@@ -127,7 +123,7 @@
         text-align: center;
         width: 40vw;
         position: relative;
-        padding-top: 8em;
+        padding-top: 10em;
         transition: 1s;
         opacity: 0;
     }
@@ -150,15 +146,12 @@
     }
 
     #proced1Text > h2 {
-        font-size: 45px;
-        margin-bottom: 15px;
-        font-family: var(--ProcedText-h2);
+        font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif;
     }
 
     #proced1Text > p {
         font-size: 20px;
-        font-family: "Lora", Arial, Helvetica, sans-serif;
-        text-align: justify;
     }
 
     #sobre > div:nth-child(2) {
@@ -218,15 +211,12 @@
     }
 
     #proced2Text > h2 {
-        margin-bottom: 15px;
-        font-size: 45px;
-        font-family: var(--ProcedText-h2);
+        margin-bottom: 20px;
+        font-size: 30px;
     }
 
     #proced2Text > p {
         font-size: 20px;
-        font-family: "Lora", Arial, Helvetica, sans-serif;
-        text-align: justify;
     }
 
     #proced2 > div {
@@ -443,14 +433,13 @@
 
     #proced1Text > h2 {
         font-size: 44px;
-        font-family: var(--ProcedText-h2);
+        font-family: Arial, Helvetica, sans-serif;
         margin-bottom: 20px;
     }
 
     #proced1Text > p {
-        font-size: 28px;
-        font-family: "Lora", Arial, Helvetica, sans-serif;
-        text-align: justify;
+        font-size: 30px;
+        font-family: "Lato";
     }
 
     #sobre > div:nth-child(2) {
@@ -511,13 +500,10 @@
     #proced2Text > h2 {
         margin-bottom: 20px;
         font-size: 44px;
-        font-family: var(--ProcedText-h2);
     }
 
     #proced2Text > p {
-        font-size: 27px;
-        font-family: "Lora", Arial, Helvetica, sans-serif;
-        text-align: justify;
+        font-size: 30px;
     }
 
     #proced2 > div {
