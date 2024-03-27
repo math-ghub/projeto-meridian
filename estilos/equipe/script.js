@@ -6,7 +6,7 @@ var portraitButtons = document.getElementsByClassName("portrait-button")
 const Infos = {
     "Dra. Michelle Mesquita": {
         "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum consequatur dolorum voluptates atque tempore odit quia impedit? Repellat, aspernatur non? Delectus facilis non reprehenderit fugit culpa sequi ullam molestias architecto.<br><br>• Proprietária Responsável Técnica Clínica Meridian Bem Estar <br>• Fisioterapeuta UNIC/2002 <br>• Pós graduada em Acunputura/2006 <br>• Dermatofuncional/2014 <br>• Cursos de Capacitação em RPG/2008 <br>• Pilates clássico/2011 <br>• Cross Pilates/2019",
-        "cargo": "Fundadora",
+        "cargo": "Fisioterapeuta",
         "conselho": "CREFITO 9- 54995-F",
     },
     "Dra. Danyelle Padilha": {
