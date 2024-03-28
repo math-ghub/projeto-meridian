@@ -3,11 +3,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Angkor&family=Gelasio:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Grand+Hotel&family=Merienda:wght@300..900&display=swap');
 
 @media screen and (min-width: 1145px) {
+    html {
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+    }
+    
     #introducao {
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 45em;
+        justify-content: center;
+        height: 100vh;
         background-color: rgb(0, 105, 122);
         border-bottom-left-radius: 500px;
         border: 1px solid rgb(0, 105, 122);
@@ -15,10 +21,9 @@
 
     #introducao > h1 {
         text-align: center;
-        margin-top: 4em;
         margin-bottom: 20px;
         width: 20em;
-        font-size: 50px;
+        font-size: clamp(2em, 5em, 6em);
         color: rgb(255, 255, 255);
         text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.685);
     }
@@ -33,6 +38,17 @@
         height: 60px;
         width: 120px;
         border-radius: 15px;
+        overflow: hidden;
+    }
+
+    #down-button:hover {
+        cursor: pointer;
+        user-select: none;
+    }
+
+    #down-button:hover p {
+        color: rgb(247, 218, 156);
+        margin-top: 5px;
     }
 
     #down-button > p {
@@ -40,11 +56,20 @@
         color: rgb(255, 255, 255);
         font-size: 60px;
         rotate: 90deg;
+        transition: 0.3s;
+    }
+
+    #backg {
+        position: absolute;
+        height: 20em;
+        width: 100%;
+        background-color: rgb(0, 105, 122);
+        z-index: -1;
     }
 
     #fotos {
         height: 41.2em;
-        border-top-right-radius: 50px;
+        border-top-right-radius: 300px;
         background-color: white;
     }
 
