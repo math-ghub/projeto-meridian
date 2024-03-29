@@ -30,6 +30,10 @@
         transition: 0.2s;
     }
 
+    #headText > a:hover {
+        background-color: rgb(69, 133, 141)
+    }
+
     #headText > p {
         color: white;
         font-size: 60px;
@@ -315,6 +319,10 @@
         align-items: center;
         text-decoration: none;
         font-size: larger;
+    }
+
+    #headText > a:hover {
+        background-color: rgb(69, 133, 141)
     }
 
     #M {
