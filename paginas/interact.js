@@ -2,7 +2,12 @@ var interativos = document.querySelectorAll(".interactive")
 var buttons = document.querySelectorAll(".button")
 var nav = document.querySelector("nav")
 var navButtons = document.querySelectorAll("nav li a")
+var navSpecialButton = document.querySelector("nav li p")
+var menuList = document.querySelector("#menuList")
 var menuButton = document.getElementById("menu")
+var servicoMenu = document.querySelector("#servicomenu")
+let insideMenuBar = false
+let insideMenu = false
 let logo = document.getElementById("logodiv")
 let wait = false
 let menuOpened = false
@@ -42,20 +47,73 @@ buttons.forEach(element => {
     })
 });
 
+navSpecialButton.addEventListener("click", () => {
+    startLoad(element.target.parentElement, true)
+    displayMenu(true)
+})
+
+navSpecialButton.addEventListener("mouseenter", element => {
+    startLoad(element.target.parentElement, true)
+    displayMenu(true)
+})
+
+navSpecialButton.parentElement.addEventListener("mouseleave", element => {
+    if (!insideMenuBar && !insideMenu) {
+        startLoad(element.target.parentElement, false)
+        displayMenu(false)
+    }
+})
+
+nav.addEventListener("mouseenter", () => {
+    insideMenuBar = true
+})
+
+nav.addEventListener("mouseleave", () => {
+    insideMenuBar = false
+    displayMenu(false)
+})
+
+menuList.addEventListener("mouseenter", () => {
+    insideMenu = true
+})
+
+menuList.addEventListener("mouseleave", () => {
+    insideMenu = false
+})
+
+function displayMenu(bool) {
+    if (bool) {
+        menuList.classList.add("openlist")
+    } else {
+        if (!insideMenu && !insideMenuBar) {
+            menuList.classList.remove("openlist")
+            startLoad(menuList.parentElement.parentElement, false)
+        }
+    }
+}
+
 navButtons.forEach(element => {
-    console.log(element)
     element.addEventListener("mouseenter", () => {
-        loadBar = element.parentElement.getElementsByClassName("load")
-        loadBar[0].classList.remove("shrink")
-        loadBar[0].classList.add("grow")
+        startLoad(element.parentElement, true)
     })
 
     element.addEventListener("mouseleave", () => {
-        loadBar = element.parentElement.getElementsByClassName("load")
-        loadBar[0].classList.remove("grow")
-        loadBar[0].classList.add("shrink")
+        startLoad(element.parentElement, false)
     })
 })
+
+startLoad = (element, bool) => {
+    loadBar = element.getElementsByClassName("load")
+    if (bool) {
+        loadBar[0].classList.remove("shrink")
+        loadBar[0].classList.add("grow")
+        return
+    }
+    if (loadBar[0].classList.contains("grow")) {
+        loadBar[0].classList.remove("grow")
+        loadBar[0].classList.add("shrink")
+    }
+}
 
 function checkHeight() {
     interativos.forEach(element => {
