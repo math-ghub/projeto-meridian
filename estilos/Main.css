@@ -112,7 +112,7 @@
         transition: .2s;
     }
 
-    nav.Open ul {
+    nav.Open > ul {
         animation: openNav .7s ease-out;
         animation-fill-mode: forwards;
     }
@@ -143,28 +143,127 @@
         }
     }
 
-    nav li:not(:empty) {
+    nav > ul > li:not(:empty) {
         color: rgb(221, 238, 235);
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 20px;
-        margin-bottom: 20px;
-        border-bottom: 3px solid rgba(0, 0, 0, 0.341);
-        border-width: 3px;
-        border-radius: 10px;
-        height: 50px;
-        display:flex;
+        height: fit-content;
+    }
+
+    nav > ul > li > a:active{
+        background-color: rgb(22, 61, 77);
+        color: black;
+    }
+
+    nav > ul > li > a, #special > p {
+        display: block;
+        text-decoration: none;
+        color: rgb(221, 238, 235);
+        background-color: red;
+        width: 100%;
+        height: 70px;
+        display: flex;
         align-items: center;
         justify-content: center;
     }
 
-    nav li:not(:empty):hover, nav li:hover a{
-        background-color: rgb(219, 219, 173);
-        color: black;
+    #servicomenu {
+        position: relative;
+        top: 0px;
     }
 
-    a {
-        text-decoration: none;
-        color: rgb(221, 238, 235);
+    #menuList {
+        background-color: rgb(241, 241, 241);
+        border-top: 0;
+        max-height: 0px;
+        overflow: hidden;
+        transition: 0.6s;
+    }
+
+    #menuList.openlist {
+        max-height: 100vh;
+        transition: 2s;
+    }
+
+    .categoria {
+        width: 100%;
+        height: 2em;
+        cursor: pointer;
+        user-select: none;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .categoria:hover {
+        background-color: lightgray;
+    }
+
+    .categoria > p {
+        display: flex;
+        position: relative;
+        left: -5px;
+        width: fit-content;
+        margin-right: auto;
+        color: black;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .listSpan {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 10px;
+        text-align: start;
+        margin-left: auto;
+        margin-right: 8px;
+        color: black;
+        transition: 0.3s ease-in-out;
+    }
+
+    .listSpan::before {
+        content: "﹥";
+    }
+
+    .listSpan.rotate {
+        rotate: 90deg;
+    }
+
+    .conteudo {
+        max-height: 0vh;
+        background-color: rgb(219, 180, 108);
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        user-select: none;
+        transition: 0.9s ease-out;
+        box-shadow: inset 0px 5px 7px rgba(0, 0, 0, 0.315);
+    }
+
+    .conteudo.show {
+        max-height: 100vh;
+        transition: 1.5s ease-out;
+    }
+
+    .conteudo > a {
+        display: flex;
+        color: white;
+        text-shadow: 0px 0px 3px black;
+        text-align: start;
+        font-size: clamp(0.5em, 1.2vw, 0.9em);
+        height: 3em;
+        align-items: center;
+    }
+
+    .conteudo > a::before {
+        content: "•";
+        font-size: 15px;
+        color: rgb(255, 255, 255);
+    }
+
+    .conteudo > a:hover {
+        background-color: rgba(161, 120, 44, 0.459);
     }
 }
 
@@ -194,7 +293,7 @@
         position: relative;
     }
 
-    nav ul {
+    nav > ul {
         list-style: none;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(8vw, 1fr));
@@ -203,7 +302,7 @@
 
     }
 
-    nav li {
+    nav > ul > li {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -216,40 +315,110 @@
 
     a {
         text-decoration: none;
+        user-select: none;
         color: white;
     }
 
     nav li p {
         cursor: pointer;
+        user-select: none;
         color: white;
     }
 
     #menuList {
-        background-color: lightgray;
+        background-color: rgb(241, 241, 241);
+        border: 1px solid black;
+        border-top: 0;
         margin-top: 2px;
-        height: 0px;
+        max-height: 0px;
         overflow: hidden;
     }
 
-    .openlist {
-        animation: listOpening .6s ease-out;
-        animation-delay: .3s;
-        animation-fill-mode: forwards;
+    #menuList.openlist {
+        max-height: 100vh;
+        transition: 2s;
+        transition-delay: .3s;
     }
 
-    @keyframes listOpening {
-        0% {
-            height: 0px;
-        }
-
-        100% {
-            height: 200px;
-        }
-    }
-
-    #menuList > li {
-        background-color: rebeccapurple;
+    .categoria {
         width: 100%;
+        height: 2em;
+        cursor: pointer;
+        user-select: none;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .categoria:hover {
+        background-color: lightgray;
+    }
+
+    .categoria > p {
+        display: flex;
+        position: relative;
+        left: -5px;
+        width: fit-content;
+        margin-right: auto;
+        color: black;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .listSpan {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 10px;
+        text-align: start;
+        margin-left: auto;
+        margin-right: 8px;
+        color: black;
+        transition: 0.3s ease-in-out;
+    }
+
+    .listSpan::before {
+        content: "﹥";
+    }
+
+    .listSpan.rotate {
+        rotate: 90deg;
+    }
+
+    .conteudo {
+        max-height: 0vh;
+        background-color: rgb(219, 180, 108);
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        user-select: none;
+        transition: 0.9s ease-out;
+        box-shadow: inset 0px 5px 7px rgba(0, 0, 0, 0.315);
+    }
+
+    .conteudo.show {
+        max-height: 100vh;
+        transition: 1.5s ease-out;
+    }
+
+    .conteudo > a {
+        display: flex;
+        color: white;
+        text-shadow: 0px 0px 3px black;
+        text-align: start;
+        font-size: clamp(0.5em, 1.2vw, 0.9em);
+        height: 3em;
+        align-items: center;
+    }
+
+    .conteudo > a::before {
+        content: "•";
+        font-size: 15px;
+        color: rgb(255, 255, 255);
+    }
+
+    .conteudo > a:hover {
+        background-color: rgba(161, 120, 44, 0.459);
     }
 
     .load {
