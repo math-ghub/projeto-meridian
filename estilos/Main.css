@@ -219,12 +219,12 @@
         margin-left: auto;
         margin-right: 8px;
         color: black;
-        font-size: clamp(0.5em, 1.5vw, 0.9em);;
         transition: 0.3s ease-in-out;
     }
 
     .listSpan::before {
         content: "﹥";
+        font-size: clamp(0.7em, 0.7vw, 0.7vw);
     }
 
     .listSpan.rotate {
@@ -376,12 +376,12 @@
         margin-left: auto;
         margin-right: 8px;
         color: black;
-        font-size: clamp(0.7em, 0.9vw, 0.7em);
         transition: 0.3s ease-in-out;
     }
 
     .listSpan::before {
         content: "﹥";
+        font-size: clamp(0.55em, 0.5vw, 0.6vw);
     }
 
     .listSpan.rotate {
