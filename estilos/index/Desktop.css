@@ -585,7 +585,7 @@
         z-index: -1;
     }
 
-    #estudio > div:nth-child(1) {
+    #estudio > article {
         position: absolute;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -595,21 +595,63 @@
         width: 90vw;
         height: 400px;
         rotate: -7deg;
-        overflow: hidden;
     }
 
     #estudio-foto {
         position: relative;
+        display: flex;
+        gap: 2%;
         top: -5vw;
-        background-image: url(../../imagens/estudio-teste.webp);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 80%;
+        height: 100%;
         max-width: 50em;
-        box-shadow: 5px 6px 7px rgba(0, 0, 0, 0.171);
+        filter: drop-shadow(5px 6px 7px rgba(0, 0, 0, 0.171));
         margin-top: 10px;
     }
+
+    .e-fotos {
+        background-size: cover;
+        height: 100%;
+        width: 19%;
+        text-align: center;
+        box-shadow: inset -8px -9px 10px rgba(0, 0, 0, 0.438);
+        border-right: 4px solid rgb(20, 84, 95);
+        border-bottom: 3px solid rgb(21, 52, 61);
+    }
+
+    .e-fotos::before {
+        content: "";
+        position: absolute;
+        width: 19%;
+        height: 100%;
+        opacity: 0;
+        background-color: rgb(65, 116, 163);
+        z-index: 2;
+        transform: translateX(-50%)
+    }
+
+    #ef-1::before {background-position: 0%; border-bottom-left-radius: 50px;}
+    #ef-5::before {background-position: 80%; border-top-right-radius: 50px;}
+
+    .e-fotos.refresh::before {animation: refresh 2s linear;}
+
+    #ef-1 {background-position: 0%; border-bottom-left-radius: 50px;}
+    #ef-2 {background-position: 20%;}
+    #ef-3 {background-position: 40%;}
+    #ef-4 {background-position: 60%;}
+    #ef-5 {background-position: 80%; border-top-right-radius: 50px;}
+
+    #ef-1.onLoop {animation: e1 7s linear;}
+    #ef-2.onLoop {animation: e2 7s linear;}
+    #ef-3.onLoop {animation: e3 7s linear;}
+    #ef-4.onLoop {animation: e4 7s linear;}
+    #ef-5.onLoop {animation: e5 7s linear;}
+
+    @keyframes e1 {0% {background-position: 0%;} 100% {background-position: 10%;}}
+    @keyframes e2 {0% {background-position: 20%;} 100% {background-position: 30%;}}
+    @keyframes e3 {0% {background-position: 40%;} 100% {background-position: 50%;}}
+    @keyframes e4 {0% {background-position: 60%;} 100% {background-position: 70%;}}
+    @keyframes e5 {0% {background-position: 80%;} 100% {background-position: 90%;}}
+    @keyframes refresh {0% {opacity: 0} 50% {opacity: 1} 100% {opacity: 0}}
 
     #estudio-desc {
         height: 100%;
