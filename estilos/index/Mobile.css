@@ -128,9 +128,6 @@
         font-family: var(--ProcedText-h2);
         margin: auto;
         margin-bottom: 20px;
-        background-color:rgb(2, 127, 146);
-        text-shadow: 1px 1px 4px black;
-        color: white;
         width: min-content;
         border-radius: 4px;
     }

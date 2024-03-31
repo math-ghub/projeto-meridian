@@ -6,7 +6,6 @@ let refreshTime = 2
 var images = [
     "estudio-teste.webp",
     "clinica-interior.jpg",
-    "trabalhador.jpg",
 ]
 
 framesArray.forEach(box => {
