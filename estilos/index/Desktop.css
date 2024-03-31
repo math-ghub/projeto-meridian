@@ -338,7 +338,7 @@
 
     .e-fotos::after {
         content: "";
-        background-image: url(../../imagens/clinica-interior.jpg);
+        background-image: url(../../imagens/estudio-teste.webp);
     }
 
     #ef-1::before {background-position: 0%; border-bottom-left-radius: 50px; animation: refresh 7s linear infinite; animation-delay: 4500ms}
