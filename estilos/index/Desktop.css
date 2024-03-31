@@ -619,6 +619,8 @@
         height: 100%;
         opacity: 0;
         background-color: rgb(43, 100, 121);
+        border-right: 4px solid rgb(20, 84, 95);
+        border-bottom: 3px solid rgb(21, 52, 61);
         z-index: 2;
         transform: translateX(-50%);
         transition: 2s;

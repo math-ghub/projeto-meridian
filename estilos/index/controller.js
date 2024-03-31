@@ -6,15 +6,15 @@ let refreshTime = 2
 var images = [
     "estudio-teste.webp",
     "clinica-interior.jpg",
+    "trabalhador.jpg",
 ]
 
 framesArray.forEach(box => {
     let actualImage = 0
     box.addEventListener("animationiteration", (anim) => {
-        if (anim.animationName == "refresh") {return};
+        if (anim.animationName == "refresh") {return actualImage += 1};
         if (actualImage > images.length - 1) {actualImage = 0};
         setAnimation(box, actualImage)
-        actualImage += 1
     })
     setAnimation(box, actualImage)
 })
