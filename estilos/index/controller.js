@@ -8,8 +8,6 @@ var images = [
     "clinica-interior.jpg",
 ]
 
-preLoad(images)
-
 framesArray.forEach(box => {
     let actualImage = 0
     box.addEventListener("animationiteration", (anim) => {
@@ -21,12 +19,5 @@ framesArray.forEach(box => {
 })
 
 function setAnimation(obj, val) {
-    obj.style["background-image"] = "url('/imagens/" + images[val] + "')"
-}
-
-function preLoad(imgList) {
-    for (let i = 0; i < imgList.length; i++) {
-        let load = new Image()
-        load.src = "/imagens/" + imgList[i]
-    }
+    obj.style["background-image"] = "url('imagens/" + images[val] + "')"
 }
