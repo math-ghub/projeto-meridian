@@ -312,7 +312,6 @@
     }
 
     .e-fotos {
-        background-image: url(../../imagens/estudio-teste.webp);
         background-size: cover;
         height: 100%;
         width: 19%;
@@ -334,11 +333,6 @@
         z-index: 2;
         transform: translateX(-50%);
         transition: 2s;
-    }
-
-    .e-fotos::after {
-        content: "";
-        background-image: url(../../imagens/clinica-interior.jpg);
     }
 
     #ef-1::before {background-position: 0%; border-bottom-left-radius: 50px; animation: refresh 7s linear infinite; animation-delay: 4500ms}
@@ -717,7 +711,6 @@
     }
 
     .e-fotos {
-        background-image: url(../../imagens/estudio-teste.webp);
         background-size: 650%;
         background-repeat: no-repeat;
         height: 100%;
@@ -741,12 +734,7 @@
         transform: translateX(-50%);
         transition: 2s;
     }
-
-    .e-fotos::after {
-        content: "";
-        background-image: url(../../imagens/clinica-interior.jpg);
-    }
-
+    
     #ef-1::before {background-position: 0%; border-bottom-left-radius: 50px; animation: refresh 7s linear infinite; animation-delay: 4500ms}
     #ef-2::before {background-position: 20%; animation: refresh 7s linear infinite; animation-delay: 5000ms}
     #ef-3::before {background-position: 40%; animation: refresh 7s linear infinite; animation-delay: 5500ms}
