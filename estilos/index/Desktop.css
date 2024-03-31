@@ -681,13 +681,13 @@
         position: relative;
         left: -5vw;
         background-color: rgb(0, 105, 122);
-        height: 62em;
+        height: 57em;
         width: 110vw;
         rotate: 7deg;
         z-index: -1;
     }
 
-    #estudio > article {
+    #estudio > article:nth-child(1) {
         position: absolute;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -760,38 +760,149 @@
         margin: auto;
     }
 
-    #estudio-desc > h2 {
+    .estudio-h2 {
         position: relative;
         margin: auto;
         text-align: center;
         font-family: 'Times New Roman', Times, serif;
         font-size: 40px;
-        text-shadow: 1px 1px 3px rgb(0, 0, 0);
+        filter: drop-shadow(1px 1px 3px rgb(0, 0, 0));
+        border-bottom: 1px solid rgb(255, 255, 255);
         color: rgba(255, 255, 255, 0.975);
         width: 270px;
-        border-radius: 15px;
         margin-top: 10px;
     }
 
-    #estudio-desc > h2::before {
-        content: "";
-        display: block;
-        position: absolute;
-        height: 1px;
-        width: 100%;
-        background-color: rgb(255, 255, 255);
-        box-shadow: 1px 1px 1px black;
-        transform: translateY(1em);
-    }
-
-    #estudio-desc > p {
+    .estudio-p {
         color: white;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 20px;
         margin-top: 10px;
     }
 
+    #fotodep {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        height: 35vw;
+        width: 100%;
+        rotate: -7deg;
+        top: 30em;
+    }
+
+    #vetor {
+        background-image: url(../../imagens/vetor1.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    #fotodep-desc {
+        position: relative;
+        width: fit-content;
+        left: 17vw;
+    }
+
+    #fotodep-desc > h2 {
+        text-align: center;
+    }
+
+    #fotodep-desc > p {
+        width: clamp(460px, 30vw, 28vw);
+        text-align: justify;
+    }
+
+    #fotodep-container {
+        position: absolute;
+        overflow: hidden;
+        border-radius: 10px;
+        right: 15vw;
+        height: 20em;
+        width: 30vw;
+    }
+
+    #fotodep-container::before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: -5vw;
+        top: 2em;
+        background-color: rgb(255, 255, 255);
+        rotate: 0deg;
+        width: 140%;
+        height: 75%;
+        z-index: -2;
+    }
+
+    #fotodep-container.animating::before {
+        animation: lineRotation 1s ease-out;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes lineRotation {
+        0% {
+            rotate: 0deg;
+        }
+
+        100% {
+            rotate: 30deg;
+        }
+    }
+
+    #fotodep-container::after {
+        content: "";
+        display: block;
+        position: absolute;
+        border-radius: 10px;
+        background-color: rgb(0, 105, 122);
+        height: 99%;
+        width: 99%;
+        z-index: -1;
+        transform: translate(0.15vw, 0.1em);
+    }
+
+    #fotodep-foto {
+        background-image: url(../../imagens/fotodep-teste.jpeg);
+        background-size: cover;
+        border-radius: 10px;
+        position: absolute;
+        width: 90%;
+        height: 90%;
+        transform: translate(1.5vw, 20em);
+    }
+
+    #fotodep-container.animating #fotodep-foto {
+        animation: nutriAppear 1s ease-out;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes nutriAppear {
+        0% {
+            opacity: 0;
+            transform: translate(1.5vw, 20em);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translate(1.5vw, 1em);
+        }
+    }
+
+    #fotodep::before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 105%;
+        height: 105%;
+        border-radius: 5px;
+        transform: translate(-2.5%, -2.5%);
+    }
+
     #localizacao {
+        margin-top: 50em;
         height: 40em;
         padding: 1px;
         text-align: center;
