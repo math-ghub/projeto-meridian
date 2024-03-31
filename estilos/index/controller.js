@@ -28,6 +28,5 @@ function preLoad(imgList) {
     for (let i = 0; i < imgList.length; i++) {
         let load = new Image()
         load.src = "/imagens/" + imgList[i]
-        console.log("imagem "+i+" carregada com sucesso!")
     }
 }
