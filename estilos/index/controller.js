@@ -19,5 +19,5 @@ framesArray.forEach(box => {
 })
 
 function setAnimation(obj, val) {
-    obj.style["background-image"] = "https://math-ghub.github.io/projeto-meridian/imagens/" + images[val]
+    obj.style["background-image"] = "url(../../imagens/" + images[val]
 }
