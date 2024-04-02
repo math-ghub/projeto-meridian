@@ -393,13 +393,16 @@
         background-image: url(../../imagens/floresta.jpg);
         height: 35em;
         padding: 0.1px;
+        overflow: hidden;
     }
 
     #headText {
+        position: absolute;
         width: 30em;
         height: 23em;
         margin-top: 8.5em;
         margin-left: 5em;
+        top: 0;
     }
 
     .button {
@@ -803,7 +806,7 @@
     #fotodep-desc {
         position: relative;
         width: fit-content;
-        left: 20vw;
+        right: -23vw;
     }
 
     #fotodep-desc > h2 {
@@ -811,16 +814,17 @@
     }
 
     #fotodep-desc > p {
-        width: clamp(460px, 30vw, 28vw);
+        width: clamp(430px, 30vw, 50em);
         text-align: justify;
     }
 
     #fotodep-container {
         position: absolute;
+        top: -5em;
         overflow: hidden;
         border-radius: 10px;
         right: 15vw;
-        height: 20em;
+        height: 31em;
         width: 30vw;
     }
 
@@ -828,11 +832,11 @@
         content: "";
         display: block;
         position: absolute;
-        left: -5vw;
+        left: -10vw;
         top: 2em;
         background-color: rgb(255, 255, 255);
         rotate: 0deg;
-        width: 140%;
+        width: 165%;
         height: 75%;
         z-index: -2;
     }
@@ -861,25 +865,26 @@
         height: 99%;
         width: 99%;
         z-index: -1;
-        transform: translate(0.15vw, 0.1em);
+        transform: translate(0.115vw, 0.18em);
     }
 
     #fotodep-foto {
-        background-image: url(../../imagens/fotodep-teste.jpeg);
+        background-image: url(../../imagens/fotodep.jpeg);
         background-size: cover;
+        background-position: bottom;
         border-radius: 10px;
         position: absolute;
+        top: .55em;
         width: 90%;
         height: 90%;
-        transform: translate(1.5vw, 20em);
     }
 
     #fotodep-container.animating #fotodep-foto {
-        animation: nutriAppear 1s ease-out;
+        animation: depAppear 1.2s ease-out;
         animation-fill-mode: forwards;
     }
 
-    @keyframes nutriAppear {
+    @keyframes depAppear {
         0% {
             opacity: 0;
             transform: translate(1.5vw, 20em);
@@ -899,6 +904,26 @@
         height: 105%;
         border-radius: 5px;
         transform: translate(-2.5%, -2.5%);
+    }
+
+    #nutricionista {
+        height: 35em;
+        /* background-color: blueviolet; */
+    }
+
+    #video-container {
+        position: relative;
+        top: 0;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    video {
+        width: 100%;
+        height: auto;
     }
 
     #localizacao {
