@@ -1,5 +1,6 @@
 const frames = document.getElementsByClassName("e-fotos")
 const framesArray = Array.from(frames)
+let actualImage = 0
 
 var images = [
     "clinica-interior.jpg",
@@ -7,13 +8,18 @@ var images = [
     "idosa-crosspilates.jpg",
 ]
 
+framesArray[0].onanimationiteration = (anim) => {
+    if (anim.animationName == "refresh") {return actualImage += 1};
+    if (actualImage > images.length - 1) {actualImage = 0};
+}
+
 framesArray.forEach(box => {
-    let actualImage = 0
     box.addEventListener("animationiteration", (anim) => {
-        if (anim.animationName == "refresh") {return actualImage += 1};
-        if (actualImage >= images.length) {actualImage = 0};
+        if (anim.animationName == "refresh") {return};
+        if (actualImage > images.length - 1) {actualImage = 0};
         setAnimation(box, actualImage)
     })
+
     setAnimation(box, actualImage)
 })
 
