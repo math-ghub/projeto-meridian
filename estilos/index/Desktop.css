@@ -913,18 +913,31 @@
     }
 
     #nutricionista-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         height: 35em;
         /* background-color: blueviolet; */
     }
 
     #nutricionista-foto {
         background-image: url(../../imagens/nutricionista.jpeg);
-        background-color: red;
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
+        margin-left: auto;
         width: 35em;
         height: 100%;
+    }
+
+    #nutricionista-desc {
+        width: 70%;
+    }
+
+    #nutricionista-desc > h2 {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 40px;
+        margin-top: 4em;
     }
 
     #video-container {
