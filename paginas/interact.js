@@ -133,10 +133,10 @@ function checkHeight() {
         let viewHeight = window.innerHeight || document.documentElement.clientHeight;
         let compareHeight = element.getBoundingClientRect().top;
 
-        if (compareHeight <= viewHeight) {
+        if (compareHeight <= viewHeight - 200) {
             Animate(element, true)
         }
-        else {
+        else if (compareHeight >= viewHeight) {
             Animate(element, false)
         }
     }

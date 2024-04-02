@@ -778,6 +778,7 @@
 
     .estudio-p {
         color: white;
+        text-align: justify;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 20px;
         margin-top: 10px;
@@ -814,7 +815,7 @@
     }
 
     #fotodep-desc > p {
-        width: clamp(430px, 30vw, 50em);
+        width: clamp(430px, 35vw, 50em);
         text-align: justify;
     }
 
@@ -835,23 +836,26 @@
         left: -10vw;
         top: 2em;
         background-color: rgb(255, 255, 255);
-        rotate: 0deg;
-        width: 165%;
+        rotate: -10deg;
+        width: 170%;
         height: 75%;
         z-index: -2;
+        opacity: 0;
     }
 
     #fotodep-container.animating::before {
-        animation: lineRotation 1s ease-out;
+        animation: lineRotation 2s ease-out;
         animation-fill-mode: forwards;
     }
 
     @keyframes lineRotation {
         0% {
-            rotate: 0deg;
+            opacity: 0;
+            rotate: -10deg;
         }
 
         100% {
+            opacity: 1;
             rotate: 30deg;
         }
     }
@@ -877,6 +881,8 @@
         top: .55em;
         width: 90%;
         height: 90%;
+        transform: translate(1.5vw, 20em);
+        opacity: 0;
     }
 
     #fotodep-container.animating #fotodep-foto {
@@ -906,9 +912,19 @@
         transform: translate(-2.5%, -2.5%);
     }
 
-    #nutricionista {
+    #nutricionista-container {
         height: 35em;
         /* background-color: blueviolet; */
+    }
+
+    #nutricionista-foto {
+        background-image: url(../../imagens/nutricionista.jpeg);
+        background-color: red;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 35em;
+        height: 100%;
     }
 
     #video-container {
