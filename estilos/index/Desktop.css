@@ -915,22 +915,34 @@
     #nutricionista-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        margin-top: 5em;
         height: 35em;
         /* background-color: blueviolet; */
     }
 
     #nutricionista-foto {
-        background-image: url(../../imagens/nutricionista.jpeg);
+        background-image: url(../../imagens/nutricionista-foto.png);
         background-size: contain;
-        background-position: center;
+        background-position: right;
         background-repeat: no-repeat;
         margin-left: auto;
-        width: 35em;
+        width: 38.2em;
         height: 100%;
     }
 
     #nutricionista-desc {
         width: 70%;
+        height: 38.2em;
+        border: 4px solid #342E24;
+    }
+
+    #nutricionista-desc::before {
+        content: "";
+        display: block;
+        position: absolute;
+        border: 4px solid #342E24;
+        width: 27em;
+        height: 36em;
     }
 
     #nutricionista-desc > h2 {
@@ -938,6 +950,12 @@
         font-family: Arial, Helvetica, sans-serif;
         font-size: 40px;
         margin-top: 4em;
+    }
+
+    #nutricionista-desc > p {
+        text-align: justify;
+        margin: auto;
+        width: 80%;
     }
 
     #video-container {
