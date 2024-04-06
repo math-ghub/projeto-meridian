@@ -464,4 +464,40 @@
         } 
     }
 
+    #nav-icons {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 13em;
+    }
+
+    .icons {
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        user-select: none;
+        margin-left: 8px;
+        border-radius: 50%;
+        width: 3em;
+        height: 3em;
+        transition: .5s;
+        filter: saturate(0.2)
+    }
+
+    .icons:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+        transform: scale(1.5);
+        filter: saturate(1);
+        mix-blend-mode: unset;
+        cursor: pointer;
+    }
+
+    #instagram-icon {background-image: url(../imagens/instagram-logo.webp);}
+    #facebook-icon {background-image: url(../imagens/facebook-logo.webp);}
+    #whatsapp-icon {background-image: url(../imagens/whatsapp-logo.png);}
     }

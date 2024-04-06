@@ -2,15 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Jomolhari&family=Karla:ital,wght@0,200..800;1,200..800&family=Mohave:ital,wght@0,300..700;1,300..700&display=swap');
 
 @media screen and (min-width: 1145px) {
-    article {
-        background-color: rgb(215, 184, 215);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 35em;
-        padding: 1px;
-    }
-    
     #introduction {
         background-color: rgb(184, 138, 138);
         display: grid;
@@ -76,4 +67,6 @@
         left: -0.5vw;
         height: 100%;
     }
+
+    
 }
