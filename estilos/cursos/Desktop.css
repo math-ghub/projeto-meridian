@@ -1,14 +1,9 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Jomolhari&family=Karla:ital,wght@0,200..800;1,200..800&family=Mohave:ital,wght@0,300..700;1,300..700&display=swap');
 
 @media screen and (min-width: 1145px) {
-    section {
-        background-color: gray;
-        margin-top: 6em;
-        text-align: center;
-    }
-
     article {
-        background-color: purple;
+        background-color: rgb(215, 184, 215);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -16,11 +11,69 @@
         padding: 1px;
     }
     
-    main div {
-        background-color: rgba(0, 255, 255, 0.347);
-        padding: 20px;
-        width: 90vw;
-        height: 27em;
-        text-align: start;
+    #introduction {
+        background-color: rgb(184, 138, 138);
+        display: grid;
+        grid-template-columns: 30% 70%;
+        height: 85vh;
+    }
+
+    #text-container {
+        background-color: rgb(0, 105, 122);
+        z-index: 1;
+    }
+
+    #text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        top: 25%;
+        left: 1vw;
+        width: 50.3vw;
+        height: 70%;
+    }
+
+    #text > h1 {
+        color: white;
+        font-family: "Mohave", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 1;
+        font-style: italic;
+        font-size: clamp(2rem, 4em, 4rem);
+        border-bottom: 1px solid white;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.756);
+        text-align: center;
+        width: 3em;
+        height: 1.1em;
+    }
+
+    #text > p:nth-of-type(1) {
+        color: #A48C5D;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: clamp(1rem, 2em, 1.5rem);
+        margin-top: 5px;
+    }
+
+    #text > p:nth-of-type(2) {
+        color: white;
+        font-family: "Karla", Arial, Helvetica, sans-serif;
+        font-size: 40px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.756);
+    }
+
+    #foto-container {
+        background-image: url(../../imagens/rpg-teste.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    #svg-container {
+        background-image: url(../../imagens/triangle.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        left: -0.5vw;
+        height: 100%;
     }
 }
