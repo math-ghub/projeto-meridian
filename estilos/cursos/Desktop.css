@@ -21,7 +21,7 @@
         position: relative;
         top: 25%;
         left: 1vw;
-        width: 50.3vw;
+        width: 45vw;
         height: 70%;
     }
 
@@ -43,6 +43,7 @@
         font-family: Arial, Helvetica, sans-serif;
         font-size: clamp(1rem, 2em, 1.5rem);
         margin-top: 5px;
+        text-align: center;
     }
 
     #text > p:nth-of-type(2) {
@@ -50,6 +51,7 @@
         font-family: "Karla", Arial, Helvetica, sans-serif;
         font-size: 40px;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.575);
+        text-align: center;
     }
 
     #foto-container {
@@ -68,5 +70,70 @@
         height: 100%;
     }
 
+    #cursos {
+        height: 50em;
+    }
+
+    #cursos-desc {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        height: 50em;
+        overflow: hidden;
+    }
     
+    #cursos-text {
+        background-color: rgba(0, 128, 0, 0.425);
+        width: 40vw;
+        height: 40em;
+    }
+
+    #cursos-text > h2 {
+        font-family: "Mohave", Arial, Helvetica, sans-serif;
+        font-size: 45px;
+        text-align: center;
+    }
+
+    #cursos-text > p {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 30px;
+        text-align: justify;
+    }
+
+    #cursos-image {
+        background-image: url(../../imagens/cachoeira.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 40vw;
+        height: 40em;
+        overflow: hidden;
+    }
+
+    #cursos-image::before {
+        content: "";
+        display: block;
+        position: relative;
+        background-image: linear-gradient(to right, transparent 0%, rgb(0, 105, 122) 5%, white 10%);
+        height: 100em;
+        rotate: 45deg;
+        top: -50%;
+        left: -40vw;
+        animation: smoothAppear 2s linear;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes smoothAppear {
+        0% {
+            width: 100vw;
+        }
+
+        100% {
+            width: 0vw;
+            left: 50vw;
+            top: 50%;
+        }
+    }
 }

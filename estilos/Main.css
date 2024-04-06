@@ -490,7 +490,7 @@
     }
 
     .icons:hover {
-        background-color: rgba(0, 0, 0, 0.8);
+        background-color: rgba(0, 0, 0, 0.5);
         transform: scale(1.5);
         filter: saturate(1);
         mix-blend-mode: unset;
