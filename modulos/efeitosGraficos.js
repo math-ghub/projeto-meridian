@@ -9,7 +9,7 @@ export function animatePage() {
     throttle(checkHeight, 200)
 })}
 
-export function checkHeight() {
+function checkHeight() {
     interativos.forEach(element => {
         let viewHeight = window.innerHeight || document.documentElement.clientHeight;
         let compareHeight = element.getBoundingClientRect().top;
@@ -24,7 +24,7 @@ export function checkHeight() {
     )
 }
 
-export function throttle(f, ms) {
+function throttle(f, ms) {
     if (wait) return;
 
     wait = true
@@ -35,7 +35,7 @@ export function throttle(f, ms) {
     }, ms)
 }
 
-export let startLoad = (element, bool) => {
+let startLoad = (element, bool) => {
     const loadBar = element.getElementsByClassName("load")
     if (bool) {
         loadBar[0].classList.remove("shrink")
@@ -48,7 +48,7 @@ export let startLoad = (element, bool) => {
     }
 }
 
-export function Animate(element, bool) {
+function Animate(element, bool) {
     if (bool) {
         element.classList.add("animating")
     }
