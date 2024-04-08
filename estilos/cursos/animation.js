@@ -5,7 +5,6 @@ const scroller = document.querySelector("#scroller")
 window.addEventListener("scroll", () => Check())
 
 function Check() {
-    console.log("Checando")
     let top = window.innerHeight || document.documentElement.clientHeight;
     let seletorHeight = topElement.getBoundingClientRect().bottom;
 
