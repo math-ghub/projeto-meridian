@@ -95,14 +95,14 @@
         transition: 1s;
     }
 
-    #proced1 > div > div:nth-child(1) {
+    #img1 {
         transition: 1s;
         opacity: 0;
         min-width: 20vw;
         max-width: 40vw;
     }
 
-    #proced1 > div > div.animating {
+    #img1.animating {
         animation: left-to-right 1s ease-in-out;
         animation-fill-mode: forwards;
     }
@@ -119,7 +119,7 @@
         }
     }
 
-    #proced1 > div:nth-child(1) {
+    #proced1 > div {
         background-color: rgb(0, 105, 122);
         height: 22em;
         width: 70vw;
@@ -247,7 +247,7 @@
         transition: 1s;
     }
 
-    #proced2 > div > div {
+    #img2 {
         background-image: url(../../imagens/proced2.jfif);
         background-repeat: no-repeat;
         background-size: cover;
@@ -262,7 +262,7 @@
         opacity: 0;
     }
 
-    #proced2 > div > div.animating {
+    #img2.animating {
         animation: right-to-left 1s ease-in-out;
         animation-fill-mode: forwards;
     }
@@ -289,7 +289,7 @@
         z-index: -1;
     }
 
-    #estudio > article {
+    #crosspilates {
         position: absolute;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -301,7 +301,7 @@
         rotate: -7deg;
     }
 
-    #estudio-foto {
+    #crosspilates-foto {
         position: relative;
         display: flex;
         gap: 2%;
@@ -313,7 +313,8 @@
     }
 
     .e-fotos {
-        background-size: cover;
+        background-size: 960%;
+        background-repeat: no-repeat;
         height: 100%;
         width: 19%;
         text-align: center;
@@ -336,51 +337,172 @@
         transition: 2s;
     }
 
-    #ef-1::before {background-position: 0%; border-bottom-left-radius: 50px; animation: refresh 7s linear infinite; animation-delay: 4500ms}
-    #ef-2::before {background-position: 10%; animation: refresh 7s linear infinite; animation-delay: 5000ms}
-    #ef-3::before {background-position: 20%; animation: refresh 7s linear infinite; animation-delay: 5500ms}
-    #ef-4::before {background-position: 30%; animation: refresh 7s linear infinite; animation-delay: 6000ms}
-    #ef-5::before {background-position: 40%; border-top-right-radius: 50px; animation: refresh 7s linear infinite; animation-delay: 6500ms}
+    #ef-1::before {background-position: 14.1%; border-bottom-left-radius: 50px; animation: refresh 7s linear infinite; animation-delay: 4500ms}
+    #ef-2::before {background-position: 28.2%; animation: refresh 7s linear infinite; animation-delay: 5000ms}
+    #ef-3::before {background-position: 42.3%; animation: refresh 7s linear infinite; animation-delay: 5500ms}
+    #ef-4::before {background-position: 56.4%; animation: refresh 7s linear infinite; animation-delay: 6000ms}
+    #ef-5::before {background-position: 70.5%; border-top-right-radius: 50px; animation: refresh 7s linear infinite; animation-delay: 6500ms}
 
-    #ef-1 {background-position: 0%; border-bottom-left-radius: 50px; animation: e1 7s linear infinite; animation-delay: 0ms;}
-    #ef-2 {background-position: 10%; animation: e2 7s linear infinite; animation-delay: 500ms;}
-    #ef-3 {background-position: 20%; animation: e3 7s linear infinite; animation-delay: 1000ms;}
-    #ef-4 {background-position: 30%; animation: e4 7s linear infinite; animation-delay: 1500ms;}
-    #ef-5 {background-position: 40%; border-top-right-radius: 50px; animation: e5 7s linear infinite; animation-delay: 2000ms;}
+    #ef-1 {background-position: 14.1%; border-bottom-left-radius: 50px; animation: e1 7s linear infinite; animation-delay: 0ms;}
+    #ef-2 {background-position: 28.2%; animation: e2 7s linear infinite; animation-delay: 500ms;}
+    #ef-3 {background-position: 42.3%; animation: e3 7s linear infinite; animation-delay: 1000ms;}
+    #ef-4 {background-position: 56.4%; animation: e4 7s linear infinite; animation-delay: 1500ms;}
+    #ef-5 {background-position: 70.5%; border-top-right-radius: 50px; animation: e5 7s linear infinite; animation-delay: 2000ms;}
 
-    @keyframes e1 {0% {background-position: 0%;} 100% {background-position: 10%;}}
-    @keyframes e2 {0% {background-position: 10%;} 100% {background-position: 20%;}}
-    @keyframes e3 {0% {background-position: 20%;} 100% {background-position: 30%;}}
-    @keyframes e4 {0% {background-position: 30%;} 100% {background-position: 40%;}}
-    @keyframes e5 {0% {background-position: 40%;} 100% {background-position: 50%;}}
+    @keyframes e1 {0% {background-position: 0%;} 100% {background-position: 14.1%;}}
+    @keyframes e2 {0% {background-position: 14.1%;} 100% {background-position: 28.2%;}}
+    @keyframes e3 {0% {background-position: 28.2%;} 100% {background-position: 42.3%;}}
+    @keyframes e4 {0% {background-position: 42.3%;} 100% {background-position: 56.4%;}}
+    @keyframes e5 {0% {background-position: 56.4%;} 100% {background-position: 70.5%;}}
     @keyframes refresh {0% {opacity: 0} 25% {opacity: 0;} 33% {opacity: 1} 37% {opacity: 1;} 70% {opacity: 0}}
 
-    #estudio-desc {
+    #crosspilates-desc {
         height: 100%;
         width: 80%;
         margin: auto;
     }
 
-    #estudio-desc > h2 {
+    .estudio-h2 {
         position: relative;
         margin: auto;
         text-align: center;
         font-family: 'Times New Roman', Times, serif;
         font-size: 40px;
-        text-shadow: 1px 1px 3px rgb(0, 0, 0);
-        box-shadow: 0px 0px 10px rgba(199, 151, 30, 0.356);
+        filter: drop-shadow(1px 1px 3px rgb(0, 0, 0));
+        border-bottom: 1px solid rgb(255, 255, 255);
         color: rgba(255, 255, 255, 0.975);
-        background-color: rgb(204, 158, 101);
         width: 270px;
-        border-radius: 15px;
         margin-top: 10px;
     }
 
-    #estudio-desc > p {
+    .estudio-p {
         color: white;
+        text-align: justify;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 20px;
         margin-top: 10px;
+    }
+
+    #fotodep {
+        position: relative;
+        display: grid;
+        height: 35vw;
+        grid-template-columns: repeat(2, 1fr);
+        rotate: -7deg;
+        top: 30em;
+    }
+
+    #vetor {
+        background-image: url(../../imagens/vetor.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    #fotodep-desc {
+        width: fit-content;
+        margin-left: auto;
+    }
+
+    #fotodep-desc > p {
+        width: 38vw;
+        text-align: justify;
+    }
+
+    #fotodep-container {
+        position: absolute;
+        overflow: hidden;
+        top: -5em;
+        border-radius: 10px;
+        right: 15vw;
+        height: 31em;
+        width: 40vw;
+    }
+
+    #fotodep-container::before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: -10vw;
+        top: 2em;
+        background-color: rgb(255, 255, 255);
+        rotate: -10deg;
+        width: 170%;
+        height: 75%;
+        z-index: -2;
+        opacity: 0;
+    }
+
+    #fotodep-container.animating::before {
+        animation: lineRotation 2s ease-out;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes lineRotation {
+        0% {
+            opacity: 0;
+            rotate: -10deg;
+        }
+
+        100% {
+            opacity: 1;
+            rotate: 30deg;
+        }
+    }
+
+    #fotodep-container::after {
+        content: "";
+        display: block;
+        position: absolute;
+        border-radius: 10px;
+        background-color: rgb(0, 105, 122);
+        height: 99%;
+        width: 99%;
+        z-index: -1;
+        transform: translate(0.115vw, 0.18em);
+    }
+
+    #fotodep-foto {
+        background-image: url(../../imagens/fotodep.jpeg);
+        background-size: cover;
+        background-position: bottom;
+        border-radius: 10px;
+        position: absolute;
+        top: .55em;
+        width: 90%;
+        height: 90%;
+        transform: translate(1.9vw, 20em);
+        opacity: 0;
+    }
+
+    #fotodep-container.animating #fotodep-foto {
+        animation: depAppear 1.2s ease-out;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes depAppear {
+        0% {
+            opacity: 0;
+            transform: translate(1.9vw, 20em);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translate(1.9vw, 1em);
+        }
+    }
+
+    #fotodep::before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 105%;
+        height: 105%;
+        border-radius: 5px;
+        transform: translate(-2.5%, -2.5%);
     }
 }
 
@@ -536,8 +658,9 @@
 
     #proced1Text {
         text-align: center;
+        position: relative;
+        margin-left: auto;
         width: 40vw;
-        position:relative;
         padding-top: 5em;
         transition: 1s;
         opacity: 0;
@@ -683,7 +806,7 @@
         z-index: -1;
     }
 
-    #estudio > article:nth-child(1) {
+    #crosspilates {
         position: absolute;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -695,7 +818,7 @@
         rotate: -7deg;
     }
 
-    #estudio-foto {
+    #crosspilates-foto {
         position: relative;
         display: flex;
         gap: 2%;
@@ -750,7 +873,7 @@
     @keyframes e5 {0% {background-position: 80%;} 100% {background-position: 90%;}}
     @keyframes refresh {0% {opacity: 0} 25% {opacity: 0;} 33% {opacity: 1} 37% {opacity: 1;} 70% {opacity: 0}}
 
-    #estudio-desc {
+    #crosspilates-desc {
         height: 100%;
         width: 80%;
         margin: auto;
@@ -779,10 +902,9 @@
 
     #fotodep {
         position: relative;
-        display: flex;
-        flex-direction: row;
+        display: grid;
         height: 35vw;
-        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
         rotate: -7deg;
         top: 30em;
     }
@@ -798,13 +920,8 @@
     }
 
     #fotodep-desc {
-        position: relative;
         width: fit-content;
-        right: -23vw;
-    }
-
-    #fotodep-desc > h2 {
-        text-align: center;
+        margin-left: auto;
     }
 
     #fotodep-desc > p {
@@ -814,8 +931,8 @@
 
     #fotodep-container {
         position: absolute;
-        top: -5em;
         overflow: hidden;
+        top: -5em;
         border-radius: 10px;
         right: 15vw;
         height: 31em;

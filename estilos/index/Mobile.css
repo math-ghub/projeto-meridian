@@ -12,6 +12,10 @@
 }
 
 @media screen and (max-width: 799px) {
+    html, body {
+        overflow-x: hidden;
+    }
+    
     #main {
         background-size: cover;
         background-image: url(../../imagens/cachoeira.jpg);
