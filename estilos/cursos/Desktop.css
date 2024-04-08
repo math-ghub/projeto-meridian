@@ -6,6 +6,10 @@
         scroll-behavior: smooth;
     }
 
+    .datas {
+        background-color: rgb(255, 251, 27);
+    }
+
     #scroller {
         background-color: rgba(0, 106, 122, 0.729);
         color: white;
@@ -168,54 +172,58 @@
         opacity: 0.5;
     }
 
-    #curso-rpg {
-        display: flex;
-        flex-direction: row;
+    .box {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         align-items: center;
         justify-content: center;
-        gap: 30px;
         height: 50em;
         overflow: hidden;
     }
     
-    #rpg-text {
+    .box-text {
         width: 40vw;
         height: 40em;
+        margin: auto;
     }
 
-    #rpg-text > h2 {
+    .box-text > h2 {
         font-family: "Mohave", Arial, Helvetica, sans-serif;
+        text-align: center;
         font-weight: 400;
         font-size: 45px;
+    }
+
+    .box-text > p {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: justify;
+        font-size: 20px;
+    }
+
+    .box-text > p.center {
         text-align: center;
     }
 
-    #rpg-text > p {
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 20px;
-        text-align: justify;
-    }
-
-    #rpg-text > ul {
+    .box-text > ul {
         list-style-position: inside;
         list-style-type: none;
     }
 
-    #rpg-text > ul > li {
+    .box-text > ul > li {
         display: flex;
         font-family: "Karla", Arial, Helvetica, sans-serif;
         font-size: 18px;
         margin-bottom: 5px;
     }
 
-    #rpg-text > ul > li::before {
+    .box-text > ul > li::before {
         content: "•";
         display: flex;
         align-items: center;
         margin-right: 5px;
     }
 
-    #rpg-text > a {
+    .box-text > a {
         background-color: rgb(0, 105, 122);
         display: flex;
         align-items: center;
@@ -223,24 +231,25 @@
         font-family: "Karla", Arial, Helvetica, sans-serif;
         text-align: center;
         margin: auto;
-        font-size: 25px;
+        font-size: clamp(20px, 1.4vw, 30px);
         width: 16vw;
         height: 3em;
         transition: 0.2s;
     }
 
-    #rpg-text > a:hover {
+    .box-text > a:hover {
         background-color: rgb(77, 156, 168);
     }
 
-    #rpg-image-container {
+    .image-container {
         position: relative;
+        overflow: hidden;
+        margin: auto;
         width: 40vw;
         height: 40em;
-        overflow: hidden;
     }
 
-    #rpg-image-container::before {
+    .image-container::before {
         content: "";
         display: block;
         position: absolute;
@@ -251,12 +260,12 @@
         transform: translate(0, -8em);
     }
 
-    #rpg-image-container.animating::before {
+    .image-container.animating::before {
         animation: smoothAppear 1.5s linear;
         animation-fill-mode: forwards;
     }
 
-    #rpg-image-container.animating #rpg-image {
+    .image-container.animating .box-image {
         opacity: 1;
     }
 
@@ -266,9 +275,8 @@
         }
     }
 
-    #rpg-image {
+    .box-image {
         position: relative;
-        background-image: url(../../imagens/rpg-teste3.jpg);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -276,4 +284,8 @@
         transition: opacity 0.75s;
         opacity: 0;
     }
+
+    #curso-rpg .box-image {background-image: url(../../imagens/rpg-teste3.jpg);}
+    #conteudo-rpg .box-image {background-image: url(../../imagens/rpg-teste4.avif);}
+    #curso-pilates .box-image {background-image: url(../../imagens/pilates-imagem.jfif);}
 }
