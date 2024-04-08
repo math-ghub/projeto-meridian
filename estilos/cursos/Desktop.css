@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Jomolhari&family=Karla:ital,wght@0,200..800;1,200..800&family=Mohave:ital,wght@0,300..700;1,300..700&display=swap');
 
 @media screen and (min-width: 1145px) {
+    html, body {
+        scroll-behavior: smooth;
+    }
     #introduction {
         background-color: rgb(184, 138, 138);
         display: grid;
@@ -82,23 +85,61 @@
     }
 
     #seletor > h2 {
-        background-color: rgba(0, 106, 122, 0.836);
+        background-color: rgb(0, 105, 122);
         border-radius: 55px 0px;
-        border: 2px solid rgba(17, 17, 17, 0.245);
         text-align: center;
-        font-family: "Mohave", Arial, Helvetica, sans-serif;
+        font-family: "Karla", Arial, Helvetica, sans-serif;
+        text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.725);
         font-style: oblique;
-        font-weight: 1;
+        font-weight: 100;
         font-size: 50px;
         width: fit-content;
-        color: rgb(255, 255, 255);
-        text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.819);
+        color: white;
+
         margin: auto;
         margin-top: 30px;
-        padding: 20px;
+        margin-bottom: 20px;
+        padding: 15px;
     }
 
-    #cursos-desc {
+    #seletor-list {
+        width: fit-content;
+        border-collapse: collapse;
+        margin: auto;
+    }
+
+    #seletor-list tr td{
+        font-family: "Karla", Arial, Helvetica, sans-serif;
+        text-align: center;
+        font-size: 30px;
+        width: 6em;
+        height: 2em;
+        border-left: 2px solid rgba(0, 0, 0, 0.474);
+        border-right: 2px solid rgba(0, 0, 0, 0.474);
+        user-select: none;
+        transition: background-color 0.5s, 0.2s;
+    }
+
+    #seletor-list tr td:hover {
+        cursor: pointer;
+        font-size: 34px;
+        background-color: rgb(230, 230, 230);
+    }
+
+    #seletor-list tr td > a {
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        transition: 0.5s;
+    }
+
+    #seletor-list tr:hover :not(:hover) {
+        opacity: 0.5;
+    }
+
+    #curso-rpg {
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -108,32 +149,32 @@
         overflow: hidden;
     }
     
-    #cursos-text {
+    #rpg-text {
         background-color: rgba(0, 128, 0, 0.425);
         width: 40vw;
         height: 40em;
     }
 
-    #cursos-text > h2 {
+    #rpg-text > h2 {
         font-family: "Mohave", Arial, Helvetica, sans-serif;
         font-size: 45px;
         text-align: center;
     }
 
-    #cursos-text > p {
+    #rpg-text > p {
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 30px;
         text-align: justify;
     }
 
-    #cursos-image-container {
+    #rpg-image-container {
         position: relative;
         width: 40vw;
         height: 40em;
         overflow: hidden;
     }
 
-    #cursos-image-container::before {
+    #rpg-image-container::before {
         content: "";
         display: block;
         position: absolute;
@@ -144,12 +185,12 @@
         transform: translate(0, -8em);
     }
 
-    #cursos-image-container.animating::before {
+    #rpg-image-container.animating::before {
         animation: smoothAppear 1.5s linear;
         animation-fill-mode: forwards;
     }
 
-    #cursos-image-container.animating #cursos-image {
+    #rpg-image-container.animating #rpg-image {
         opacity: 1;
     }
 
@@ -159,7 +200,7 @@
         }
     }
 
-    #cursos-image {
+    #rpg-image {
         position: relative;
         background-image: url(../../imagens/idosa-crosspilates.jpg);
         background-position: center;
