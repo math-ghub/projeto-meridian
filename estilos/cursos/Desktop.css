@@ -5,7 +5,7 @@
     #introduction {
         background-color: rgb(184, 138, 138);
         display: grid;
-        grid-template-columns: 30% 70%;
+        grid-template-columns: calc(30% - 10vh) calc(70% + 10vh);
         height: 85vh;
     }
 
@@ -19,9 +19,9 @@
         flex-direction: column;
         align-items: center;
         position: relative;
-        top: 25%;
-        left: 1vw;
-        width: 45vw;
+        top: calc(50% - 6vw);
+        left: calc(1vw + calc(10em - 7vw));
+        width: clamp(31em, calc(45vw - 7vh), 50em);
         height: 70%;
     }
 
@@ -61,6 +61,7 @@
         background-position: center;
     }
 
+
     #svg-container {
         background-image: url(../../imagens/triangle.svg);
         background-repeat: no-repeat;
@@ -72,6 +73,29 @@
 
     #cursos {
         height: 50em;
+        background-color: white;
+    }
+
+    #seletor {
+        height: 20em;
+        padding: 1px;
+    }
+
+    #seletor > h2 {
+        background-color: rgba(0, 106, 122, 0.836);
+        border-radius: 55px 0px;
+        border: 2px solid rgba(17, 17, 17, 0.245);
+        text-align: center;
+        font-family: "Mohave", Arial, Helvetica, sans-serif;
+        font-style: oblique;
+        font-weight: 1;
+        font-size: 50px;
+        width: fit-content;
+        color: rgb(255, 255, 255);
+        text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.819);
+        margin: auto;
+        margin-top: 30px;
+        padding: 20px;
     }
 
     #cursos-desc {
@@ -102,38 +126,47 @@
         text-align: justify;
     }
 
-    #cursos-image {
-        background-image: url(../../imagens/cachoeira.jpg);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
+    #cursos-image-container {
+        position: relative;
         width: 40vw;
         height: 40em;
         overflow: hidden;
     }
 
-    #cursos-image::before {
+    #cursos-image-container::before {
         content: "";
         display: block;
-        position: relative;
-        background-image: linear-gradient(to right, transparent 0%, rgb(0, 105, 122) 5%, white 10%);
-        height: 100em;
-        rotate: 45deg;
-        top: -50%;
-        left: -40vw;
-        animation: smoothAppear 2s linear;
+        position: absolute;
+        background-image: linear-gradient(to bottom, transparent 0%, rgb(0, 105, 122) 5%, white 10%);
+        width: 40vw;
+        height: 48em;
+        z-index: 1;
+        transform: translate(0, -8em);
+    }
+
+    #cursos-image-container.animating::before {
+        animation: smoothAppear 1.5s linear;
         animation-fill-mode: forwards;
     }
 
-    @keyframes smoothAppear {
-        0% {
-            width: 100vw;
-        }
+    #cursos-image-container.animating #cursos-image {
+        opacity: 1;
+    }
 
+    @keyframes smoothAppear {
         100% {
-            width: 0vw;
-            left: 50vw;
-            top: 50%;
+            transform: translate(0, 44em);
         }
+    }
+
+    #cursos-image {
+        position: relative;
+        background-image: url(../../imagens/idosa-crosspilates.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100%;
+        transition: opacity 0.75s;
+        opacity: 0;
     }
 }

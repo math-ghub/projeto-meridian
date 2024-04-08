@@ -1,3 +1,5 @@
+import * as PageAnimations from "../modulos/efeitosGraficos.js";
+
 var interativos = document.querySelectorAll(".interactive")
 var nav = document.querySelector("nav")
 var navButtons = document.querySelectorAll("nav > ul > li > a")
@@ -12,9 +14,7 @@ let logo = document.getElementById("logodiv")
 let wait = false
 let menuOpened = false
 
-window.addEventListener("scroll", () => {
-    throttle(checkHeight, 200)
-})
+PageAnimations.animatePage()
 
 menuButton.addEventListener("click", () => {
     if (!menuOpened) {
@@ -98,8 +98,8 @@ navButtons.forEach(element => {
     })
 })
 
-startLoad = (element, bool) => {
-    loadBar = element.getElementsByClassName("load")
+function startLoad(element, bool) {
+    let loadBar = element.getElementsByClassName("load")
     if (bool) {
         loadBar[0].classList.remove("shrink")
         loadBar[0].classList.add("grow")
@@ -127,38 +127,3 @@ categoryButtons.forEach(button => {
         }
     })
 })
-
-function checkHeight() {
-    interativos.forEach(element => {
-        let viewHeight = window.innerHeight || document.documentElement.clientHeight;
-        let compareHeight = element.getBoundingClientRect().top;
-
-        if (compareHeight <= viewHeight - 200) {
-            Animate(element, true)
-        }
-        else if (compareHeight >= viewHeight) {
-            Animate(element, false)
-        }
-    }
-    )
-}
-
-function Animate(element, bool) {
-    if (bool) {
-        element.classList.add("animating")
-    }
-    else {
-        element.classList.remove("animating")
-    }
-}
-
-function throttle(f, ms) {
-    if (wait) return;
-
-    wait = true
-
-    setTimeout(() => {
-        f()
-        wait = false
-    }, ms)
-}

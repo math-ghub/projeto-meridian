@@ -492,19 +492,20 @@
     }
 
     #proced1 > div {
-        min-width: 20vw;
-        max-width: 40vw;
-        transition: 1s;
+        background-color: rgb(0, 105, 122);
+        height: 30em;
+        width: 35vw;
+        position: absolute;
+        left: 5em;
+        transform: translateY(4em)
     }
 
-    #proced1 > div > div:nth-child(1) {
+    #img1 {
         transition: 1s;
         opacity: 0;
-        min-width: 20vw;
-        max-width: 40vw;
     }
 
-    #proced1 > div > div.animating {
+    #img1.animating {
         animation: left-to-right 1s ease-in-out;
         animation-fill-mode: forwards;
     }
@@ -521,16 +522,7 @@
         }
     }
 
-    #proced1 > div:nth-child(1) {
-        background-color: rgb(0, 105, 122);
-        height: 22em;
-        width: 70vh;
-        position: absolute;
-        top: 50em;
-        left: 5em;
-    }
-
-    #proced1 > div:nth-child(1) > div {
+    #img1 {
     background-image: url(../../imagens/foto-principal-1.jpeg);
     background-position: center right;
     background-size: cover;
@@ -649,7 +641,7 @@
         transition: 1s;
     }
 
-    #proced2 > div > div {
+    #img2 {
         background-image: url(../../imagens/proced2.jfif);
         background-repeat: no-repeat;
         background-size: cover;
@@ -664,7 +656,7 @@
         opacity: 0;
     }
 
-    #proced2 > div > div.animating {
+    #img2.animating {
         animation: right-to-left 1s ease-in-out;
         animation-fill-mode: forwards;
     }
