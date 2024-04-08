@@ -1,3 +1,24 @@
-import * as AnimatePage from "../../modulos/efeitosGraficos.js";
+const topElement = document.querySelector("main")
+const seletor = document.querySelector("#seletor")
+const scroller = document.querySelector("#scroller")
 
-AnimatePage.animatePage();
+window.addEventListener("scroll", () => Check())
+
+function Check() {
+    console.log("Checando")
+    let top = window.innerHeight || document.documentElement.clientHeight;
+    let seletorHeight = topElement.getBoundingClientRect().bottom;
+
+    if (seletorHeight < top) {
+        scroller.classList.add("visible")
+    } else {
+        scroller.classList.remove("visible")
+    }
+
+}
+
+scroller.addEventListener("click", () => {
+    let objTop = seletor.getBoundingClientRect().top
+    let offSet = window.scrollY
+    window.scrollTo({top: objTop + offSet - 100, behavior: "smooth"})
+})
