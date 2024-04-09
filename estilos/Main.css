@@ -329,7 +329,7 @@
     }
 
     nav > ul > li > a:hover, nav > ul > li > p:hover {
-        color: rgb(211, 169, 62);
+        color: rgb(255, 228, 146);
     }
 
     #menuList {
