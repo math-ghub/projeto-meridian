@@ -35,12 +35,12 @@
         background-color: white;
         margin: auto;
         width: .2em;
-        animation: grow 2s linear;
+        animation: growTopic 2s linear;
         animation-fill-mode: forwards;
         animation-delay: .5s;
     }
 
-    @keyframes grow {
+    @keyframes growTopic {
         0% {
             height: 0;
         }
