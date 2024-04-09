@@ -430,7 +430,7 @@
     }
 
     .conteudo > a:hover {
-        background-color: rgba(169, 223, 238, 0.911);
+        background-color: rgba(33, 82, 95, 0.911);
         text-shadow: 0px 0px 7px black;
     }
 
