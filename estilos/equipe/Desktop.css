@@ -76,7 +76,7 @@
     }
 
     #vector {
-        background-image: url(/imagens/vector-equipe.svg);
+        background-image: url(../../imagens/vector-equipe.svg);
         background-size: contain;
         background-repeat: no-repeat;
         width: 70vh;
