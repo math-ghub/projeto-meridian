@@ -1,7 +1,10 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Jomolhari&family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Karla:ital,wght@0,200..800;1,200..800&family=Mohave:ital,wght@0,300..700;1,300..700&display=swap');
 
 @media screen and (min-width: 1145px) {
     #introduction {
+        background-repeat: no-repeat;
+        background-size: cover;
         height: 90vh;
     }
 
@@ -11,9 +14,68 @@
         padding: 21vh;
     }
 
-    #intro-text > h1 {
-        font-size: 6em;
-        color: transparent;
-        filter: drop-shadow(0px 0px 4px white);
+    #intro-titulo {
+        background-repeat: no-repeat;
+        width: 45em;
+        height: 12em;
+    }
+
+    #intro-topico {
+        display: flex;
+        flex-direction: row;
+        height: 30vh;
+    }
+
+    #intro-linha-container {
+        width: 2em;
+        height: 100%;
+    }
+
+    #intro-linha {
+        background-color: white;
+        margin: auto;
+        width: .2em;
+        animation: grow 2s linear;
+        animation-fill-mode: forwards;
+        animation-delay: .5s;
+    }
+
+    @keyframes grow {
+        0% {
+            height: 0;
+        }
+        100% {
+            height: 100%;
+        }
+    }
+
+    #intro-topico > ul {
+        list-style: none;
+        display: grid;
+        font-family: "K2D", Arial, Helvetica, sans-serif;
+        color: white;
+        text-shadow: 0px 0px 10px black;
+        font-size: 25px;
+        width: 100%;
+    }
+
+    #intro-topico > ul > li {
+        opacity: 0;
+    }
+
+    #l1 {animation: showTopic 1s linear; animation-fill-mode: forwards; animation-delay: .7s}
+    #l2 {animation: showTopic 1s linear; animation-fill-mode: forwards; animation-delay: 1.1s}
+    #l3 {animation: showTopic 1s linear; animation-fill-mode: forwards; animation-delay: 1.5s}
+    #l4 {animation: showTopic 1s linear; animation-fill-mode: forwards; animation-delay: 1.9s}
+    #l5 {animation: showTopic 1s linear; animation-fill-mode: forwards; animation-delay: 2.3s}
+
+    @keyframes showTopic {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
     }
 }

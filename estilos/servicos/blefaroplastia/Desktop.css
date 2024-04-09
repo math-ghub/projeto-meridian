@@ -4,7 +4,9 @@
     #introduction {
         background-image: url(../../../imagens/blefaroplastia-fundo.jpg);
         background-position: 0 -30vw;
-        background-repeat: no-repeat;
-        background-size: cover;
+    }
+
+    #intro-titulo {
+        background-image: url(../../../imagens/blefaroplastia-titulo.svg);
     }
 }
