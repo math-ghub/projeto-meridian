@@ -2,7 +2,7 @@
 
 @media screen and (min-width: 1145px) {
     #introduction {
-        background-image: url(/imagens/blefaroplastia-teste.jpg);
+        background-image: url(../../../imagens/blefaroplastia-teste.jpg);
         background-position: 0 -30vw;
         background-repeat: no-repeat;
         background-size: cover;
