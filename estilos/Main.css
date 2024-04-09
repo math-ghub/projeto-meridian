@@ -318,12 +318,18 @@
         text-decoration: none;
         user-select: none;
         color: white;
+        transition: 0.3s;
     }
 
     nav li p {
         cursor: pointer;
         user-select: none;
         color: white;
+        transition: 0.3s;
+    }
+
+    nav > ul > li > a:hover, nav > ul > li > p:hover {
+        color: rgb(211, 169, 62);
     }
 
     #menuList {
