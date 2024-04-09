@@ -26,6 +26,7 @@
         opacity: 0;
         transition: 0.5s;
         user-select: none;
+        z-index: 2;
     }
 
     #scroller.visible {
