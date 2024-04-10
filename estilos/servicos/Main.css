@@ -197,9 +197,10 @@
         justify-content: center;
         font-family: "Jost", Arial, Helvetica, sans-serif;
         margin: auto;
+        margin-top: 15px;
         user-select: none;
         cursor: pointer;
-        font-size: 18px;
+        font-size: clamp(18px, 1.2vw, 40px);
         width: 15vw;
         height: 5vw;
     }
