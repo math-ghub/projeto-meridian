@@ -169,4 +169,47 @@
         color: white;
         text-shadow: 0px 0px 3px black;
     }
+
+    #procedimento {
+        height: 25em;
+    }
+
+    #procedimento > h2 {
+        text-align: center;
+        font-family: "Jost", Arial, Helvetica, sans-serif;
+        font-size: 35px;
+        font-weight: 400;
+        margin-top: 1em;
+    }
+
+    #procedimento > p {
+        width: 80%;
+        font-family: "Jost", Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        text-align: justify;
+        margin: auto;
+    }
+
+    #link {
+        background-color: rgb(0, 105, 122);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Jost", Arial, Helvetica, sans-serif;
+        margin: auto;
+        user-select: none;
+        cursor: pointer;
+        font-size: 18px;
+        width: 15vw;
+        height: 5vw;
+    }
+
+    #link:hover {
+        background-color: rgb(60, 147, 160);
+    }
+
+    footer {
+        background-color: black;
+        height: 7em;
+    }
 }

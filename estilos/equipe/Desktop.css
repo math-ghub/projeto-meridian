@@ -72,6 +72,7 @@
     #down-button:hover {
         cursor: pointer;
         user-select: none;
+        background-color: rgba(26, 112, 112, 0.884);
     }
 
     #down-button:hover p {
