@@ -115,12 +115,15 @@
     }
 
     #antes-e-depois {
+        background-image: linear-gradient(to bottom, rgb(36, 111, 122), rgb(11, 98, 114));
         height: 25em;
     }
 
     #antes-e-depois > h2 {
-        font-family: "Jost", Arial, Helvetica, sans-serif;
+        font-family: "K2D", Arial, Helvetica, sans-serif;
         text-align: center;
+        color: white;
+        text-shadow: 1px 1px 2px black;
         margin-bottom: 10px;
         font-size: 40px;
         font-weight: 400;
@@ -139,7 +142,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-        border: 5px solid rgb(0, 105, 122);
+        border: 5px solid rgb(255, 255, 255);
         width: 25em;
         height: 20em;
         background-color: blue;
