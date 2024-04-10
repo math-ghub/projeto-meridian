@@ -9,4 +9,16 @@
     #intro-titulo {
         background-image: url(../../../imagens/blefaroplastia-titulo.svg);
     }
+
+    #sobre-image {
+        background-image: url(../../../imagens/blefaroplastia-imagem1.webp);
+    }
+
+    #aed-imagem1 {
+        background-image: url(../../../imagens/aed-imagem1.png);
+    }
+
+    #aed-imagem2 {
+        background-image: url(../../../imagens/aed-imagem2.png);
+    }
 }
