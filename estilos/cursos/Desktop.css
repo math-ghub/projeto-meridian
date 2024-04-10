@@ -40,7 +40,6 @@
     }
 
     #introduction {
-        background-color: rgb(184, 138, 138);
         display: grid;
         grid-template-columns: calc(30% - 10vh) calc(70% + 10vh);
         height: 85vh;
