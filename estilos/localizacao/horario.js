@@ -16,7 +16,6 @@ const Agenda = {
 function checkFuncionamento() {
     let dia = horarioValue.getDay()
     const hora = horarioValue.getHours()
-    const minuto = horarioValue.getMinutes()
     let restante;
     let inicio;
     let fim;
@@ -58,16 +57,13 @@ function checkFuncionamento() {
 }
 
 function lojaStatus(bool, rest) {
+    const minuto = horarioValue.getMinutes()
+    let variavel =(rest == 1 && minuto > 0) ? "Minuto" : "Hora"
+    rest = (rest == 1 && minuto > 0) ? 60 - minuto : rest
     let plural = rest > 1 ? "s" : "";
-    if (bool) {
-        infoLoja.innerText = "Aberto"
-        infoLoja.style.color = "lightGreen"
-        horarioTexto.innerHTML = "Fecha em: <span id='horario'>" + rest + " Hora" + plural
-    } else {
-        infoLoja.innerText = "Fechado"
-        infoLoja.style.color = "Red"
-        horarioTexto.innerHTML = "Abre em: <span id='horario'>" + rest + " Hora" + plural
-    }
+    infoLoja.innerText = bool ? "Aberto" : "Fechado"
+    infoLoja.style.color = bool ? "lightGreen" : "Red"
+    horarioTexto.innerHTML = (bool ? "Fecha" : "Abre") + " em: <span id='horario'>" + rest + " " + variavel + plural
 }
 
 checkFuncionamento()
