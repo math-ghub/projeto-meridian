@@ -1029,7 +1029,6 @@
         grid-template-columns: repeat(2, 1fr);
         margin-top: 8em;
         height: 35em;
-        /* background-color: blueviolet; */
     }
 
     #nutricionista-foto {
@@ -1044,7 +1043,6 @@
 
     #nutricionista-desc {
         height: 38.2em;
-        /* border: 4px solid #342E24; */
     }
 
 
@@ -1075,6 +1073,10 @@
         color: #ac6e09;
     }
 
+    #fisioterapia {
+        height: 20em;
+    }
+
     #video-container {
         position: relative;
         top: 0;
@@ -1088,39 +1090,6 @@
     video {
         width: 100%;
         height: auto;
-    }
-
-    #localizacao {
-        margin-top: 50em;
-        height: 40em;
-        padding: 1px;
-        text-align: center;
-        position: relative;
-        top: -33em;
-        border-top-right-radius: 1000px;
-        background-color: white;
-    }
-
-    #localizacao > div > iframe {
-        margin: auto;
-        height: 25em;
-        width: 80%;
-    }
-
-    #localizacao > div:nth-child(1) > h2 {
-        text-align: center;
-        margin: auto;
-        font-size: 40px;
-        font-family: "Merienda";
-        color: rgb(0, 105, 122);
-        width: 200px;
-    }
-
-    #localizacao > div > p {
-        margin: auto;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 20px;
-        text-align: center;
     }
 
     footer {
