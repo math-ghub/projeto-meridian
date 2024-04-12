@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Jomolhari&family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Karla:ital,wght@0,200..800;1,200..800&family=Mohave:ital,wght@0,300..700;1,300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 
+html, body {
+    overflow-x: hidden;
+}
+
 @media screen and (min-width: 1145px) {
     #introduction {
         background-repeat: no-repeat;
@@ -92,9 +96,28 @@
 
     #sobre-image {
         background-size: cover;
+        position: relative;
         width: 80%;
         height: 80%;
         margin: auto;
+        opacity: 0;
+    }
+
+    #sobre-image.animating {
+        animation: bottom-to-top 1s ease-in-out;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes bottom-to-top {
+        0% {
+            top: 20vh;
+            opacity: 0;
+        }
+
+        100% {
+            top: 1vh;
+            opacity: 1;
+        }
     }
 
     #sobre-text {
@@ -107,12 +130,39 @@
         font-size: 30px;
         font-weight: 500;
         text-align: center;
+        position: relative;
+        opacity: 0;
+    }
+
+    #sobre-text.animating > h2 {
+        animation: right-to-left 1s ease-out;
+        animation-fill-mode: forwards;
+        animation-delay: 0.5s;
+    }
+
+    @keyframes right-to-left {
+        0% {
+            left: 20vw;
+            opacity: 0;
+        }
+
+        100% {
+            left: 1vw;
+            opacity: 1;
+        }
     }
 
     #sobre-text > p {
         font-family: "Jost", Arial, Helvetica, sans-serif;
         font-size: 18px;
+        position: relative;
+        opacity: 0;
     }
+
+    #sobre-text.animating > p:nth-of-type(1) {animation: right-to-left 1s ease-out; animation-fill-mode: forwards; animation-delay: 1s;}
+    #sobre-text.animating > p:nth-of-type(2) {animation: right-to-left 1s ease-out; animation-fill-mode: forwards; animation-delay: 1.5s;}
+    #sobre-text.animating > p:nth-of-type(3) {animation: right-to-left 1s ease-out; animation-fill-mode: forwards; animation-delay: 2s;}
+    #sobre-text.animating > p:nth-of-type(4) {animation: right-to-left 1s ease-out; animation-fill-mode: forwards; animation-delay: 2.5s;}
 
     #antes-e-depois {
         background-image: linear-gradient(to bottom, rgb(36, 111, 122), rgb(11, 98, 114));
@@ -138,10 +188,27 @@
         height: 20em;
     }
 
+    #aed-imagens.animating > #aed-imagem1 {animation: left-to-right 1s ease-out; animation-fill-mode: forwards}
+    #aed-imagens.animating > #aed-imagem2 {animation: right-to-left 1s ease-out; animation-fill-mode: forwards}
+
+    @keyframes left-to-right {
+        0% {
+            right: 20vw;
+            opacity: 0;
+        }
+
+        100% {
+            right: 1vw;
+            opacity: 1;
+        }
+    }
+
     .aed-imagem {
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+        position: relative;
+        opacity: 0;
         border: 5px solid rgb(255, 255, 255);
         width: 25em;
         height: 20em;
@@ -169,6 +236,7 @@
         color: white;
         text-shadow: 0px 0px 3px black;
     }
+
 
     #procedimento {
         height: 25em;
