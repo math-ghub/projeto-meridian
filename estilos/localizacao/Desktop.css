@@ -123,6 +123,13 @@
         border-left: 2px solid rgb(0, 0, 0);
         text-align: center;
     }
+
+    #informacoes > p {
+        text-align: center;
+        margin-top: 20px;
+        font-family: "K2D", Arial, Helvetica, sans-serif;
+        font-size: 19px;
+    }
     
     footer {
         display: flex;
