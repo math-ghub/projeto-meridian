@@ -10,6 +10,10 @@
         background-image: url(../../../imagens/blefaroplastia-titulo.svg);
     }
 
+    #intro-text {
+        left: -7em;
+    }
+
     #sobre-image {
         background-image: url(../../../imagens/blefaroplastia-imagem1.webp);
     }
