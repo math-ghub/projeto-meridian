@@ -2,12 +2,16 @@
 
 @media screen and (min-width: 1145px) {
     #introduction {
-        background-image: url(../../../imagens/blefaroplastia-fundo.jpg);
+        background-image: url(../../../imagens/radiofrequencia-criogenica-fundo.png);
         background-position: 0 -30vw;
     }
 
     #intro-titulo {
         background-image: url(../../../imagens/radiofrequencia-titulo.svg);
+    }
+
+    #intro-text {
+        left: -7em;
     }
 
     #sobre-image {
