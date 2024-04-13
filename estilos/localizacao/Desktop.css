@@ -34,7 +34,7 @@
         color: white;
     }
 
-    hr {
+    #info-box > hr {
         width: 95%;
         margin: auto;
         margin-bottom: 4px;
@@ -124,11 +124,22 @@
         text-align: center;
     }
 
+    #phone {
+        margin-top: 20px;
+    }
+
     #informacoes > p {
         text-align: center;
-        margin-top: 20px;
         font-family: "K2D", Arial, Helvetica, sans-serif;
         font-size: 19px;
+    }
+
+    #informacoes > hr {
+        width: 10em;
+        margin: auto;
+        border: none;
+        height: 1px;
+        background-color: black;
     }
     
     footer {
