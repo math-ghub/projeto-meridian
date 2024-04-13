@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+@media screen and (min-width: 1145px) {
+    #introduction {
+        background-image: url(../../../imagens/peeling-fundo.jpg);
+        background-position: 0 -60vw;
+    }
+
+    #intro-titulo {
+        background-image: url(../../../imagens/peeling-titulo.svg);
+    }
+
+    #intro-text {
+        left: -7vw;
+    }
+
+    #sobre-image {
+        background-image: url(../../../imagens/blefaroplastia-imagem1.webp);
+    }
+
+    #aed-imagem1 {
+        background-image: url(../../../imagens/aed-imagem1.png);
+    }
+
+    #aed-imagem2 {
+        background-image: url(../../../imagens/aed-imagem2.png);
+    }
+}
