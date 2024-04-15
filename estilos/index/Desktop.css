@@ -1,7 +1,10 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&family=Parisienne&family=Sail&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lora:ital,wght@0,400..700 ;1.400..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Jomolhari&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&family=Parisienne&family=Sail&family=Kumbh+Sans:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lora:ital,wght@0,400..700 ;1.400..700&family=Jomolhari&display=swap');
+
+@font-face {
+    font-family: "KyivType";
+    src: url(../../fonts/KyivType/Dmitry\ Rastvortsev\ -\ KyivType\ Sans\ Light-.otf);
+}
 
 * {
     margin: 0;
@@ -1025,52 +1028,169 @@
     #nutricionista-container {
         display: grid;
         position: relative;
-        left: -7vw;
         grid-template-columns: repeat(2, 1fr);
         margin-top: 8em;
         height: 35em;
     }
 
-    #nutricionista-foto {
-        background-image: url(../../imagens/nutricionista-foto.svg);
-        background-size: contain;
-        background-position: right;
-        background-repeat: no-repeat;
+    #nutricionista-foto-container {
         margin-left: auto;
-        width: 38.2em;
+        width: 35em;
         height: 100%;
     }
 
+    @keyframes slowFall {
+        0% {
+            top: -10vh;
+            opacity: 0;
+        }
+
+        30% {
+            opacity: 1;
+        }
+
+        100% {
+            top: 1vh;
+            opacity: 1;
+        }
+    }
+
+    .nutri-fruta {
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        opacity: 0;
+    }
+
+    #nutri-fruta1 {
+        background-image: url(../../imagens/fruta1.svg);
+        width: 20em;
+        height: 20em;
+        transform: translate(-2em, -12em);
+    }
+
+    #nutri-fruta2 {
+        background-image: url(../../imagens/fruta2.svg);
+        width: 13em;
+        height: 13em;
+        transform: translate(23em, 1em);
+        z-index: 1;
+    }
+
+    #nutri-fruta3 {
+        background-image: url(../../imagens/fruta3.svg);
+        width: 35em;
+        height: 35em;
+        transform: translate(-8em, 2em);
+    }
+
+    #nutricionista-foto-container.animating > .nutri-fruta {
+        animation: slowFall 0.8s ease-out;
+        animation-fill-mode: forwards;
+    }
+
+    #nutricionista-foto-container.animating > #nutri-fruta2 {animation-delay: .3s;}
+    #nutricionista-foto-container.animating > #nutri-fruta3 {animation-delay: .6s}
+
+    #nutri-imagem {
+        background-image: url(../../imagens/nutricionista-imagem.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: relative;
+        top: -8em;
+        width: 100%;
+        height: 45em;
+        opacity: 0;
+    }
+
+    #nutricionista-foto-container.animating > #nutri-imagem {
+        animation: nutriVisible 1s ease-out;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes nutriVisible {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
     #nutricionista-desc {
+        width: clamp(10em, 50vw, 60em);
         height: 38.2em;
+        position: relative;
+        right: 3em;
     }
 
 
     #nutricionista-desc > h2 {
-        text-align: center;
         margin: auto;
-        margin-top: 2vw;
-        margin-bottom: 1.1vw;
-        font-family: "Jomolhari", Arial, Helvetica, sans-serif;
+        margin-top: 1vw;
+        margin-bottom: 1em;
+        font-family: "KyivType", Arial, Helvetica, sans-serif;
         line-height: 32px;
-        width: 80%;
+        width: fit-content;
+        position: relative;
         font-size: clamp(30px, 2em, 2.1em);
+        opacity: 0;
+    }
+
+    #nutricionista-desc > h2::before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 0;
+        border-bottom: 3px solid rgb(0, 105, 122);
+        transform: translateY(1.06em);
     }
 
     #nutricionista-desc > p {
         text-align: justify;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-family: "Kumbh Sans";
         font-size: 1.2em;
+        width: 85%;
         margin: auto;
-        width: 80%;
+        position: relative;
+        opacity: 0;
     }
 
-    .nutri-h2 {
-        color: #000000;
+    #nutricionista-desc.animating > h2 {
+        animation: textToTop 0.7s linear;
+        animation-fill-mode: forwards;
     }
 
-    .nutri-text {
-        color: #ac6e09;
+    #nutricionista-desc.animating > h2::before {animation: growToRight 0.9s ease-out; animation-fill-mode: forwards;animation-delay: 1s;}
+    #nutricionista-desc.animating > p:nth-of-type(1) {animation: textToTop 0.4s linear;animation-fill-mode: forwards;animation-delay: 0.3s;
+    }
+    #nutricionista-desc.animating > p:nth-of-type(3) {animation: textToTop 0.4s linear;animation-fill-mode: forwards;animation-delay: 0.6s;
+    }
+    #nutricionista-desc.animating > p:nth-of-type(4) {animation: textToTop 0.4s linear;animation-fill-mode: forwards;animation-delay: 0.9s;
+    }
+
+    @keyframes textToTop {
+        0% {
+            top: 10vh;
+            opacity: 0;
+        }
+
+        100% {
+            top: 1vh;
+            opacity: 1;
+        }
+    }
+
+    @keyframes growToRight {
+        0% {
+            width: 0;
+        }
+
+        100% {
+            width: 2.74em;
+        }
     }
 
     #fisioterapia {
