@@ -1102,6 +1102,7 @@
         width: 100%;
         height: 45em;
         opacity: 0;
+        filter: drop-shadow(6px 6px 7px rgba(0, 0, 0, 0.541))
     }
 
     #nutricionista-foto-container.animating > #nutri-imagem {
