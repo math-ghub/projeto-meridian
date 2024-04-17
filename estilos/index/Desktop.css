@@ -1030,7 +1030,7 @@
         position: relative;
         grid-template-columns: repeat(2, 1fr);
         margin-top: 8em;
-        height: 35em;
+        height: 30em;
     }
 
     #nutricionista-foto-container {
@@ -1151,7 +1151,7 @@
 
     #nutricionista-desc > p {
         text-align: justify;
-        font-family: "Kumbh Sans";
+        font-family: Arial, Helvetica, sans-serif;
         font-size: 1.2em;
         width: 85%;
         margin: auto;
@@ -1194,8 +1194,64 @@
         }
     }
 
-    #fisioterapia {
+    #rpg {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        height: 30em;
+    }
+
+    #rpg-text {
+        margin-left: auto;
+        width: 40vw;
+        position: relative;
+        opacity: 0;
+    }
+
+    #rpg-text > h2 {
+        font-family: "KyivType";
+        font-size: 2em;
+        width: fit-content;
+        border-bottom: 2px solid gray;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+
+    #rpg-text > p {
+        text-align: justify;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.2em;
+    }
+
+    #rpg.animating > #rpg-text {
+        animation: bottom-to-top 1s ease-out;
+        animation-fill-mode: forwards;
+    }
+
+    #rpg-image-container {
+        background-color: rgb(0, 105, 122);
+        margin: auto;
+        width: 40vw;
         height: 20em;
+    }
+
+    #rpg-image-container::before {
+        content: "";
+        display: block;
+        position: relative;
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(../../imagens/rpg-proced.jpg);
+        background-size: cover;
+        background-position: center;
+        box-shadow: 9px -4px 8px rgba(0, 0, 0, 0.444);
+        transform: translate(-20px, 30px);
+    }
+
+    #rpg.animating > #rpg-image-container::before {
+        animation: right-to-left 1s ease-out;
+        animation-fill-mode: forwards;
     }
 
     #video-container {

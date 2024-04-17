@@ -346,6 +346,22 @@
         transition-delay: .3s;
     }
 
+    .opçao {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(241, 241, 241);
+        height: 2em;
+        cursor: pointer;
+        transition: 0s;
+    }
+
+    .opçao > p {
+        color: black;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: clamp(0.5em, 1.5vw, 0.9em);
+    }
+
     .categoria {
         background-color: rgb(241, 241, 241);
         width: 100%;
@@ -356,7 +372,7 @@
         flex-direction: row;
     }
 
-    .categoria:hover {
+    .categoria:hover, .opçao:hover {
         background-color: lightgray;
     }
 
