@@ -9,7 +9,6 @@
 
 
 #introducao {
-    background-color: red;
     display: grid;
     grid-template-columns: 30em auto;
     height: 85vh;
