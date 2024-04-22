@@ -107,3 +107,83 @@
     background-color: #FFC452;
     transform: translateY(1.5em);
 }
+
+.main-h2 {
+    font-family: "KyivType", Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 1.5em;
+}
+
+#principios-box {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+#principios-box-text {
+    font-family: "Kulim Park", Arial, Helvetica, sans-serif;
+    text-align: justify;
+    font-size: 20px;
+    margin-bottom: 2em;
+}
+
+#principios-box-text > p {
+    width: 90%;
+    margin: auto;
+}
+
+#principios-box-image {
+    background-image: url(../../../imagens/rpg-principios-box-image.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 25em;
+}
+
+#beneficios {
+    background-color: #E6E6E6;
+}
+
+#beneficios-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 1em;
+    column-gap: 2em;
+    justify-content: center;
+}
+
+.beneficios-box-item {
+    width: 15em;
+    height: fit-content;
+    margin-bottom: 15px;
+}
+
+.beneficios-box-item::before {
+    content: "";
+    display: block;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 11em;
+    margin-bottom: 10px;
+}
+
+.beneficios-box-item::after {
+    content: "";
+    display: block;
+    font-family: "Kulim Park", Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    text-align: center;
+}
+
+#beneficios-box-item1::before {background-image: url(../../../imagens/rpg-beneficios-box-item-dores-musculares.svg)}
+#beneficios-box-item2::before {background-image: url(../../../imagens/rpg-beneficios-box-item-postura.svg)}
+#beneficios-box-item3::before {background-image: url(../../../imagens/rpg-beneficios-box-item-flexivel.svg)}
+#beneficios-box-item4::before {background-image: url(../../../imagens/rpg-beneficios-box-item-lesoes.svg)}
+#beneficios-box-item5::before {background-image: url(../../../imagens/rpg-beneficios-box-item-estresse.svg)}
+
+#beneficios-box-item1::after {content: "Alívio das Dores Musculares e Articulares";}
+#beneficios-box-item2::after {content: "Correção da Postura";}
+#beneficios-box-item3::after {content: "Aumento da Flexibilidade e Mobilidade";}
+#beneficios-box-item4::after {content: "Prevenção de Lesões";}
+#beneficios-box-item5::after {content: "Redução de Estresse";}
