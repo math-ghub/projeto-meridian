@@ -187,3 +187,69 @@
 #beneficios-box-item3::after {content: "Aumento da Flexibilidade e Mobilidade";}
 #beneficios-box-item4::after {content: "Prevenção de Lesões";}
 #beneficios-box-item5::after {content: "Redução de Estresse";}
+
+#indicacoes-box-text {
+    font-family: "Kulim Park", Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: justify;
+}
+
+#indicacoes-box-text > p {
+    width: 90%;
+    margin: auto;
+}
+
+#indicacoes-box-text > ul > li {
+    margin-bottom: 5px;
+    list-style-type: none;
+    text-align: start;
+}
+
+#indicacoes-box-text > ul > li::before {
+    content: "● ";
+}
+
+#indicacoes-box-image {
+    background-image: url(../../../imagens/rpg-indicacoes-box-image.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 20em;
+}
+
+#consulta-text {
+    font-family: "Kulim Park", Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: justify;
+}
+
+#consulta-text > p {
+    width: 90%;
+    margin: auto;
+}
+
+#consulta-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 12em;
+    height: 3em;
+    margin: auto;
+    margin-top: 1em;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(0, 105, 122);
+}
+
+#consulta-image {
+    background-image: url(../../../imagens/rpg-consulta-image.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 20em;
+}
+
+footer {
+    background-color: black;
+    height: 8em;
+}
