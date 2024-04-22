@@ -203,6 +203,8 @@
     margin-bottom: 5px;
     list-style-type: none;
     text-align: start;
+    width: 90%;
+    margin: auto
 }
 
 #indicacoes-box-text > ul > li::before {
