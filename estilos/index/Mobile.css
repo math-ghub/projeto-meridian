@@ -42,6 +42,7 @@
         font-family: "Parisienne", "Arial";
         text-align: center;
         text-shadow: 2px 2px 1px black;
+        hyphens: none;
     }
 
     #headText > a {
