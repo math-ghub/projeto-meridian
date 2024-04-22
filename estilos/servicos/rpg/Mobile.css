@@ -10,7 +10,7 @@
 
 #introducao {
     display: grid;
-    grid-template-columns: 30em auto;
+    grid-template-columns: 100% auto;
     height: 85vh;
 }
 
@@ -28,12 +28,11 @@
 }
 
 #intro-header {
-    position: absolute;
+    position: relative;
     width: fit-content;
-    top: 18vh;
-    left: 15em;
-    height: 9em;
-    transform: translateX(-50%)
+    margin: auto;
+    height: 0em;
+    transform: translateY(11em);
 }
 
 #intro-header-top {
