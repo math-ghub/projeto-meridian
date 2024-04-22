@@ -21,7 +21,8 @@
     }
 
     #principios-box-image {
-        width: 30em;
+        width: clamp(1px, 30vw, 30em);
+        margin-left: 3em;
     }
 
     #indicacoes-box {
@@ -42,16 +43,22 @@
     }
 
     #consulta {
+        position: relative;
         display: grid;
         grid-template-columns: 50% 50%;
         grid-template-areas: "foto texto";
         height: 30em;
+        overflow: hidden;
     }
 
     #consulta-text {
         grid-area: texto;
         justify-self: start;
-        width: clamp(1px, 50vw, 40em);
+        width: clamp(1px, 50vw, 50em);
+    }
+
+    #consulta-text > h2 {
+        padding: 1em;
     }
 
     #consulta-image {
@@ -62,4 +69,20 @@
         background-color: red;
         justify-self: end;
     }
+
+    #consulta::before, #consulta::after {
+        content: "";
+        display: block;
+        background-color: #B0F4FF;
+        position: absolute;
+        right: 0;
+        rotate: -45deg;
+        width: 70em;
+        height: 3em;
+        z-index: -1;
+    }
+    
+    #consulta::before {transform: translate(-5em, 30em);}
+    #consulta::after {transform: translate(-10em, 37.5em);}
+    
 }
