@@ -208,7 +208,7 @@
 }
 
 #indicacoes-box-text > ul > li::before {
-    content: "● ";
+    content: "• ";
 }
 
 #indicacoes-box-image {
