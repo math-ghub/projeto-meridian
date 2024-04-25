@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+@media screen and (min-width: 1145px) {
+    #introducao {
+        grid-template-columns: 30em auto;
+    }
+
+    #como-funciona-box {
+        grid-template-columns: 50% 50%;
+    }
+
+    .beneficios-item {
+        grid-template-columns: auto auto;
+        grid-template-rows: 7em;
+        margin-bottom: 2em;
+    }
+
+    .beneficios-item::before {
+        margin: auto;
+        margin-right: 15px;
+        width: 5em;
+        height: 5em;
+    }
+
+    .beneficios-item::after {
+        content: "";
+        display: block;
+        position: absolute;
+        background-color: gray;
+        width: 1px;
+        height: 5em;
+        transform: translate(calc(5em + 7.5px), 1em);
+    }
+
+    .beneficios-item > p {
+        align-self: center;
+    }
+
+    #porque-escolher-box {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+        align-items: center;
+    }
+
+    #porque-escolher-box-text {
+        margin: 0;
+    }
+}
