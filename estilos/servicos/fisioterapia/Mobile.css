@@ -7,6 +7,7 @@
     src: url(../../../fonts/KyivType/Dmitry\ Rastvortsev\ -\ KyivType\ Sans\ Light-.otf);
 }
 
+
 #introducao {
     display: grid;
     grid-template-columns: 100% auto;
@@ -114,94 +115,33 @@
     padding: 1.5em;
 }
 
-#como-funciona-box {
-    display: grid;
-    grid-template-columns: auto;
-}
-
-#como-funciona-box-text {
-    font-family: "Kulim Park", Arial, Helvetica, sans-serif;
-    text-align: justify;
-    font-size: 20px;
-    margin-bottom: 2em;
-}
-
-#como-funciona-box-text > p {
-    width: 90%;
-    margin: auto;
-}
-
-#como-funciona-box-image {
-    background-image: url(../../../imagens/cross-pilates-como-funciona-box-image.svg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: auto;
-    width: 95%;
-    height: 20em;
-}
-
-.beneficios-item {
-    display: grid;
-    grid-template-rows: auto auto;
-    height: fit-content;
-    width: clamp(1px, 90%, 40em);
-    margin: auto;
-    margin-bottom: 1em
-}
-
-.beneficios-item::before {
-    content: "";
-    display: block;
-    justify-self: center;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin-bottom: 15px;
-    width: 9em;
-    height: 9em;
-}
-
-.beneficios-item-title {
-    font-weight: bold;
-}
-
-.beneficios-item > p {
-    font-family: "Kulim Park", Arial, Helvetica, sans-serif;
+.tratamentos-box-text {
+    font-family: "K2D", Arial, Helvetica, sans-serif;
     font-size: 18px;
-    text-align: justify;
-}
-
-#beneficios-item1::before {background-image: url(../../../imagens/cross-pilates-beneficios-item-fortalecimento.svg);}
-#beneficios-item2::before {background-image: url(../../../imagens/cross-pilates-beneficios-item-flexibilidade.svg);}
-#beneficios-item3::before {background-image: url(../../../imagens/cross-pilates-beneficios-item-resistencia.svg);}
-#beneficios-item4::before {background-image: url(../../../imagens/cross-pilates-beneficios-item-coordenacao.svg);}
-#beneficios-item5::before {background-image: url(../../../imagens/cross-pilates-beneficios-item-saude.svg);}
-
-#porque-escolher-box {
-    display: grid;
-    grid-template-rows: auto auto;
-}
-
-#porque-escolher-box-text {
-    font-family: "Kulim Park", Arial, Helvetica, sans-serif;
-    text-align: justify;
-    font-size: 20px;
-    margin-bottom: 2em;
-}
-
-#porque-escolher-box-text > p {
-    width: 90%;
-    margin: auto;
-}
-
-#porque-escolher-box-image {
-    background-color: red;
-    background-image: url(../../../imagens/cross-pilates-como-funciona-box-image.svg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin: auto;
     width: 95%;
-    height: 15em;
+    max-width: 50em;
+    margin: auto;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+#instalacoes {
+    display: grid;
+    grid-template-rows: auto;
+}
+
+#instalacoes-text > p {
+    font-family: "Kulim Park", Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    width: 95%;
+    margin: auto;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+#instalacoes-image {
+    background-image: url(../../../imagens/fisioterapia-instalacoes-image.svg);
+    width: 95%;
+    margin: auto;
+    height: 20em;
 }
