@@ -15,7 +15,7 @@
     --ProcedText-h2: "KyivType", Arial, Helvetica;
 }
     
-@media screen and (min-width: 800px) and (max-width: 1144px) {
+@media screen and (min-width: 799px) and (max-width: 1144px) {
     html, body {
         overflow-x: hidden;
     }

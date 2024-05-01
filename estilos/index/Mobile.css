@@ -234,7 +234,131 @@
         }
     }
 
-    iframe {
-        width: 200px;
+    #estudio {
+        position: relative;
+        top: 2vw;   
     }
+
+    #estudio::before {
+        content: "";
+        display: block;
+        background-color: rgb(0, 105, 122);
+        width: 150%;
+        height: 55em;
+        position: absolute;
+        z-index: -3;
+        rotate: 7deg;
+        transform: translateX(-10%);
+    }
+
+    #estudio h2 {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 30px;
+        color: white;
+        border-bottom: 1px solid white;
+        width: fit-content;
+        margin: auto;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.603);
+    }
+
+    #estudio p {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 18px;
+        text-align: justify;
+        color: white;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 90%;
+    }
+
+    #crosspilates {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #crosspilates-foto {
+        background-image: url(../../imagens/clinica-interior.jpg);
+    }
+
+    #fotodep-foto {
+        background-image: url(../../imagens/fotodep.jpeg)
+    }
+
+    #crosspilates-foto, #fotodep-foto {
+        height: 20em;
+        width: 95%;
+        margin: auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 2em;
+    }
+
+    #nutricionista-container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #nutricionista-container h2::before {
+        content: "";
+        display: block;
+        background-color: rgb(0, 105, 122);
+        height: 3px;
+        width: 2.74em;
+        transform: translateY(1.2em);
+    }
+
+    #nutricionista-container p {
+        width: 90%;
+        margin: auto;
+    }
+
+    #nutricionista-foto-container {
+        margin: auto;
+        width: clamp(20px, 100vw, 20em);
+        height: 30em;
+    }
+
+    .nutri-fruta {
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        opacity: 1;
+    }
+
+    #nutri-fruta1 {
+        background-image: url(../../imagens/fruta1.svg);
+        width: 18em;
+        height: 18em;
+        transform: translate(-3em, -4em);
+    }
+
+    #nutri-fruta2 {
+        background-image: url(../../imagens/fruta2.svg);
+        width: 9em;
+        height: 12em;
+        transform: translate(14.2em, 10em);
+        background-position: right;
+        z-index: 1;
+    }
+
+    #nutri-fruta3 {
+        background-image: url(../../imagens/fruta3.svg);
+        width: 27em;
+        height: 27em;
+        transform: translate(-8em, 8em);
+    }
+
+    #nutri-imagem {
+        background-image: url(../../imagens/nutricionista-imagem.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: relative;
+        width: 100%;
+        height: 35em;
+        filter: drop-shadow(6px 6px 7px rgba(0, 0, 0, 0.541))
+    }
+
 }
