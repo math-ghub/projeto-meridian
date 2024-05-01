@@ -236,19 +236,9 @@
 
     #estudio {
         position: relative;
-        top: 2vw;   
-    }
-
-    #estudio::before {
-        content: "";
-        display: block;
         background-color: rgb(0, 105, 122);
-        width: 150%;
-        height: 55em;
-        position: absolute;
-        z-index: -3;
-        rotate: 7deg;
-        transform: translateX(-10%);
+        padding: 1em;
+        top: 2vw;   
     }
 
     #estudio h2 {
@@ -286,18 +276,19 @@
     }
 
     #crosspilates-foto, #fotodep-foto {
-        height: 20em;
+        height: 15em;
         width: 95%;
         margin: auto;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        margin-bottom: 2em;
+        margin-bottom: 1em;
     }
 
     #nutricionista-container {
         display: flex;
         flex-direction: column-reverse;
+        margin-top: 30px;
     }
 
     #nutricionista-container h2::before {
@@ -318,6 +309,7 @@
         margin: auto;
         width: clamp(20px, 100vw, 20em);
         height: 30em;
+        position: relative;
     }
 
     .nutri-fruta {
@@ -338,7 +330,7 @@
         background-image: url(../../imagens/fruta2.svg);
         width: 9em;
         height: 12em;
-        transform: translate(14.2em, 10em);
+        transform: translate(13em, 10em);
         background-position: right;
         z-index: 1;
     }
@@ -361,4 +353,19 @@
         filter: drop-shadow(6px 6px 7px rgba(0, 0, 0, 0.541))
     }
 
+    #rpg-text > h2 {
+        font-size: 30px;
+        font-family: var(--ProcedText-h2);
+        margin: auto;
+        margin-bottom: 20px;
+        width: min-content;
+    }
+
+    #rpg-text > p {
+        font-size: 20px;
+        font-family: "Lora", Arial, Helvetica, sans-serif;
+        text-align: justify;
+        width: 90%;
+        margin: auto;
+    }
 }
