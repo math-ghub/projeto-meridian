@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+@media screen and (max-width: 1144px) {
+    video {
+        width: 0;
+    }
+
+    #introducao {
+        background-color: rgb(0, 105, 122);
+        padding: 1px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 35em;
+        border-bottom-left-radius: 250px;
+    }
+
+    #intro {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #intro > h1 {
+        font-size: 70px;
+        text-align: center;
+        text-wrap: balance;
+        color: white;
+        text-shadow: 2px 2px 4px black;
+    }
+
+    #introspan {
+        color: rgb(247, 218, 156);
+        text-decoration: underline;
+    }
+
+    #down-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        background-color: rgb(0, 80, 93);
+        color: white;
+        margin-top: 20px;
+        border-radius: 10px;
+        font-size: 5em;
+        width: 1.5em;
+        height: .7em;
+    }
+
+    #down-button > p {
+        rotate: 90deg;
+        height: 105px;
+    }
+}
