@@ -8,7 +8,6 @@ window.addEventListener("scroll", () => Check())
 function Check() {
     let top = window.innerHeight || document.documentElement.clientHeight;
     let seletorHeight = box.getBoundingClientRect().bottom;
-    console.log(top, seletorHeight)
 
     if (seletorHeight < top) {
         scroller.classList.add("visible")

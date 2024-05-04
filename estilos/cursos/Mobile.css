@@ -26,11 +26,16 @@
         transition: 0.5s;
         user-select: none;
         z-index: 2;
+        -webkit-tap-highlight-color: transparent;
     }
 
     #scroller.visible {
         opacity: 1;
         cursor: pointer;
+    }
+    
+    a:focus {
+        outline: none !important;
     }
 
     #scroller:active {
