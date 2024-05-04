@@ -141,4 +141,8 @@
     #intro > h1 {
         font-size: 50px;
     }
+    
+    #down-button {
+        font-size: 45px;
+    }
 }
