@@ -50,6 +50,7 @@ function UpdatePortrait() {
 }
 
 function Write(text, parent, ms) {
+    if (window.innerWidth < 1145) {parent.innerHTML = text; return};
     oldTimeout.forEach(val => {
         clearTimeout(val)
     })

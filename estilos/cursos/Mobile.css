@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+@media screen and (max-width: 1144px) {
+    html, body {
+        scroll-behavior: smooth;
+    }
+
+    .datas {
+        background-color: rgba(58, 212, 255, 0.425)
+    }
+
+    #scroller {
+        background-color: rgba(0, 106, 122, 0.729);
+        color: white;
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Karla", Arial, Helvetica, sans-serif;
+        border-radius: 50%;
+        width: 4em;
+        height: 4em;
+        right: 2em;
+        bottom: 2em;
+        opacity: 0;
+        transition: 0.5s;
+        user-select: none;
+        z-index: 2;
+    }
+
+    #scroller.visible {
+        opacity: 1;
+        cursor: pointer;
+    }
+
+    #scroller:hover {
+        background-color: rgb(124, 209, 222);
+        transform: scale(1.1);
+    }
+
+    #introduction {
+        height: 30em;
+        background-color: rgb(0, 105, 122);
+    }
+
+    #text {
+        padding: 1px;
+    }
+
+    #text > h1 {
+        color: white;
+        font-family: "Mohave", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 1;
+        font-style: italic;
+        font-size: clamp(2rem, 4em, 4rem);
+        border-bottom: 1px solid white;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.575);
+        text-align: center;
+        margin: auto;
+        margin-top: 2em;
+        width: 3em;
+        height: 1.1em;
+    }
+
+    #text > p:nth-of-type(1) {
+        color: #A48C5D;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: clamp(1rem, 2em, 1.5rem);
+        margin-top: 5px;
+        text-align: center;
+    }
+
+    #text > p:nth-of-type(2) {
+        opacity: 0;
+    }
+}
