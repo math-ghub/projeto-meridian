@@ -33,7 +33,7 @@
         cursor: pointer;
     }
 
-    #scroller:hover {
+    #scroller:active {
         background-color: rgb(124, 209, 222);
         transform: scale(1.1);
     }
@@ -72,5 +72,107 @@
 
     #text > p:nth-of-type(2) {
         opacity: 0;
+    }
+
+    hr {
+        width: 0;
+        height: 0;
+    }
+
+    #seletor > h2 {
+        background-color: rgb(0, 105, 122);
+        border-radius: 35px 0px;
+        text-align: center;
+        font-family: "Karla", Arial, Helvetica, sans-serif;
+        text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.725);
+        font-style: oblique;
+        font-weight: 100;
+        font-size: 30px;
+        width: fit-content;
+        color: white;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 15px;
+    }
+
+    #seletor-list {
+        width: fit-content;
+        border-collapse: collapse;
+        margin: auto;
+    }
+
+    #seletor-list tr td{
+        font-family: "Karla", Arial, Helvetica, sans-serif;
+        text-align: center;
+        font-size: 30px;
+        width: 6em;
+        height: 2em;
+        border-left: 2px solid rgba(0, 0, 0, 0.474);
+        border-right: 2px solid rgba(0, 0, 0, 0.474);
+        user-select: none;
+        transition: background-color 0.5s, 0.2s;
+    }
+
+    #seletor-list tr td:active {
+        cursor: pointer;
+        font-size: 34px;
+        background-color: rgb(230, 230, 230);
+    }
+
+    #seletor-list tr td > a {
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        height: 100%;
+        transition: 0.5s;
+    }
+
+    #seletor-list tr:active :not(:active) {
+        opacity: 0.5;
+    }
+
+    .box-text {
+        width: 95vw;
+        margin: auto;
+        margin-top: 3em;
+    }
+
+    .box-text > h2 {
+        font-family: "Mohave", Arial, Helvetica, sans-serif;
+        text-align: center;
+        font-weight: 400;
+        font-size: 45px;
+    }
+
+    .box-text > p {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: justify;
+        font-size: 20px;
+    }
+
+    .box-text > p.center {
+        text-align: center;
+    }
+
+    .box-text > ul {
+        list-style-position: inside;
+        list-style-type: none;
+    }
+
+    .box-text > ul > li {
+        display: flex;
+        font-family: "Karla", Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+
+    .box-text > ul > li::before {
+        content: "•";
+        display: flex;
+        align-items: center;
+        margin-right: 5px;
     }
 }

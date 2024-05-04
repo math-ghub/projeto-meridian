@@ -1,12 +1,14 @@
 const topElement = document.querySelector("main")
 const seletor = document.querySelector("#seletor")
 const scroller = document.querySelector("#scroller")
+const box = document.querySelector("#curso-rpg")
 
 window.addEventListener("scroll", () => Check())
 
 function Check() {
     let top = window.innerHeight || document.documentElement.clientHeight;
-    let seletorHeight = topElement.getBoundingClientRect().bottom;
+    let seletorHeight = box.getBoundingClientRect().bottom;
+    console.log(top, seletorHeight)
 
     if (seletorHeight < top) {
         scroller.classList.add("visible")
