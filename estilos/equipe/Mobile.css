@@ -54,6 +54,11 @@
         font-size: 5em;
         width: 1.5em;
         height: .7em;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    #down-button:active {
+        background-color: rgb(0, 66, 77);
     }
 
     #down-button > p {
