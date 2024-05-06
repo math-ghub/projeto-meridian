@@ -210,11 +210,10 @@ p {
         height: fit-content;
     }
 
-    nav > ul > li > a:active{
-        background-color: rgb(22, 61, 77);
+    :is(nav > ul > li > a, #special > p):active{
+        background-color: rgb(6, 78, 90);
         -webkit-tap-highlight-color: none;
         user-select: none;
-        color: black;
     }
 
     nav > ul > li > a, #special > p {
@@ -228,6 +227,7 @@ p {
         display: flex;
         align-items: center;
         justify-content: center;
+        -webkit-tap-highlight-color: transparent;
     }
 
     #servicomenu {
