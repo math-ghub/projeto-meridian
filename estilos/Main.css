@@ -253,8 +253,8 @@ p {
         border-radius: 25px;
         border: 1px solid rgb(255, 166, 0);
         left: -4em;
-        top: 7em;
-        height: 10em;
+        top: 4.5em;
+        height: 12em;
         width: 3.5em;
         transition: left 0.7s ease-in-out;
     }
@@ -265,8 +265,8 @@ p {
         background-repeat: no-repeat;
         user-select: none;
         border-radius: 50%;
-        width: 3em;
-        height: 3em;
+        width: 3.5em;
+        height: 3.5em;
         transition: .5s;
     }
 
