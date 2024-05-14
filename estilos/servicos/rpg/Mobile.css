@@ -238,19 +238,10 @@
     height: 3em;
     margin: auto;
     margin-top: 1em;
+    margin-bottom: 2em;
     text-decoration: none;
     color: white;
     background-color: rgb(0, 105, 122);
-}
-
-#consulta-image {
-    background-image: url(../../../imagens/rpg-consulta-image.svg);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 20em;
-    margin-top: 10px;
-    margin-bottom: 10px;
 }
 
 footer {

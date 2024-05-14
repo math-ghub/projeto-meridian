@@ -7,10 +7,10 @@
     src: url(../../../fonts/KyivType/Dmitry\ Rastvortsev\ -\ KyivType\ Sans\ Light-.otf);
 }
 
-@media screen and (min-width: 1145px) {
+@media screen and (max-width: 1144px) {
     #introducao {
         display: grid;
-        grid-template-columns: 30em auto;
+        grid-template-columns: 100% auto;
         height: 85vh;
     }
     
@@ -21,19 +21,18 @@
     
     #intro-image {
         height: 100%;
-        background-image: url(../../../imagens/fotodepilacao-introducao.jpg);
+        background-image: url(../../../imagens/rpg-introducao-image.svg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
     }
     
     #intro-header {
-        position: absolute;
+        position: relative;
         width: fit-content;
-        top: 18vh;
-        left: 15em;
-        height: 9em;
-        transform: translateX(-50%)
+        margin: auto;
+        height: 0em;
+        transform: translateY(15vh);
     }
     
     #intro-header-top {
@@ -56,7 +55,7 @@
     
     #intro-header-main {
         font-family: "K2D", Arial, Helvetica, sans-serif;
-        font-size: 60px;
+        font-size: 50px;
         font-weight: 300;
         text-shadow: 4px 2px 5px rgb(0, 0, 0, 0.54);  
         color: white;
@@ -109,46 +108,38 @@
         transform: translateY(1.5em);
     }
     
-    #explicacao {
-        height: 30em;
-    }
-    
     .main-h2 {
+        font-family: "KyivType", Arial, Helvetica, sans-serif;
         text-align: center;
-        font-family: "K2D", Arial, Helvetica, sans-serif;
-        font-size: 40px;
-        font-weight: 300;
-        padding: 1.5em;
+        font-size: 30px;
+        padding: 1em;
     }
-    
+
     .box {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-    #explicacao-box {
-        height: 15em;
+        margin: auto;
+        text-align: justify;
     }
     
     #explicacao-box-text {
         font-family: "Kulim Park", Arial, Helvetica, sans-serif;
         text-align: justify;
-        margin-left: auto;
-        font-size: clamp(20px, 2vw, 28px);
-        width: 80%;
+        margin: auto;
+        font-size: 20px;
+        width: 90%;
     }
     
     #explicacao-box-image {
         background-image: url(../../../imagens/fotodepilacao-box-image.svg);
         background-repeat: no-repeat;
+        background-position: center;
         background-size: contain;
-        margin-left: 10vw;
-        height: 100%;
+        margin-top: 1em;
+        width: 95%;
+        height: 20em;
     }
-    
+
     #beneficios {
         background-color: #F5FAFF;
-        height: 30em;
     }
     
     #beneficios > h2 {
@@ -156,37 +147,29 @@
         padding: 1.2em;
     }
     
-    #beneficios-box {
-        height: 20em;
-    }
-    
-    #beneficios-box-image {
-        background-image: url(../../../imagens/fotodepilacao-beneficios-image.svg);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        width: 80%;
-        margin-left: auto;
-        transform: translateX(-20px);
-    }
-    
     #beneficios-box-text {
         display: flex;
         align-items: center;
         font-family: "Kulim Park", Arial, Helvetica, sans-serif;
-        font-size: clamp(17px, 1.3vw, 21px);
+        font-size: 20px;
         text-align: justify;
+        margin: auto;
         width: 90%;
     }
     
     #beneficios-box-text > ol {list-style-type: none; counter-reset: numb;}
+
+    #beneficios-box-text > ol > li {
+        margin-bottom: 20px;
+        hyphens: auto;
+    }
     
     #beneficios-box-text > ol > li::before {
         counter-increment: numb;
         content: counter(numb)". ";
         font-weight: bold;
     }
-    
+
     #contraindicacoes {
         height: fit-content;
     }
@@ -203,7 +186,7 @@
     }
     
     .contraindicacoes-item {
-        height: 17em;
+        height: 13em;
         width: 15em;
     }
     
@@ -213,7 +196,8 @@
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
-        height: 12em;
+        height: 10em;
+        margin-left: 1em
     }
     
     .contraindicacoes-item::after {
@@ -221,7 +205,7 @@
         display: block;
         position: relative;
         font-family: "Ledger", Arial, Helvetica, sans-serif;
-        font-size: 30px;
+        font-size: 25px;
         text-align: center;
     }
     
@@ -238,39 +222,11 @@
     #ci-item4::after{content: "Eczema ou Psoríase"}
     #ci-item5::after{content: "Exposição ao Sol"}
     #ci-item6::after{content: "Depilação com Cera"}
-    
+
     #consulta {
         position: relative;
         margin-top: 4em;
-        height: 30em;
         overflow: hidden;
-    }
-    
-    #consulta::before, #consulta::after {
-        content: "";
-        display: block;
-        background-color: #B0F4FF;
-        position: absolute;
-        right: 0;
-        rotate: -45deg;
-        width: 70em;
-        height: 3em;
-        z-index: -1;
-    }
-    
-    #consulta::before {transform: translate(-5em, 30em);}
-    #consulta::after {transform: translate(-10em, 37.5em);}
-    
-    #consulta-image {
-        background-image: url(../../../imagens/fotodepilacao-consulta-imagem.svg);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        margin-top: 2.5%;
-        margin-left: auto;
-        width: 90%;
-        height: 90%;
-        transform: translateX(-2em)
     }
     
     #consulta-text {
@@ -279,12 +235,14 @@
         justify-content: center;
         font-family: "KyivType", Arial, Helvetica, sans-serif;
         width: 90%;
+        margin: auto;
     }
     
     #consulta-text > h2 {
-        width: fit-content;
+        width: 95%;
         align-self: center;
-        font-size: 35px;
+        text-align: center;
+        font-size: 30px;
         margin-bottom: 20px;
     }
     
@@ -301,6 +259,8 @@
         font-family: "Kulim Park", Arial, Helvetica, sans-serif;
         font-size: 18px;
         background-color: #00697A;
+        color: white;
+        text-decoration: none;
         margin: auto;
         margin-top: 20px;
         margin-bottom: 90px;

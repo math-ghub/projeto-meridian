@@ -2,13 +2,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&family=Parisienne&family=Sail&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lora:ital,wght@0,400..700 ;1.400..700&display=swap');
 
+@font-face {
+    font-family: "KyivType";
+    src: url(../../../fonts/KyivType/Dmitry\ Rastvortsev\ -\ KyivType\ Sans\ Light-.otf);
+}
+
 * {
     margin: 0;
     padding: 0;
 }
 
 :root {
-    --ProcedText-h2: "Josefin Sans", Arial, Helvetica;
+    --ProcedText-h2: "KyivType", Arial, Helvetica;
 }
 
 @media screen and (max-width: 799px) {
@@ -18,7 +23,7 @@
     
     #main {
         background-size: cover;
-        background-image: url(../../imagens/floresta-celular.jpg);
+        background-image: url(../../imagens/home-mobile.jpg);
         background-position: center;
         background-repeat: no-repeat;
         height: 35em;
@@ -39,7 +44,7 @@
     #headText > p {
         color: white;
         font-size: 50px;
-        font-family: "Parisienne", "Arial";
+        font-family: "Sail", "Arial";
         text-align: center;
         text-shadow: 2px 2px 1px black;
         hyphens: none;
@@ -49,16 +54,15 @@
         display: flex;
         width: 12em;
         height: 4em;
-        background-color: rgba(5, 68, 78, 0.707);
+        background-color: rgb(5, 68, 78);
         color: white;
-        border: 1px solid black;
         border-radius: 20px;
         margin: auto;
         margin-top: 3em;
         justify-content: center;
         align-items: center;
         text-decoration: none;
-        font-size: larger;
+        font-family: "KyivType";
     }
 
     #sobre {
