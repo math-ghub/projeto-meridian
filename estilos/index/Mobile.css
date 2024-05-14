@@ -316,6 +316,18 @@
         position: relative;
     }
 
+    #nutricionista-foto-container::before {
+        content: "";
+        display: block;
+        position: relative;
+        top: 26.5em;
+        width: 19.5em;
+        height: 1em;
+        background-color: rgb(0, 105, 122);
+        border-radius: 10px;
+        z-index: 1;
+    }
+
     .nutri-fruta {
         background-size: contain;
         background-repeat: no-repeat;
@@ -343,7 +355,7 @@
         background-image: url(../../imagens/fruta3.svg);
         width: 27em;
         height: 27em;
-        transform: translate(-8em, 8em);
+        transform: translate(-9em, 5.8em);
     }
 
     #nutri-imagem {
