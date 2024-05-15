@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+@media screen and (min-width: 1145px) {
+    #introducao {
+        grid-template-columns: 30em auto;
+    }
+
+    #instalacoes {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 5em;
+    }
+
+    #instalacoes-text {
+        width: clamp(20px, 90%, 50em);
+        margin: auto;
+        align-self: center;
+    }
+
+    #instalacoes-text > h2 {
+        padding: 0.8em;
+    }
+
+    #instalacoes-image {
+        width: clamp(20px, 80%, 40em);
+        height: 22em;
+        margin: 0;
+    }
+
+    #abordagem-box {
+        grid-template-columns: 40% 60%;
+    }
+
+    #abordagem-text {
+        grid-column: 2;
+        width: 75%;
+        margin-right: 25%;
+    }
+
+    #abordagem-image {
+        grid-column: 1;
+        grid-row: 1;
+        margin-top: 0;
+        width: clamp(20em, 25vw, 25em);
+        height: clamp(20em, 25vw, 25em);
+        margin-right: 3em;
+    }
+}

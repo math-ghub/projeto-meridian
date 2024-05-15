@@ -21,7 +21,7 @@
 
 #intro-image {
     height: 100%;
-    background-image: url(../../../imagens/cross-pilates-introducao-image.svg);
+    background-image: url(../../../imagens/fisioterapia-introducao.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -55,7 +55,7 @@
 
 #intro-header-main {
     font-family: "K2D", Arial, Helvetica, sans-serif;
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 300;
     text-shadow: 4px 2px 5px rgb(0, 0, 0, 0.54);  
     color: white;
@@ -122,12 +122,16 @@
     max-width: 50em;
     margin: auto;
     text-align: justify;
-    margin-bottom: 15px;
+    margin-bottom: 35px;
 }
 
 #instalacoes {
     display: grid;
     grid-template-rows: auto;
+}
+
+#instalacoes-text > h2 {
+    font-size: 30px;
 }
 
 #instalacoes-text > p {
@@ -140,8 +144,33 @@
 }
 
 #instalacoes-image {
-    background-image: url(../../../imagens/fisioterapia-instalacoes-image.svg);
+    content: url(../../../imagens/fisioterapia-instalacoes-image.svg);
+    object-fit: cover;
+    object-position: center;
+    width: clamp(20px, 90%, 40em);
+    margin: auto;
+    height: 20em;
+}
+
+#abordagem-box {
+    display: grid;
+    grid-template-rows: auto;
+}
+
+#abordagem-text {
+    font-family: "Kulim Park", Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    text-align: justify;
     width: 95%;
     margin: auto;
+}
+
+#abordagem-image {
+    content: url(../../../imagens/fisioterapia-abordagem-image.png);
+    object-fit: contain;
+    object-position: center;
+    margin: auto;
+    margin-top: 2em;
+    width: 90%;
     height: 20em;
 }
