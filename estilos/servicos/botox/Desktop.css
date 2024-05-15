@@ -15,7 +15,7 @@
     }
 
     #sobre-image {
-        background-image: url(../../../imagens/botox-imagem1.webp);
+        content: url(../../../imagens/botox-imagem1.webp);
     }
 
     #aed-imagem1 {

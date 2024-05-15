@@ -15,7 +15,7 @@
     }
 
     #sobre-image {
-        background-image: url(../../../imagens/limpeza-de-pele-imagem1.jpg);
+        content: url(../../../imagens/limpeza-de-pele-imagem1.jpg);
     }
 
     #aed-imagem1 {

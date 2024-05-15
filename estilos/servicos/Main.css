@@ -95,7 +95,7 @@ html, body {
     }
 
     #sobre-image {
-        background-size: cover;
+        object-fit: cover;
         position: relative;
         width: 80%;
         height: 80%;
@@ -308,9 +308,9 @@ html, body {
     }
 
     #procedimento-image {
-        background-image: url(../../imagens/blefaroplastia-teste.jpeg);
-        background-position: center;
-        background-size: cover;
+        content: url(../../imagens/blefaroplastia-teste.jpeg);
+        object-position: center;
+        object-fit: cover;
         position: relative;
         width: clamp(10em, 80%, 50em);
         height: 30em;

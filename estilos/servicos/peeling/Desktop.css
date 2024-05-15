@@ -15,7 +15,7 @@
     }
 
     #sobre-image {
-        background-image: url(../../../imagens/blefaroplastia-imagem1.webp);
+        content: url(../../../imagens/blefaroplastia-imagem1.webp);
     }
 
     #aed-imagem1 {
