@@ -67,8 +67,8 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    top: calc(100% - 9em);
-    height: 9em;
+    top: calc(100% - 6em);
+    height: 6em;
 }
 
 #intro-footer::before, #intro-footer::after {
@@ -85,7 +85,7 @@
     width: 60%;
 }
 #intro-footer::after {
-    top: -9em;
+    top: -6.5em;
     left: 10%;
     width: 80%;
 }
