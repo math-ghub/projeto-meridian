@@ -328,11 +328,27 @@
         z-index: 1;
     }
 
+    @keyframes slowFall {
+        0% {
+            top: -5vh;
+            opacity: 0;
+        }
+
+        30% {
+            opacity: 1;
+        }
+
+        100% {
+            top: 1vh;
+            opacity: 1;
+        }
+    }
+
     .nutri-fruta {
         background-size: contain;
         background-repeat: no-repeat;
         position: absolute;
-        opacity: 1;
+        opacity: 0;
     }
 
     #nutri-fruta1 {
@@ -358,6 +374,14 @@
         transform: translate(-9em, 5.8em);
     }
 
+    #nutricionista-foto-container.animating > .nutri-fruta {
+        animation: slowFall 0.8s ease-out;
+        animation-fill-mode: forwards;
+    }
+
+    #nutricionista-foto-container.animating > #nutri-fruta2 {animation-delay: .3s;}
+    #nutricionista-foto-container.animating > #nutri-fruta3 {animation-delay: .6s}
+
     #nutri-imagem {
         background-image: url(../../imagens/nutricionista-imagem.png);
         background-size: contain;
@@ -365,8 +389,24 @@
         background-position: center;
         position: relative;
         width: 100%;
+        opacity: 0;
         height: 35em;
         filter: drop-shadow(6px 6px 7px rgba(0, 0, 0, 0.541))
+    }
+
+    #nutricionista-foto-container.animating > #nutri-imagem {
+        animation: nutriVisible 1s ease-out;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes nutriVisible {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
     }
 
     #rpg-text > h2 {
