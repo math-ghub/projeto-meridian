@@ -93,6 +93,53 @@ html, body {
             opacity: 1;
         }
     }
+
+    #sobre {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    main h2 {
+        font-family: "K2D", Arial, Helvetica, sans-serif;
+        text-align: center;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-size: 30px;
+        width: 90%;
+    }
+
+    main p {
+        font-family: "Karla";
+        font-size: 18px;
+        text-align: justify;
+        margin: auto;
+        width: 95%;
+    }
+
+    #sobre-image {
+        background-color: red;
+        width: 90%;
+        max-width: 30em;
+        height: 20em;
+        margin: auto;
+        margin-top: 10px
+    }
+
+    #aed-imagens {
+        background-color: red;
+        padding: 1px;
+    }
+
+    .aed-imagem {
+        width: 90%;
+        max-width: 25em;
+        height: 20em;
+        background-color: green;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 7px;
+    }
 }
 
 @media screen and (min-width: 800px) and (max-width: 1144px) {
@@ -266,9 +313,6 @@ html, body {
     #sobre-text.animating > p:nth-of-type(4) {animation: right-to-left 1s ease-out; animation-fill-mode: forwards; animation-delay: 2.5s;}
 
     #antes-e-depois {
-        background-size: 150%;
-        background-position: center -23em;
-        background-repeat: no-repeat;
         height: 25em;
     }
 

@@ -9,6 +9,15 @@
         grid-template-columns: 50% 50%;
     }
 
+    #como-funciona-box-text {
+        max-width: 40em;
+        justify-self: end;
+    }
+
+    #como-funciona-box-image {
+        margin: 0;
+    }
+
     .beneficios-item {
         grid-template-columns: auto auto;
         grid-template-rows: 7em;
@@ -43,6 +52,85 @@
     }
 
     #porque-escolher-box-text {
+        max-width: 40em;
+        justify-self: end;
+    }
+
+    #porque-escolher-box-image {
         margin: 0;
+    }
+
+    .box {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #consulta {
+        position: relative;
+        margin-top: 4em;
+        height: 30em;
+        overflow: hidden;
+    }
+    
+    #consulta::before, #consulta::after {
+        content: "";
+        display: block;
+        background-color: #B0F4FF;
+        position: absolute;
+        right: 0;
+        rotate: -45deg;
+        width: 70em;
+        height: 3em;
+        z-index: -1;
+    }
+    
+    #consulta::before {transform: translate(-5em, 30em);}
+    #consulta::after {transform: translate(-10em, 37.5em);}
+    
+    #consulta-image {
+        background-image: url(../../../imagens/fotodepilacao-consulta-imagem.svg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-top: 2.5%;
+        margin-left: auto;
+        width: 90%;
+        height: 90%;
+        transform: translateX(-2em)
+    }
+    
+    #consulta-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-family: "KyivType", Arial, Helvetica, sans-serif;
+        width: 90%;
+    }
+    
+    #consulta-text > h2 {
+        width: fit-content;
+        align-self: center;
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+    
+    #consulta-text > p {
+        font-size: 20px;
+        font-family: "K2D", Arial, Helvetica, sans-serif;
+        text-align: justify;
+    }
+    
+    #consulta-text > a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Kulim Park", Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        background-color: #00697A;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 90px;
+        height: 3.5em;
+        width: 12.5em;
     }
 }

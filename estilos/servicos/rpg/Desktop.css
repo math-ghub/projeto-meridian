@@ -65,6 +65,7 @@
         grid-area: foto;
         width: 45vw;
         height: 90%;
+        background-image: url(../../../imagens/rpg-consulta-image.svg);
         background-size: cover;
         justify-self: end;
     }

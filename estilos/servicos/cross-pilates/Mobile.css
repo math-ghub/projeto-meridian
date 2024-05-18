@@ -138,6 +138,7 @@
     background-repeat: no-repeat;
     margin: auto;
     width: 95%;
+    max-width: 40em;
     height: 20em;
 }
 
@@ -202,5 +203,51 @@
     background-repeat: no-repeat;
     margin: auto;
     width: 95%;
+    max-width: 40em;
     height: 15em;
+}
+
+#consulta {
+    position: relative;
+    margin-top: 4em;
+    overflow: hidden;
+}
+
+#consulta-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "KyivType", Arial, Helvetica, sans-serif;
+    width: 90%;
+    margin: auto;
+}
+
+#consulta-text > h2 {
+    width: 95%;
+    align-self: center;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+#consulta-text > p {
+    font-size: 20px;
+    font-family: "K2D", Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+#consulta-text > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Kulim Park", Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    background-color: #00697A;
+    color: white;
+    text-decoration: none;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 90px;
+    height: 3.5em;
+    width: 12.5em;
 }
