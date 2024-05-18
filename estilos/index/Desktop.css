@@ -545,14 +545,14 @@
     }
 
     #nutri-fruta1 {
-        background-image: url(../../imagens/fruta1.svg);
+        background-image: url(../../imagens/fruta1-mobile.png);
         width: 20em;
         height: 20em;
         transform: translate(-1em, 20em);
     }
 
     #nutri-fruta2 {
-        background-image: url(../../imagens/fruta2.svg);
+        background-image: url(../../imagens/fruta2-mobile.png);
         width: 13em;
         height: 13em;
         transform: translate(23em, 37em);
@@ -560,7 +560,7 @@
     }
 
     #nutri-fruta3 {
-        background-image: url(../../imagens/fruta3.svg);
+        background-image: url(../../imagens/fruta3-mobile.png);
         width: 35em;
         height: 35em;
         transform: translate(-9em, 34em);
