@@ -66,16 +66,15 @@
     }
 
     #sobre {
-        height: 42em;
         padding: 1px;
         overflow: hidden;
     }
 
     #sobre > div:nth-child(1) {
         width: 80%;
-        height: 38em;
         margin: auto;
-        margin-top: 40px;
+        margin-top: 2em;
+        margin-bottom: 2em;
         display: flex;
         flex-direction: column-reverse;
     }
@@ -84,7 +83,8 @@
         margin: auto;
         margin-top: 70px;
         min-width: 280px;
-        width: 50vw;
+        width: 80vw;
+        max-width: 35em;
     }
 
     #proced1 > div > div:nth-child(1) {
@@ -111,19 +111,19 @@
 
     #proced1 > div:nth-child(1) {
         background-color: rgb(0, 105, 122);
-        height: 15em;
+        height: 20em;
         position: relative;
     }
 
     #proced1 > div:nth-child(1) > div {
-    background-image: url(../../imagens/foto-principal-1.jpeg);
-    background-position: center right;
-    background-size: cover;
-    box-shadow: -3px 4px 6px rgba(0, 0, 0, 0.425);
-    width: 100%;
-    height: 100%;
-    position: relative;
-    top: -2em;
+        background-image: url(../../imagens/foto-principal-1.jpeg);
+        background-position: center right;
+        background-size: cover;
+        box-shadow: -3px 4px 6px rgba(0, 0, 0, 0.425);
+        width: 100%;
+        height: 100%;
+        position: relative;
+        top: -2em;
     }
 
     #proced1Text {
@@ -289,6 +289,12 @@
         margin-bottom: 1em;
     }
 
+    #rpg {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-bottom: 20px;
+    }
+
     #rpg-text > h2 {
         font-size: 30px;
         font-family: var(--ProcedText-h2);
@@ -304,5 +310,33 @@
         text-align: justify;
         width: 90%;
         margin: auto;
+    }
+
+    #rpg-image-container {
+        background-color: rgb(0, 105, 122);
+        margin: auto;
+        margin-top: 20px;
+        width: 80vw;
+        max-width: 30em;
+        height: 20em;
+    }
+
+    #rpg-image-container::before {
+        content: "";
+        display: block;
+        position: relative;
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(../../imagens/rpg-proced.jpg);
+        background-size: cover;
+        background-position: center;
+        box-shadow: -9px -4px 8px rgba(0, 0, 0, 0.444);
+        transform: translate(10px, 20px);
+    }
+
+    #rpg.animating > #rpg-image-container::before {
+        animation: left-to-right 1s ease-out;
+        animation-fill-mode: forwards;
     }
 }
