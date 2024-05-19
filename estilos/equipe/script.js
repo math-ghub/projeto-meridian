@@ -9,11 +9,6 @@ const Infos = {
         "cargo": "Fisioterapeuta",
         "conselho": "CREFITO 9- 54995-F",
     },
-    "Dra. Danyelle Padilha": {
-        "text": "Me chamo Danyelle Padilha, sou Nutricionista e Pós graduada em Nutrição e obesidade. Acredito que um dos primeiro pilares para qualidade de vida e principalmente, performance física, começa na nossa alimentação.<br> <br> Tendo a alimentação com base, podemos facilitar esse caminho entre ganho de massa magra e emagrecimento. Hoje o meu foco é principalmente esse, através de um protocolo simples e didático, compreendendo que cada paciente tem suas particularidades, conseguir proporcionar uma reeducação alimentar, e principalmente, saúde aos meus pacientes.<br> <br>E com o propósito de defender um estilo de vida saudável, sem terrorismos e com equilíbrio. Te convido a nos visitar, aqui na Clínica Meridian. Vamos falar da sua saúde?",
-        "cargo": "Nutricionista",
-        "conselho": "CRN 21700/P",
-    },
     "Aline Lima": {
         "text": "Texto 3",
         "cargo": "Esteticista",
