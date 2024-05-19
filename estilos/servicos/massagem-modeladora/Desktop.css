@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+@media screen and (min-width: 1145px) {
+    #introduction {
+        background-image: url(../../../imagens/blefaroplastia-fundo.jpg);
+        background-position: 0 -30vw;
+    }
+
+    #intro-titulo {
+        content: url(../../../imagens/massagem-modeladora-titulo.svg);
+    }
+
+    #intro-text {
+        left: -7em;
+    }
+
+    #sobre-image {
+        content: url(../../../imagens/blefaroplastia-imagem1.webp);
+    }
+
+    #aed-imagem1 {
+        background-image: url(../../../imagens/aed-imagem1.png);
+    }
+
+    #aed-imagem2 {
+        background-image: url(../../../imagens/aed-imagem2.png);
+    }
+}
