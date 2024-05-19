@@ -102,11 +102,6 @@
     }
 
     .portrait-img:nth-of-type(2) {
-        background-position: center -6em;
-    }
-
-    .portrait-img:nth-of-type(3) {
-        background-size: cover;
         background-position: center -18.5em;
     }
 

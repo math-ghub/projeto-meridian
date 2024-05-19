@@ -118,16 +118,16 @@ html, body {
     }
 
     #sobre-image {
-        background-color: red;
+        object-fit: cover;
         width: 90%;
         max-width: 30em;
         height: 20em;
         margin: auto;
-        margin-top: 10px
+        margin-top: 10px;
     }
 
     #aed-imagens {
-        background-color: red;
+        background-image: linear-gradient(to right, rgb(0, 105, 122), rgb(38, 145, 161));
         padding: 1px;
     }
 
@@ -135,10 +135,31 @@ html, body {
         width: 90%;
         max-width: 25em;
         height: 20em;
-        background-color: green;
         margin: auto;
         margin-top: 10px;
         margin-bottom: 7px;
+    }
+
+    #link {
+        background-color: rgb(0, 105, 122);
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Jost", Arial, Helvetica, sans-serif;
+        margin: auto;
+        margin-top: 15px;
+        user-select: none;
+        cursor: pointer;
+        font-size: 20px;
+        width: 11em;
+        height: 3.5em;
+        text-decoration: none;
+        color: white;
+    }
+
+    #link:active, #link:hover {
+        background-color: rgb(60, 147, 160);
     }
 }
 
