@@ -90,6 +90,7 @@
 
     tr:nth-child(1) {
         background-color: lightgray;
+        font-family: "K2D", Arial, Helvetica, sans-serif;
         left: 5vw;
     }
     

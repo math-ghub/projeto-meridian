@@ -110,6 +110,7 @@
         height: 2em;
         font-size: 28px;
         background-color: rgb(202, 202, 202);
+        font-family: "K2D";
     }
 
     table tr:not(:first-child) {
