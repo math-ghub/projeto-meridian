@@ -36,12 +36,19 @@ portraitButtons["next"].addEventListener("click", () => {
 
 function UpdatePortrait() {
     var selectedKey = Object.keys(Infos)[Selected]
-    var selectedValues = Object.values(Infos)
-    infoValues.children[0].innerHTML = selectedKey
-    infoValues.children[1].innerHTML = selectedValues[Selected].conselho
-    Write(selectedValues[Selected].text, infoValues.children[2], 7)
-    cargoVal.children[0].innerHTML = selectedValues[Selected].cargo
+    var selectedValues = Object.values(Infos)[Selected]
+
+    Write(selectedValues.text, infoValues.children[2], 3)
+
+    changePortraitValues(selectedKey, selectedValues.cargo, selectedValues.conselho)
+    
     ImageList.style.transform = `translate(${-(Selected * 40) - 20}em, -50%)`
+}
+
+function changePortraitValues(nome, cargo, conselho) {
+    infoValues.children[0].innerHTML = nome
+    cargoVal.children[0].innerHTML = cargo
+    infoValues.children[1].innerHTML = conselho
 }
 
 function Write(text, parent, ms) {
