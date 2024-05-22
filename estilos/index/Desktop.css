@@ -1206,6 +1206,7 @@
         height: fit-content;
         margin: auto;
         margin-left: 20px;
+        transform: translateY(-20px);
     }
 
     footer > #redes-sociais a {
@@ -1245,7 +1246,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        padding: 1em;
+        padding: 1.5em;
     }
 
     #f-sobre-box > hr {
