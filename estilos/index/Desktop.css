@@ -1257,6 +1257,7 @@
     .f-sobre-box-content > h2 {
         color: #D7D7D7;
         font-weight: 500;
+        margin-bottom: 10px;
     }
 
     .f-sobre-box-content > h2::before {
