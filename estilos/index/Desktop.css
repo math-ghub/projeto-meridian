@@ -1245,13 +1245,19 @@
     #f-sobre-box {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        flex-wrap: wrap;
+        justify-content: center;
         padding: 1.5em;
     }
 
     #f-sobre-box > hr {
         height: 10em;
         margin: auto;
+        margin-right: 20px;
+        margin-left: 20px;
+        background-color: #2B2B2B;
+        border: 0;
+        width: 2px;
     }
 
     .f-sobre-box-content > h2 {
@@ -1267,6 +1273,7 @@
 
     .f-sobre-box-content > p {
         width: 25vw;
+        max-width: 28em;
         color: #AAAAAA;
         text-align: justify;
         font-size: 14px;
