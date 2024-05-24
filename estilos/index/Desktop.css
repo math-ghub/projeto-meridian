@@ -1176,6 +1176,8 @@
         background-color: #191919;
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
         padding: 0.5em;
         font-family: "K2D", Arial, Helvetica, sans-serif;
     }
@@ -1189,7 +1191,7 @@
         justify-content: center;
     }
 
-    footer > #logo img {
+    footer > #logo > img {
         width: 100%;
         padding: 5px;
         border-bottom: 2px solid #D9D9D9;
@@ -1201,12 +1203,42 @@
         font-weight: 100;
     }
 
+    footer > #logo > a {
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        color: orange;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 12px;
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer > #logo > a:hover {
+        text-decoration: underline;
+    }
+
+    footer > #logo > a:hover > img {
+        transform: scale(1.2);
+    }
+
+    footer > #logo > a > img {
+        width: 20px;
+        transition: 0.2s;
+    }
+
+    footer > #logo > a > p {
+        margin-left: 5px;
+        transition: 0.2s;
+    }
+
     footer > #redes-sociais {
         background-image: linear-gradient(to right, white, transparent 4%);
         height: fit-content;
-        margin: auto;
         margin-left: 20px;
-        transform: translateY(-20px);
+        transform: translateY(40px);
     }
 
     footer > #redes-sociais a {
@@ -1228,7 +1260,7 @@
     #f-facebook img {width: 30px;}
 
     #f-sobre {
-        width: 70%;
+        width: fit-content;
     }
 
     #f-sobre > p {
@@ -1277,5 +1309,22 @@
         color: #AAAAAA;
         text-align: justify;
         font-size: 14px;
+    }
+
+    #f-servicos {
+        width: 20em;
+        /* background-color: beige; */
+    }
+
+    #f-servicos > h2 {
+        text-align: center;
+        color: rgb(184, 184, 184);
+        background-color: #2B2B2B;
+    }
+
+
+
+    #f-servicos > a {
+        color: green
     }
 }
