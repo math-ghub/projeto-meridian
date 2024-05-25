@@ -154,19 +154,4 @@
         height: 1px;
         background-color: black;
     }
-    
-    footer {
-        display: flex;
-        height: 7em;
-        background-color: black;
-        align-items: center;
-        justify-content: center;
-    }
-
-    footer > p {
-        color: white;
-        text-align: center;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-size: 17px;
-    }
 }

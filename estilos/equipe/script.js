@@ -5,7 +5,7 @@ var portraitButtons = document.getElementsByClassName("portrait-button")
 
 const Infos = {
     "Dra. Michelle Mesquita": {
-        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum consequatur dolorum voluptates atque tempore odit quia impedit? Repellat, aspernatur non? Delectus facilis non reprehenderit fugit culpa sequi ullam molestias architecto.<br><br>• Proprietária Responsável Técnica Clínica Meridian Bem Estar <br>• Fisioterapeuta UNIC/2002 <br>• Pós graduada em Acupuntura/2006 <br>• Dermatofuncional/2014 <br>• Cursos de Capacitação em RPG/2008 <br>• Pilates clássico/2011 <br>• Cross Pilates/2019",
+        "text": "Dra. Michelle Mesquita é a fisioterapeuta responsável e proprietária da Clínica Meridian Bem Estar. Com uma trajetória sólida e diversificada no campo da fisioterapia, ela se compromete a oferecer tratamentos de alta qualidade e a promover o bem-estar de seus pacientes. Desde o início de sua carreira em 2002, Dra. Michelle tem continuamente ampliado seu conhecimento e aperfeiçoado suas habilidades por meio de diversas especializações e capacitações.<br><br><strong>Formações e Especializações:</strong><br><br>• Proprietária e Responsável Técnica da Clínica Meridian Bem Estar<br>• Fisioterapeuta pela UNIC (2002)<br>• Pós-graduada em Acupuntura (2006)<br>• Especialista em Dermato-funcional (2014)<br>• Capacitação em Reeducação Postural Global (RPG) (2008)<br>• Formação em Pilates Clássico (2011)<br>• Formação em Cross Pilates (2019)",
         "cargo": "Fisioterapeuta",
         "conselho": "CREFITO 9- 54995-F",
     },

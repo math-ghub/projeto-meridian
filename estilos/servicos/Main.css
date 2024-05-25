@@ -486,9 +486,4 @@ html, body {
         animation: right-to-left 1s ease-in-out;
         animation-fill-mode: forwards;
     }
-
-    footer {
-        background-color: black;
-        height: 7em;
-    }
 }

@@ -108,7 +108,6 @@
     }
 
     #cursos {
-        height: 50em;
         background-color: white;
     }
 
@@ -286,4 +285,8 @@
     #curso-rpg .box-image {background-image: url(../../imagens/rpg-teste3.jpg);}
     #conteudo-rpg .box-image {background-image: url(../../imagens/rpg-teste4.avif);}
     #curso-pilates .box-image {background-image: url(../../imagens/pilates-imagem.jfif);}
+
+    main {
+        height: fit-content;
+    }
 }
