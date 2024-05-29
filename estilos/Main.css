@@ -441,15 +441,12 @@ p {
         margin-right: auto;
         color: orange;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 12px;
+        font-size: 14px;
         margin-top: 10px;
         display: flex;
         align-items: center;
         justify-content: center;
-    }
-
-    footer > #logo > a:hover {
-        text-decoration: underline;
+        text-decoration: none;
     }
 
     footer > #logo > a:hover > img {
