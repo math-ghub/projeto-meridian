@@ -480,7 +480,7 @@ p {
         filter: drop-shadow(0px 0px 4px rgb(52, 104, 139));
     }
 
-    footer > #redes-sociais p {display: block; opacity: 0; width: 0;}
+    footer > #redes-sociais p {display: none;}
 
     footer > #redes-sociais a > img {transition: 0.15s linear;}
 
