@@ -23,8 +23,8 @@
     
     #main {
         background-size: cover;
-        background-image: url(../../imagens/home-mobile.jpg);
-        background-position: center;
+        background-image: url(../../imagens/floresta-tablet.jpg);
+        background-position: bottom left;
         background-repeat: no-repeat;
         height: 35em;
         padding: 0.1px;
@@ -44,7 +44,7 @@
     #headText > p {
         color: white;
         font-size: 50px;
-        font-family: "Sail", "Arial";
+        font-family: "Parisienne", Arial, Helvetica, sans-serif;
         text-align: center;
         text-shadow: 2px 2px 1px black;
         hyphens: none;
