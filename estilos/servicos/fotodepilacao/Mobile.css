@@ -227,6 +227,19 @@
         position: relative;
         margin-top: 4em;
         overflow: hidden;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #consulta-image {
+        background-image: url(../../../imagens/fotodepilacao-consulta.jpeg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 90%;
+        max-width: 30em;
+        height: 20em;
+        margin: auto;
     }
     
     #consulta-text {
@@ -263,7 +276,7 @@
         text-decoration: none;
         margin: auto;
         margin-top: 20px;
-        margin-bottom: 90px;
+        margin-bottom: 20px;
         height: 3.5em;
         width: 12.5em;
     }

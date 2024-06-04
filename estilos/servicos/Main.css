@@ -472,7 +472,7 @@ html, body {
     }
 
     #procedimento-image {
-        content: url(../../imagens/blefaroplastia-teste.jpeg);
+        content: url(../../imagens/fotodep.jpeg);
         object-position: center;
         object-fit: cover;
         position: relative;
