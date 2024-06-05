@@ -17,12 +17,27 @@
 
 @font-face {
     font-family: "KyivType";
-    src: url(../../fonts/KyivType/Dmitry\ Rastvortsev\ -\ KyivType\ Sans\ Light-.otf);
+    src: url(../fonts/KyivType/Dmitry\ Rastvortsev\ -\ KyivType\ Sans\ Light-.otf);
 }
 
 @font-face {
     font-family: "Parisienne";
-    src: url(../../fonts/Parisienne-Regular.ttf);
+    src: url(../fonts/Parisienne-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Gelasio";
+    src: url(../fonts/Gelasio-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Karla";
+    src: url(../fonts/Karla/static/Karla-Light.ttf);
+}
+
+@font-face {
+    font-family: "Mohave";
+    src: url(../fonts/Mohave/static/Mohave-LightItalic.ttf);
 }
 
 * {
