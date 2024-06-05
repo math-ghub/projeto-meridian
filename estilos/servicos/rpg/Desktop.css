@@ -13,7 +13,7 @@
         width: clamp(10em, 90%, 50em);
         justify-self: end;
         align-self: center;
-        font-size: clamp(20px, 2vw, 27px);
+        font-size: 24px;
     }
 
     #principios-box-text > p {
@@ -33,7 +33,7 @@
     #indicacoes-box-text {
         justify-self: end;
         align-self: center;
-        font-size: clamp(20px, 2vw, 27px);
+        font-size: 24px;
     }
 
     #indicacoes-box-image {

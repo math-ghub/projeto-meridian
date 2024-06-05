@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: https://meridianbemestar.com.br/sitemap.xml
