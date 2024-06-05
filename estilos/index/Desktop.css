@@ -1,10 +1,5 @@
 @charset "utf-8";
 
-@font-face {
-    font-family: "KyivType";
-    src: url(../../fonts/KyivType/Dmitry\ Rastvortsev\ -\ KyivType\ Sans\ Light-.otf);
-}
-
 * {
     margin: 0;
     padding: 0;
