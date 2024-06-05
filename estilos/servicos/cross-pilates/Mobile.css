@@ -58,6 +58,7 @@
     font-weight: 300;
     text-shadow: 4px 2px 5px rgb(0, 0, 0, 0.54);  
     color: white;
+    text-align: center;
 }
 
 #intro-footer {
