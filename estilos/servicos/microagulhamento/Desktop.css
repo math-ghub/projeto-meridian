@@ -16,6 +16,10 @@
         content: url(../../../imagens/microagulhamento-titulo.svg);
     }
 
+    #intro-text {
+        left: -7em;
+    }
+
     #sobre-image {
         content: url(../../../imagens/blefaroplastia-imagem1.webp);
     }
