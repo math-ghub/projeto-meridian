@@ -76,7 +76,7 @@
 
     #text > h1 {
         color: white;
-        font-family: "K2D", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-family: "Karla", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-weight: 1;
         font-style: italic;
         font-size: clamp(2rem, 4em, 4rem);
