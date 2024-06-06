@@ -84,7 +84,6 @@
 
 #intro-footer > p {
     color: white;
-    font-family: "Magra";
     font-size: 21px;
     text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.445);
     margin-bottom: 10px;
@@ -101,7 +100,6 @@
 }
 
 .main-h2 {
-    font-family: "KyivType", Arial, Helvetica, sans-serif;
     text-align: center;
     font-size: 35px;
     padding: 1.5em;
@@ -216,6 +214,10 @@
     font-family: "Kulim Park", Arial, Helvetica, sans-serif;
     font-size: 20px;
     text-align: justify;
+}
+
+#consulta-text > h2 {
+    font-family: 'Times New Roman', Times, serif;
 }
 
 #consulta-text > p {

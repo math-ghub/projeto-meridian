@@ -108,7 +108,6 @@
     
     .main-h2 {
         text-align: center;
-        font-family: "K2D", Arial, Helvetica, sans-serif;
         font-size: 40px;
         font-weight: 300;
         padding: 1.5em;
@@ -270,14 +269,13 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        font-family: "KyivType", Arial, Helvetica, sans-serif;
         width: 90%;
     }
     
     #consulta-text > h2 {
         width: fit-content;
         align-self: center;
-        font-size: 35px;
+        font-size: 40px;
         margin-bottom: 20px;
     }
     
