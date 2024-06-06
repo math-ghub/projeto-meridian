@@ -4,8 +4,7 @@ let actualImage = 0
 
 var images = [
     "clinica-interior.jpg",
-    "clinica-interior2.png",
-    "idosa-crosspilates.jpg",
+    "idosa-crosspilates.jpg"
 ]
 
 framesArray[0].onanimationiteration = (anim) => {
