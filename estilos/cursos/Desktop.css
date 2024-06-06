@@ -1,5 +1,4 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Jomolhari&family=Karla:ital,wght@0,200..800;1,200..800&family=Mohave:ital,wght@0,300..700;1,300..700&display=swap');
 
 @media screen and (min-width: 1145px) {
     html, body {
@@ -63,8 +62,8 @@
 
     #text > h1 {
         color: white;
-        font-family: "Mohave", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-weight: 1;
+        font-family: "Karla", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 100;
         font-style: italic;
         font-size: clamp(2rem, 4em, 4rem);
         border-bottom: 1px solid white;
@@ -96,7 +95,6 @@
         background-size: cover;
         background-position: center;
     }
-
 
     #svg-container {
         background-image: url(../../imagens/triangle.svg);
@@ -185,9 +183,10 @@
     }
 
     .box-text > h2 {
-        font-family: "Mohave", Arial, Helvetica, sans-serif;
+        font-family: "K2D", Arial, Helvetica, sans-serif;
         text-align: center;
         font-weight: 400;
+        margin-bottom: 15px;
         font-size: 45px;
     }
 

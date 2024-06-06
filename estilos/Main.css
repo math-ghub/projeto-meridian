@@ -1,45 +1,5 @@
 @charset "utf-8";
 
-@font-face {
-    font-family: "K2D";
-    src: url(../fonts/K2D/K2D-Regular.ttf);
-}
-
-@font-face {
-    font-family: "K2D Thin";
-    src: url(../fonts/K2D/K2D-Thin.ttf);
-}
-
-@font-face {
-    font-family: "Kulim Park";
-    src: url(../fonts/Kulim_Park/KulimPark-Regular.ttf);
-}
-
-@font-face {
-    font-family: "KyivType";
-    src: url(../fonts/KyivType/Dmitry\ Rastvortsev\ -\ KyivType\ Sans\ Light-.otf);
-}
-
-@font-face {
-    font-family: "Parisienne";
-    src: url(../fonts/Parisienne-Regular.ttf);
-}
-
-@font-face {
-    font-family: "Gelasio";
-    src: url(../fonts/Gelasio-Regular.ttf);
-}
-
-@font-face {
-    font-family: "Karla";
-    src: url(../fonts/Karla/static/Karla-Light.ttf);
-}
-
-@font-face {
-    font-family: "Mohave";
-    src: url(../fonts/Mohave/static/Mohave-LightItalic.ttf);
-}
-
 * {
     margin: 0;
     padding: 0;
