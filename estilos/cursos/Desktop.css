@@ -63,8 +63,8 @@
 
     #text > h1 {
         color: white;
-        font-family: "Karla", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-weight: 100;
+        font-family: "Mohave", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 1;
         font-style: italic;
         font-size: clamp(2rem, 4em, 4rem);
         border-bottom: 1px solid white;
@@ -185,10 +185,9 @@
     }
 
     .box-text > h2 {
-        font-family: "K2D", Arial, Helvetica, sans-serif;
+        font-family: "Mohave", Arial, Helvetica, sans-serif;
         text-align: center;
         font-weight: 400;
-        margin-bottom: 15px;
         font-size: 45px;
     }
 

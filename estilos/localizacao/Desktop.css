@@ -1,4 +1,6 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Judson:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jomolhari&family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Karla:ital,wght@0,200..800;1,200..800&family=Mohave:ital,wght@0,300..700;1,300..700&display=swap');
 
 * {
     margin: 0;
@@ -25,6 +27,7 @@
 
     #info-box > h2 {
         margin: auto;
+        font-family: "Judson", Arial, Helvetica, sans-serif;
         font-size: 30px;
         font-weight: 1;
         width: fit-content;
@@ -42,7 +45,7 @@
 
     #info-box > p {
         text-align: center;
-        font-family: "K2D Thin", Arial, Helvetica, sans-serif;
+        font-family: "K2D", Arial, Helvetica, sans-serif;
         font-style: italic;
         font-weight: 1;
         color: white;
@@ -107,12 +110,12 @@
         height: 2em;
         font-size: 28px;
         background-color: rgb(202, 202, 202);
-        font-family: "K2D", Arial, Helvetica, sans-serif;
+        font-family: "K2D";
     }
 
     table tr:not(:first-child) {
         height: 3em;
-        font-family: "K2D", Arial, Helvetica, sans-serif;
+        font-family: "Jomolhari";
     }
 
     table td {

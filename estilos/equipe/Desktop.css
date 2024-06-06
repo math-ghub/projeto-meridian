@@ -198,6 +198,7 @@ html, body {
     #portrait-cargo > p {
         color: rgb(255, 255, 255);
         text-shadow: 0px 0px 4px black;
+        font-family: "Gelasio", Arial, Helvetica, sans-serif;
         font-size: 30px;
         width: 100%;
         text-indent: 15px;
@@ -211,18 +212,21 @@ html, body {
     }
 
     main h3 {
+        font-family: "Gelasio", Arial, Helvetica, sans-serif;
         font-size: 40px;
         color: rgb(0, 105, 122);
         text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.434);
     }
 
     main h4 {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         color: rgb(171, 107, 55);
         position: relative;
         top: -8px;
     }
 
     main p {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 20px;
         text-align: justify;
         color: black;
