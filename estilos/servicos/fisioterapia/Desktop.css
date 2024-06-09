@@ -29,6 +29,11 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .main-h2 {
+        font-weight: 500;
+        font-size: 40px;
+    }
+
     #consulta {
         position: relative;
         margin-top: 4em;
@@ -75,6 +80,7 @@
         align-self: center;
         font-size: 40px;
         margin-bottom: 20px;
+        font-weight: 500;
     }
     
     #consulta-text > p {

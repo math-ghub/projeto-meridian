@@ -59,7 +59,8 @@
 
     #consulta-text > h2 {
         padding: 1em;
-        font-family: 'Times New Roman', Times, serif;
+        font-family: "K2D", Arial, Helvetica, sans-serif;
+        font-weight: 500;
     }
 
     #consulta-image {
