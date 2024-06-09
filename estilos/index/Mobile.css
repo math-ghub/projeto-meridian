@@ -266,22 +266,34 @@
         flex-direction: column-reverse;
     }
 
-    #crosspilates-foto {
+    #crosspilates-foto::before {
         background-image: url(../../imagens/clinica-interior.jpg);
     }
 
-    #fotodep-foto {
+    #fotodep-foto::before {
         background-image: url(../../imagens/fotodep.jpeg)
     }
 
     #crosspilates-foto, #fotodep-foto {
         height: 15em;
-        width: clamp(20px, 95%, 25em);
+        width: clamp(20px, 96%, 25em);
+        background-color: white;
         margin: auto;
+        object-fit: cover;
+        margin-bottom: 1em;
+    }
+
+    :is(#crosspilates-foto, #fotodep-foto)::before {
+        content: "";
+        display: block;
+        width: clamp(20px, 95%, 25em);
+        height: 14em;
+        background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover;
-        margin-bottom: 1em;
+        margin: auto;
+        transform: translateY(calc(0.5em - 5px));
+        border: 5px solid rgb(0, 105, 122)
     }
 
     #rpg {
