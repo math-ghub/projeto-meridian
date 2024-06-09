@@ -39,14 +39,14 @@
     #headText > p {
         color: white;
         font-size: 60px;
-        font-family: "Parisienne", "Arial";
+        font-family: "Parisienne", Arial, Helvetica, sans-serif;
         text-align: center;
     }
 
     #headText > a {
         display: flex;
-        width: 13em;
-        height: 4em;
+        width: 12em;
+        height: 3.6em;
         background-color: rgb(5, 68, 78);
         color: azure;
         border-radius: 20px;
@@ -55,7 +55,8 @@
         justify-content: center;
         align-items: center;
         text-decoration: none;
-        font-family: "KyivType", Arial, Helvetica, sans-serif;
+        font-family: "K2D", Arial, Helvetica, sans-serif;
+        font-size: 18px;
         padding: 0.2em;
     }
 
@@ -655,8 +656,8 @@
 
     #headText > a {
         display: flex;
-        width: 12em;
-        height: 4em;
+        width: 11em;
+        height: 3.7em;
         background-color: rgb(5, 68, 78);
         color: azure;
         margin: auto;
@@ -664,7 +665,8 @@
         justify-content: center;
         align-items: center;
         text-decoration: none;
-        font-family: "KyivType", Arial, Helvetica, sans-serif;
+        font-family: "K2D", Arial, Helvetica, sans-serif;
+        font-size: 18px;
         padding: 0.2em;
     }
 

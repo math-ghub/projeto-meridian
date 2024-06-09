@@ -45,7 +45,7 @@
 
     #headText > a {
         display: flex;
-        width: 12em;
+        width: 11em;
         height: 4em;
         background-color: rgb(5, 68, 78);
         color: white;
@@ -55,7 +55,8 @@
         justify-content: center;
         align-items: center;
         text-decoration: none;
-        font-family: "KyivType";
+        font-family: "K2D", Arial, Helvetica, sans-serif;
+        font-size: 18px;
     }
 
     #sobre {
