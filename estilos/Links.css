@@ -7,20 +7,22 @@
 
 body {
     background-color: #efefef;
+    overflow-x: hidden;
 }
 
 #container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 45% 55%;
     margin: auto;
     min-width: 1px;
-    max-width: 75em;
+    max-width: 85em;
     height: 100vh;
 }
 
 #buttons-container {
-    padding-left: 7em;
-    padding-top: 20px;
+    padding-left: clamp(5px, 7vw, 5em);
+    padding-bottom: 2em;
+    margin-top: auto;
 }
 
 #logo {
@@ -91,13 +93,11 @@ body {
 
 #M {
     position: absolute;
-    bottom: 1px;
-    min-width: 5px;
-    width: 45em;
+    width: 100%;
     height: 45em;
     background-image: url(../imagens/M-Verde.svg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 45em;
     background-position-y: 4em;
     z-index: -1;
 
@@ -122,7 +122,7 @@ body {
     width: 15em;
     height: 15em;
     border-radius: 50%;
-    transform: translate(15em, -20em);
+    transform: translate(13em, -21em);
     background-image: radial-gradient(circle at center, rgba(182, 164, 59, 0.419), transparent 71%);
     z-index: 2;
 }
@@ -133,7 +133,7 @@ body {
     position: absolute;
     border: 2px solid rgb(142, 142, 142);
     padding: 5px;
-    top: 14em;
+    bottom: 27em;
     z-index: -1;
     transform: translateX(3em);
 }
@@ -146,13 +146,66 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    top: 14em;
+    bottom: 27.8em;
     z-index: 2;
     transform: translate(calc(3em + 7px), 7px);
 }
 
 @media screen and (max-width: 1010px) {
-    body {
-        background-color: red;
+    #container {
+        display: flex;
+        flex-direction: column-reverse;
+        height: fit-content;
+        max-height: none;
+        justify-content: center;
+    }
+
+    #buttons-container {
+        padding-left: 0;
+        padding-top: 0;
+        margin: auto;
+        text-align: center;
+    }
+
+    #logo {
+        object-position: 2em;
+    }
+
+    #image-container {
+        margin: auto;
+        justify-content: center;
+    }
+
+    #michelle {
+        width: 100vw;
+        background-size: 30em;
+        background-position-y: -3em;
+        height: 30em;
+        mask-image: linear-gradient(to top, transparent 0%, black 40%);
+    }
+
+    #M {
+        width: 100vw;
+        height: 40em;
+        background-position: center;
+        background-size: 25em;
+        mask-image: linear-gradient(to top, transparent 25%, black 60%);
+    }
+
+    #circle {
+        transform: translate(3em, -9em);
+        z-index: 5;
+    }
+
+    #square {
+        display: none;
+    }
+
+    #square-after {
+        width: 10em;
+        height: 3.2em;
+        bottom: 0;
+        background-size: 110%;
+        transform: translate(calc(-6em + 7px), -14em);
     }
 }
