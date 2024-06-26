@@ -1,0 +1,158 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #efefef;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
+    min-width: 1px;
+    max-width: 75em;
+    height: 100vh;
+}
+
+#buttons-container {
+    padding-left: 7em;
+    padding-top: 20px;
+}
+
+#logo {
+    width: 15em;
+    margin-bottom: 20px;
+}
+
+#buttons-container > h1 {
+    color: rgb(64, 64, 64);
+    font-family: "K2D Thin", Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 55px;
+    line-height: 55px;
+    margin-bottom: 35px;
+}
+
+#buttons-container > h1 > strong {
+    color: rgb(35, 35, 35);
+    font-family: "Kulim Park", Arial, Helvetica, sans-serif;
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.icon-container {
+    background-image: linear-gradient(to right, rgb(135, 162, 97), rgb(96, 136, 52));
+    width: 4.5em;
+    height: 4.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-container img {
+    width: 55%;
+    height: 55%;
+}
+
+#i-localizacao img {
+    width: 65%;
+    height: 65%;
+}
+
+.button-text-container {
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    font-family: "K2D Thin", Arial, Helvetica, sans-serif;
+    border: 2px solid rgb(123, 123, 123);
+    border-left: none;
+    width: 16em;
+    height: 3.4em;
+}
+
+.button-text-container > h2> strong {
+    font-family: "K2D", Arial, Helvetica, sans-serif;
+}
+
+#image-container {
+    display: flex;
+    position: relative;
+    align-items: end;
+}
+
+#M {
+    position: absolute;
+    bottom: 1px;
+    min-width: 5px;
+    width: 45em;
+    height: 45em;
+    background-image: url(../imagens/M-Verde.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 4em;
+    z-index: -1;
+
+}
+
+#michelle {
+    width: 35em;
+    height: 45em;
+    margin-top: auto;
+    object-fit: contain;
+    z-index: 1;
+    overflow: hidden;
+    background-image: url(../imagens/links-michelle.png);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#circle {
+    position: absolute;
+    min-width: 100px;
+    width: 15em;
+    height: 15em;
+    border-radius: 50%;
+    transform: translate(15em, -20em);
+    background-image: radial-gradient(circle at center, rgba(182, 164, 59, 0.419), transparent 71%);
+    z-index: 2;
+}
+
+#square {
+    width: 12em;
+    height: 3.5em;
+    position: absolute;
+    border: 2px solid rgb(142, 142, 142);
+    padding: 5px;
+    top: 14em;
+    z-index: -1;
+    transform: translateX(3em);
+}
+
+#square-after {
+    width: 12em;
+    height: 3.5em;
+    position: absolute;
+    background-image: url(../imagens/olhos.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    top: 14em;
+    z-index: 2;
+    transform: translate(calc(3em + 7px), 7px);
+}
+
+@media screen and (max-width: 1010px) {
+    body {
+        background-color: red;
+    }
+}
