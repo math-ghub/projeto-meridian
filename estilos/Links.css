@@ -49,20 +49,37 @@ body {
     flex-direction: row;
     align-items: center;
     margin-bottom: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+.button:hover .icon-container {
+    background: rgb(93, 133, 60);
+}
+
+.button:hover .icon-container img {
+    transform: scale(1.1);
+}
+
+.button:hover .button-text-container {
+    background-color: rgb(202, 235, 161);
 }
 
 .icon-container {
     background-image: linear-gradient(to right, rgb(135, 162, 97), rgb(96, 136, 52));
+    background-color: rgba(36, 102, 21, 0.701);
     width: 4.5em;
     height: 4.5em;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.4s;
 }
 
 .icon-container img {
     width: 55%;
     height: 55%;
+    transition: 0.4s;
 }
 
 #i-localizacao img {
@@ -79,6 +96,7 @@ body {
     border-left: none;
     width: 16em;
     height: 3.4em;
+    transition: 0.4s;
 }
 
 .button-text-container > h2> strong {
@@ -146,7 +164,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    bottom: 27.8em;
+    bottom: 27.85em;
     z-index: 2;
     transform: translate(calc(3em + 7px), 7px);
 }
