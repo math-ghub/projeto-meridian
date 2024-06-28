@@ -10,7 +10,7 @@ html, body {
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        height: 34em;
+        height: 31em;
         padding: 1px;
     }
 
@@ -134,8 +134,8 @@ html, body {
         max-width: 25em;
         height: 20em;
         margin: auto;
-        margin-top: 10px;
-        margin-bottom: 7px;
+        margin-top: 2em;
+        margin-bottom: 2em;
     }
 
     #link {
@@ -168,6 +168,10 @@ html, body {
     #intro-topico {
         margin-left: 1.5em;
         font-size: 20px;
+    }
+
+    #link {
+        margin-bottom: 2em;
     }
 }
 

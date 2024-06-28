@@ -32,12 +32,13 @@
     .main-h2 {
         font-weight: 500;
         font-size: 40px;
+        font-family: "K2D", Arial, Helvetica, sans-serif;
     }
 
     #consulta {
         position: relative;
         margin-top: 4em;
-        height: 30em;
+        height: 32em;
         overflow: hidden;
     }
     
@@ -61,7 +62,7 @@
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        margin-top: 2.5%;
+        margin-top: -2.5%;
         margin-left: auto;
         width: 90%;
         height: 90%;
@@ -78,6 +79,7 @@
     #consulta-text > h2 {
         width: fit-content;
         align-self: center;
+        font-family: "K2D", Arial, Helvetica, sans-serif;
         font-size: 40px;
         margin-bottom: 20px;
         font-weight: 500;

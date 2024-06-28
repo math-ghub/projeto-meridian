@@ -1,8 +1,60 @@
 @charset "utf-8";
 
 @media screen and (max-width: 1144px) {
+    #introduction {
+        background-image: url(../../../imagens/botox-fundo.jpg);
+        background-position: 0em 0em;
+    }
+
     #intro-titulo {
         content: url(../../../imagens/botox-titulo.svg)
+    }
+
+    #sobre-image {
+        content: url(../../../imagens/botox-imagem1.webp);
+    }
+    
+    .aed-imagem {
+        background-size: cover;
+        background-position: center;
+    }
+
+    .aed-imagem::before {
+        content: "Antes";
+        display: inline-block;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-100%);
+        font-size: 30px;
+        color: white;
+        text-shadow: 0px 0px 3px black;
+    }
+
+    .aed-imagem::after {
+        content: "Depois";
+        display: inline-block;
+        position: relative;
+        top: 100%;
+        left: 50%;
+        transform: translate(-130%,-100%);
+        font-size: 30px;
+        color: white;
+        text-shadow: 0px 0px 3px black;
+    }
+
+    #aed-imagem1 {
+        background-image: url(../../../imagens/botox-antes-e-depois.jpg);
+    }
+
+    #aed-imagem2 {
+        background-image: url(../../../imagens/botox-antes-e-depois2.jpg);
+    }
+}
+
+@media screen and (min-width: 760px) and (max-width: 1144px) {
+    #introduction {
+        background-position: 0em -15em;
     }
 }
 
@@ -25,10 +77,22 @@
     }
 
     #aed-imagem1 {
-        background-image: url(../../../imagens/aed-imagem1.png);
+        background-image: url(../../../imagens/botox-antes-e-depois.jpg);
     }
 
     #aed-imagem2 {
-        background-image: url(../../../imagens/aed-imagem2.png);
+        background-image: url(../../../imagens/botox-antes-e-depois2.jpg);
+    }
+
+    .aed-imagem::before {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-100%);
+    }
+
+    .aed-imagem::after {
+        top: 100%;
+        left: 50%;
+        transform: translate(-130%,-100%);
     }
 }
