@@ -138,6 +138,28 @@ html, body {
         margin-bottom: 2em;
     }
 
+    .aed-imagem::before {
+        content: "Antes";
+        display: inline-block;
+        position: relative;
+        bottom: -85%;
+        left: 15%;
+        font-size: 30px;
+        color: white;
+        text-shadow: 0px 0px 3px black;
+    }
+
+    .aed-imagem::after {
+        content: "Depois";
+        display: inline-block;
+        position: relative;
+        bottom: -85%;
+        left: 50%;
+        font-size: 30px;
+        color: white;
+        text-shadow: 0px 0px 3px black;
+    }
+
     #link {
         background-color: rgb(0, 105, 122);
         position: relative;

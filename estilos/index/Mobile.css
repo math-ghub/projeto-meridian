@@ -277,7 +277,7 @@
     #crosspilates-foto, #fotodep-foto {
         height: 15em;
         width: clamp(20px, 96%, 25em);
-        background-color: white;
+        background-color: rgba(255, 255, 255, 0.47);
         margin: auto;
         object-fit: cover;
         margin-bottom: 1em;
@@ -286,7 +286,7 @@
     :is(#crosspilates-foto, #fotodep-foto)::before {
         content: "";
         display: block;
-        width: clamp(20px, 95%, 25em);
+        width: clamp(20px, 96%, 25em);
         height: 14em;
         background-size: cover;
         background-position: center;
