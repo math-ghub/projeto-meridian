@@ -29,3 +29,8 @@
     font-family: "Karla";
     src: url(../fonts/Karla/static/Karla-Light.ttf);
 }
+
+@font-face {
+    font-family: "Kanit";
+    src: url(../fonts/Kanit-Regular.ttf);
+}
