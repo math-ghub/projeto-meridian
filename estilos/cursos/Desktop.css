@@ -59,6 +59,11 @@
     --footer-p-font-size: 24px;
 }
 
+main {
+    overflow: hidden;
+    position: relative;
+}
+
 #hero {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -219,7 +224,7 @@
 }
 
 #hero-badge-text {
-    background-image: url(../assets/circle.svg);
+    background-image: url(../../imagens/circle.svg);
     background-size: 85%;
     background-position: center;
     background-repeat: no-repeat;
