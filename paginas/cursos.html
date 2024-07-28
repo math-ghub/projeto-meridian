@@ -1,248 +1,224 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meridian Bem Estar | Cursos</title>
-    <link rel="stylesheet" href="../estilos/Fonts.css" preload>
-    <link rel="shortcut icon" href="../imagens/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" defer href="../estilos/Main.css">
-    <link rel="stylesheet" defer href="../estilos/cursos/Desktop.css">
-    <link rel="stylesheet" defer href="../estilos/cursos/Mobile.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cursos - Meridian Bem Estar</title>
+  <link rel="stylesheet" href="../estilos/cursos/Desktop.css">
+  <link rel="stylesheet" href="../estilos/cursos/MediaQueries.css">
 </head>
 <body>
-    <header>
-        <div id="logodiv">
-            <a href="../index.html"><img src="../imagens/Marca-Meridian.png" alt="Meridian Bem Estar"></a>
-        </div>
-        <nav>
-            <div id="menu"></div>
-            <ul>
-                <li id="special">
-                    <p>Serviços</p>
-                    <div id="servicomenu" class="load">
-                        <ul id="menuList">
-                            <li class="drop">
-                                <div class="categoria">
-                                    <span class="listSpan"></span>
-                                    <p>Facial</p>
-                                </div>
-                                <div class="conteudo">
-                                    <a href="../paginas/servicos/blefaroplastia.html">Blefaroplastia (sem corte)</a>
-                                    <a href="../paginas/servicos/botox.html">Botox</a>
-                                    <a href="../paginas/servicos/limpeza-de-pele.html">Limpeza de Pele</a>
-                                    <a href="../paginas/servicos/microagulhamento.html">Microagulhamento</a>
-                                    <a href="../paginas/servicos/peeling.html">Peeling</a>
-                                    <a href="../paginas/servicos/radiofrequencia-criogenica.html">Radiofrequência Criogênica</a>
-                                </div>
-                            </li>
-                            <li class="drop">
-                                <div class="categoria">
-                                    <span class="listSpan"></span>
-                                    <p>Corporal</p>
-                                </div>
-                                <div class="conteudo">
-                                    <a href="servicos/criolipolise.html">Criolipólise</a>
-                                    <a href="servicos/heccus.html">Heccus</a>
-                                    <a href="servicos/ozonio.html">Ozônio</a>
-                                    <a href="servicos/radiofrequencia-criogenica.html">Radiofrequência Criogênica</a>
-                                    <a href="servicos/drenagem-linfatica.html">Drenagem Linfática</a>
-                                    <a href="servicos/massagem-modeladora.html">Massagem Modeladora</a>
-                                    <a href="servicos/liberacao-miofascial.html">Liberação Miofascial</a>
-                                </div>
-                            </li>
-                            <li>
-                                <a href="servicos/fotodepilacao.html" class="opçao">
-                                    <p>Fotodepilação</p>
-                                </a>
-                            </li>              
-                            <li>
-                                <a href="servicos/rpg.html" class="opçao">
-                                    <p>RPG</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="servicos/cross-pilates.html" class="opçao">
-                                    <p>Cross Pilates</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="servicos/fisioterapia.html" class="opçao">
-                                    <p>Fisioterapia</p>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li>
-                    <a href="equipe.html" >Equipe</a>
-                    <div class="load"></div>
-                </li>
-                <li>
-                    <a href="localizacao.html">Localização</a>
-                    <div class="load"></div>
-                </li>
-                <li>
-                    <a href="cursos.html">Cursos</a>
-                    <div class="load"></div>
-                </li>
-                <li></li>
-                <li></li>
-            </ul>
-        </nav>
-        <div id="nav-icons">
-            <a href="https://www.instagram.com/clinicameridiancba" id="instagram-icon" class="icons" target="_blank"></a>
-            <a href="https://www.facebook.com/meridiancba/?locale=pt_BR" id="facebook-icon" class="icons" target="_blank"></a>
-            <a href="https://wa.me/556592198713?text=Ol%C3%A1!%20Estou%20interessado%20em%20agendar%20uma%20consulta%20na%20Meridian%20Bem%20Estar.%20Por%20favor,%20poderia%20me%20fornecer%20informa%C3%A7%C3%B5es%20sobre%20disponibilidade%20de%20hor%C3%A1rios%20e%20procedimentos?%20Aguardo%20seu%20retorno.%20Obrigado!" id="whatsapp-icon" class="icons" target="_blank"></a>
-        </div>
-    </header>
-    
-    <main>
-        <div id="scroller"><p style="position: relative; top: 2px; font-size: 40px;font-weight: 400;">^</p></div>
-        <section id="introduction">
-            <div id="text-container">
-                <div id="text">
-                    <h1>Cursos</h1>
-                    <p>Explore novas técnicas, aprofunde sua experiência.</p>
-                    <p>Explore técnicas avançadas para aprimorar seu conhecimento.</p>
-                </div>
+  <main>
+    <section id="hero">
+      <div id="hero-text" class="container-text">
+        <div id="hero-text-container" class="container-text-container">
+          <h1>Transforme sua <br>carreira e torne-se<br>um <span id="hero-h1-span" class="custom-span">expert em RPG</span></h1>
+          <p>
+            <span id="hero-p-span">
+              Você está pronto para elevar sua<br>
+              prática clínica a um novo patamar?<br>
+            </span>
+            O Curso de Realinhamento Postural é
+            uma formação avançada em RPG, a
+            chave para desbloquear um mundo<br>
+            de oportunidades e transformar a vida
+            dos seus pacientes com tratamentos
+            <span id="hero-p2-span">mais eficazes e precisos</span>.
+          </p>
+          <a id="hero-button" class="button">
+            <div class="button-long">
+              <p>ESTOU <strong>PRONTO</strong></p>
             </div>
-            <div id="foto-container">
-                <div id="svg-container"></div>
+            <div class="button-short">
+              <div class="button-short-arrow"></div>
             </div>
-        </section>
-        <hr style="background-color: rgb(0, 105, 122); height: 3px;">
-        <section id="cursos">
-            <article id="seletor">
-                <h2>Selecione um Curso</h2>
-                <table id="seletor-list">
-                    <tr>
-                        <td><a href="#curso-rpg">RPG</a></td>
-                        <td><a href="#curso-pilates">Pilates</a></td>
-                        <td><a href="">Estética</a></td>
-                    </tr>
-                </table>
-            </article>
-            <article id="curso-rpg" class="box">
-                <div class="box-text">
-                    <h2>Curso de RPG</h2>
-                    <p> 
-                    O RPG é uma abordagem revolucionária da fisioterapia que visa corrigir desequilíbrios musculares, melhorar a postura e restaurar a função corporal ideal. Combinando técnicas avançadas e uma compreensão profunda do corpo humano, nosso curso oferece uma jornada de aprendizado enriquecedora e transformadora.</p>
-                    <br>
-                    <p>Ao longo do curso, você terá a oportunidade de:</p>
-                    <br>
-                    <ul>
-                        <li>Aprender os princípios fundamentais da RPG e sua aplicação prática.</li>
-                        <li>Dominar técnicas específicas para avaliação postural e correção de disfunções musculoesqueléticas.</li>
-                        <li>Explorar estudos de caso reais e simulações clínicas para uma compreensão mais profunda dos conceitos.</li>
-                        <li>Receber orientação personalizada de nossos fisioterapeutas experientes, que estão dedicados a ajudá-lo em sua jornada de saúde e bem-estar.</li>
-                    </ul>
-                    <br>
-                    <p class="center">Módulo 1: <span class="datas">6</span> e <span class="datas">7</span> de <span class="datas">Setembro de 2024</span></p>
-                    <br>
-                    <p class="center">Módulo 2: <span class="datas">11</span> e <span class="datas">12</span>  de <span class="datas">Outubro de 2024</span></p>
-                    <br>
-                    <p class="center">Certificado: Carga Horária de <span class="datas">120H</span></p>
-                    <br>
-                    <p style="text-align: center;">Para mais Informações</p>
-                    <a href="https://wa.me/556592198713?text=Ol%C3%A1!%20Estou%20interessado%20em%20obter%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20curso%20de%20RPG.%20Por%20favor,%20me%20envie%20detalhes%20sobre%20o%20conte%C3%BAdo%20do%20curso,%20os%20requisitos%20de%20inscri%C3%A7%C3%A3o%20e%20os%20hor%C3%A1rios%20dispon%C3%ADveis.%20Estou%20ansioso%20para%20participar%20e%20aprimorar%20minhas%20habilidades%20na%20%C3%A1rea.%20Obrigado!">Entre em Contato</a>
-                </div>
-                <div class="image-container interactive">
-                    <div class="box-image"></div>
-                </div>
-            </article>
-            <article id="conteudo-rpg" class="box">
-                <div class="image-container interactive">
-                    <div class="box-image"></div>
-                </div>
-                <div class="box-text">
-                    <h2>Conteúdos - RPG</h2>
-                    <p>Módulo 1:</p>
-                    <br>
-                    <ul>
-                        <li>Conceito do método</li>
-                        <li>Cadeias musculares</li>
-                        <li>Pompages</li>
-                        <li>Respiração</li>
-                        <li>Diagnóstico clínico postural</li>
-                        <li>Fisiologia do sistema Miofascial</li>
-                        <li>Princípios de Globalidade</li>
-                        <li>Manualidade e Individualidade</li>
-                        <li>Sensação, Percepção e Técnicas Sensoperceptivas</li>
-                        <li> Método de Reeducação Postural e recursos Miofasciais</li>
-                    </ul>
-                    <br>
-                    <p>Módulo 2:</p>
-                    <br>
-                    <ul>
-                        <li>Tipos de posturas de tratamentos</li>
-                        <li>Desequilíbrio estáticos e dinâmicos</li>
-                        <li>Recursos Miofasciais</li>
-                        <li>Imagiologia</li>
-                        <li>Teoria de Atendimento</li>
-                        <li>Prática de Atendimento</li>
-                        <li>Grupos especiais de atendimento</li>
-                        <li>Como montar um setor RPG</li>
-                        <li>Discussão de casos clínicos</li>
-                    </ul>
-                </div>
-            </article>
-            <article id="curso-pilates" class="box">
-                <div class="box-text">
-                    <h2>Curso de Pilates</h2>
-                    <p>Nossas aulas de Pilates são ministradas por instrutores altamente qualificados, que combinam princípios tradicionais com técnicas modernas para criar um programa adaptado às necessidades individuais de cada aluno. Seja você um iniciante buscando melhorar sua postura e condicionamento físico, ou um atleta procurando aumentar seu desempenho e prevenir lesões, nosso curso oferece uma abordagem abrangente para atender a todos os níveis de habilidade e condições físicas.</p>
-                    <br>
-                    <p>Ao participar do nosso curso de Pilates, você irá:</p>
-                    <br>
-                    <ul>
-                        <li>Desenvolver uma base sólida de força, estabilidade e flexibilidade.</li>
-                        <li>Melhorar a postura, aliviar dores nas costas e prevenir lesões.</li>
-                        <li>Aumentar a consciência corporal e a coordenação motora.</li>
-                        <li>Reduzir o estresse, promovendo um estado de relaxamento e bem-estar.</li>
-                    </ul>
-                </div>
-                <div class="image-container interactive">
-                    <div class="box-image"></div>
-                </div>
-            </article>
-        </section>
-    </main>
+          </a>
+        </div>
+        <div id="hero-logos"></div>
+      </div>
+      <div id="hero-image">
+        <div id="hero-image-rect"></div>
+        <div id="hero-img">
+          <div id="hero-badge">
+            <div id="hero-badge-text">
+              <div id="hero-badge-check"></div>
+            </div>
+          </div>
+          <div id="hero-light1" class="hero-light"></div>
+          <div id="hero-light2" class="hero-light"></div>
+        </div>
+      </div>
+    </section>
 
-    <footer>
-        <div id="logo">
-            <img src="../imagens/Marca-Meridian2.png" alt="Logo Meridian">
-            <p>Av. Professora Alice Freire Silva, 1091</p>
-            <p>Cpa II, Cuiabá - MT, 78055-534</p>
-            <a href="https://www.google.com/maps/place/Cl%C3%ADnica+Meridian+Bem+Estar/@-15.5608404,-56.0467913,17z/data=!3m1!4b1!4m6!3m5!1s0x939db08e5ebf5e39:0x5c164c48f644326!8m2!3d-15.5608404!4d-56.0442164!16s%2Fg%2F12hnl14h5?entry=ttu" target="_blank"><img src="../imagens/google-maps.png" alt="Google Maps"><p>Ver no Google Maps</p></a>
+    <section id="section1">
+      <h1>O que você <span id="section1-h1-span" class="custom-span">vai aprender?</span></h1>
+      <div id="section1-container">
+        <div class="section1-box">
+          <div class="section1-box-header">
+            <h2>1. Aprimoramento Técnico:</h2>
+          </div>
+          <div class="section1-box-main">
+            <p>Mergulhe fundo na metodologia avançada do RPG, adquirindo conhecimentos que vão te permitir tratar disfunções posturais e musculoesqueléticas com uma abordagem mais precisa e eficaz.</p>
+          </div>
         </div>
-        <div id="redes-sociais">
-            <div id="f-instagram">
-                <a href="https://www.instagram.com/clinicameridiancba" target="_blank"><img src="../imagens/instagram-logo.webp" alt="Logo Instagram"><p>/clinicameridiancba</p></a>
+        <div class="section1-line-divisor"></div>
+        <div class="section1-box">
+          <div class="section1-box-header">
+            <h2>2. Diferenciação profissional:</h2>
+          </div>
+          <div class="section1-box-main">
+            <p>Destaque-se no mercado de trabalho dominando técnica especializada que atrai mais pacientes e oportunidades de aumentar seu faturamento.</p>
+          </div>
+        </div>
+        <div class="section1-line-divisor"></div>
+        <div class="section1-box">
+          <div class="section1-box-header">
+            <h2>3. Melhoria nos Resultados Clínicos:</h2>
+          </div>
+          <div class="section1-box-main">
+            <p>Garanta resultados superiores no tratamento dos seus pacientes, aumentando a satisfação e a fidelização deles.</p>
+          </div>
+        </div>
+        <div class="section1-line-divisor"></div>
+        <div class="section1-box">
+          <div class="section1-box-header">
+            <h2>4. Aumento da Confiança e Autonomia:</h2>
+          </div>
+          <div class="section1-box-main">
+            <p>Sinta-se mais confiante e autônomo na tomada de decisões terapêuticas com o domínio desta técnica avançada. Facilite a integração em equipes multidisciplinares, permitindo uma abordagem mais holística e colaborativa no cuidado ao paciente.</p>
+          </div>
+        </div>
+      </div>
+      <a id="section1-button" class="button">
+        <div class="button-long">
+          <p>QUERO <strong>FAZER PARTE</strong></p>
+        </div>
+        <div class="button-short">
+          <div class="button-short-arrow"></div>
+        </div>
+      </a>
+      <div id="section1-light1" class="section1-light"></div>
+      <div id="section1-light2" class="section1-light"></div>
+    </section>
+
+    <section id="section2">
+      <div class="top-button-container">
+        <div class="top-button">
+          <div class="top-button-arrow"></div>
+        </div>
+      </div>
+      <div id="section2-container">
+        <div id="section2-text" class="container-text">
+          <div id="section2-text-container" class="container-text-container">
+            <h1>Quem é <span id="section2-h1-span">Dra.  Michelle<br> Mesquita?</span></h1>
+            <div id="section2-text-border">
+              <p>
+                Com mais de duas décadas de experiência dedicadas à transformação da saúde e bem-estar de seus pacientes, Michelle se capacita constantemente. Acumulando uma vasta experiência e bagagem na aplicação desta e de outras técnicas em seus pacientes, observando de perto os benefícios e a evolução de inúmeros.
+              </p>
+              <br>
+              <p>
+                Mentora desde 2019, ela ministra diversos cursos, dentre eles essa formação avançada de RPG, compartilhando seu conhecimento e experiência com outros profissionais da fisioterapia. Seus cursos têm formado e atualizado fisioterapeutas em diversas instituições e localidades, incluindo a honra de ministrar para fisioterapeutas dos bombeiros, da polícia militar. Transforme vidas através da Reeducação Postural Global com Michelle Mesquita!
+              </p>
             </div>
-            <div id="f-whatsapp">
-                <a href="https://wa.me/556592198713?text=Ol%C3%A1!%20Estou%20interessado%20em%20agendar%20uma%20consulta%20na%20Meridian%20Bem%20Estar.%20Por%20favor,%20poderia%20me%20fornecer%20informa%C3%A7%C3%B5es%20sobre%20disponibilidade%20de%20hor%C3%A1rios%20e%20procedimentos?%20Aguardo%20seu%20retorno.%20Obrigado!" target="_blank"><img src="../imagens/whatsapp-logo.png" alt="Logo Whatsapp"><p>(65) 99219-8713</p></a>
-            </div>
-            <div id="f-facebook">
-                <a href="https://www.facebook.com/meridiancba/?locale=pt_BR" target="_blank"><img src="../imagens/facebook-logo.webp" alt="Logo Facebook"><p>/meridiancba</p></a>
             </div>
         </div>
-        <div id="f-sobre">
-            <div id="f-sobre-box">
-                <div id="f-quem-somos" class="f-sobre-box-content">
-                    <h2>Quem Somos?</h2>
-                    <p>A Clínica Meridian, com 17 anos de experiência, é uma referência em estética e bem-estar em Cuiabá. Nosso compromisso é oferecer tratamentos personalizados e de alta qualidade, sempre com foco na saúde e na satisfação de nossos clientes. Nossa equipe de profissionais qualificados trabalha continuamente para proporcionar os melhores resultados possíveis, utilizando técnicas avançadas e inovadoras.</p>
-                </div>
-                <hr>
-                <div id="f-nossa-missao" class="f-sobre-box-content">
-                    <h2>Nossa Missão</h2>
-                    <p>Nossa missão é proporcionar saúde e bem-estar através de tratamentos estéticos e terapêuticos de alta qualidade, sempre focados nas necessidades e no cuidado individual de cada paciente. Nossa visão é ser reconhecida como a melhor clínica de estética e bem-estar da região, inovando continuamente e proporcionando resultados excepcionais para nossos clientes.</p>
-                </div>
-            </div>
+        <div id="section2-image">
+          <div id="section2-light"></div>
+          <div id="section2-fade"></div>
+          <div id="section2-rectangle"></div>
+          <div id="section2-M"></div>
+          <div id="section2-michelle"></div>
         </div>
-        <!-- <div id="f-servicos">
-        </div> -->
-    </footer>
-    <script type="module" src="interact.js" defer></script>
-    <script src="../estilos/cursos/animation.js" defer></script>
+      </div>
+    </section>
+    <div id="section2-ignore-block"></div>
+
+    <section id="section3">
+      <div id="section3-light1" class="section1-light"></div>
+      <div id="section3-light2" class="section1-light"></div>
+      <div id="section3-light3" class="section1-light"></div>
+      <div id="section3-light4" class="section1-light"></div>
+      <h1>O que os <strong>alunos estão dizendo?</strong></h1>
+      <div id="section3-list">
+        <div class="section3-list-box-small">
+          <div class="section3-list-box-small-user"></div>
+          <h2>Mariana Silva<br>Fisioterapeuta</h2>
+          <p>
+            A formação com a Michelle transformou completamente minha abordagem clínica. A confiança e autonomia que adquiri são impagáveis!
+          </p>
+        </div>
+        <div class="section3-list-box-big">
+          <div class="section3-list-box-big-user"></div>
+          <h2>Mariana Silva<br>Fisioterapeuta</h2>
+          <p>
+            A formação com a Michelle transformou completamente minha abordagem clínica. A confiança e autonomia que adquiri são impagáveis!
+          </p>
+        </div>
+        <div class="section3-list-box-big">
+          <div class="section3-list-box-big-user"></div>
+          <h2>Mariana Silva<br>Fisioterapeuta</h2>
+          <p>
+            A formação com a Michelle transformou completamente minha abordagem clínica. A confiança e autonomia que adquiri são impagáveis!
+          </p>
+        </div>
+        <div class="section3-list-box-small">
+          <div class="section3-list-box-small-user"></div>
+          <h2>Mariana Silva<br>Fisioterapeuta</h2>
+          <p>
+            A formação com a Michelle transformou completamente minha abordagem clínica. A confiança e autonomia que adquiri são impagáveis!
+          </p>
+        </div>
+      </div>
+      <h1>Agora veja o que os<br><strong>pacientes estão dizendo</strong></h1>
+      <div id="section3-phones"></div>
+      <div id="section3-phones-user-list">
+        <div class="section3-phones-user-list-user"></div>
+        <div class="section3-phones-user-list-user"></div>
+        <div class="section3-phones-user-list-user"></div>
+        <div class="section3-phones-user-list-user"></div>
+        <div class="section3-phones-user-list-user"></div>
+        <p>+ 395 pacientes</p>
+      </div>
+      <div id="section3-last-box">
+        <div id="section3-last-box-text-container">
+          <h1><strong>Garanta</strong> sua<br>vaga agora!</h1>
+          <p>Não perca a oportunidade de transformar sua carreira e se destacar com um fisioterapeuta que domina a Reeducação Postural Global!<br>
+          <span id="section3-last-box-span">As vagas são limitadas para garantir um aprendizado de qualidade.</span></p>
+        </div>
+        <div id="section3-last-box-warning">
+          <div class="section3-warning"></div>
+          <p>INSCREVA-SE AGORA E <strong>TRANSFORME A SUA CARREIRA!</strong></p>
+          <div class="section3-warning"></div>
+        </div>
+        <div id="section3-last-box-button-container">
+          <a id="section3-button" class="button">
+            <div class="button-long">
+              <p>GARANTIR <strong>MINHA VAGA</strong></p>
+            </div>
+            <div class="button-short">
+              <div class="button-short-arrow"></div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="top-button-container">
+      <div class="top-button">
+        <div class="top-button-arrow"></div>
+      </div>
+    </div>
+    <h1>Perguntas <span id="footer-span">frequentes</span></h1>
+    <div class="footer-text-box">
+      <p>Para quem é este curso?</p>
+    </div>
+    <div class="footer-text-box">
+      <p>Preciso de alguma experiência prévia?</p>
+    </div>
+    <div class="footer-text-box">
+      <p>Como o curso é estruturado?</p>
+    </div>
+  </footer>
 </body>
 </html>
