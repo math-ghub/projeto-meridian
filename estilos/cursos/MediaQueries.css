@@ -174,12 +174,20 @@
         margin: 1rem auto;
     }
 
+    .section3-phone:nth-of-type(odd) {
+        display: none;
+    }
+
     #section3-phones-user-list {
         transform: translateX(-2rem);
     }
 
     .section3-phones-user-list-user:nth-of-type(n + 2) {
         transform: translateX(calc(-2rem * var(--user-index)));
+    }
+
+    #section3-light3 {
+        transform: translateY(90rem);
     }
 }
 
@@ -199,35 +207,6 @@
         --font-1-h1-size: clamp(20px, 9.7vw, 40px);
         --font-1-p-size: 19px;
         --font-1-p-weight: 300;
-    
-        
-        /* Global */
-        --down-arrow: url("../../imagens/down.png");
-        
-        
-        /* Hero Section */
-        --hero-background: url("../../imagens/white-simple-textured-design-background.svg");
-        --hero-image: url("../../imagens/michelle.png");
-        --hero-check: url("../../imagens/check.png");
-        --hero-arrow: url("../../imagens/next.png");
-        --hero-logos: url("../../imagens/logo_seguranca.svg");
-        --hero-section-padding: 0 4rem;
-    
-        --hero-grid-max-width: 650px;
-    
-        /* Section1 */
-        --section1-container-max-width: 850px;
-    
-        /* Section2 */
-        --section2-padding: 4rem 0 4rem 4rem;
-        --section2-rectangle-background: url("../../imagens/michelle_produto.png");
-        --section2-M: url("../../imagens/cursos_M.svg");
-        --section2-michelle: url("../../imagens/michelle_M.png");
-    
-        /* Section3 */
-        --section3-box-user: url("../../imagens/user.png");
-        --section3-phones: url("../../imagens/cursos_pacientes.png");
-        --section3-warning: url("../../imagens/warning.png");
     
         /* Footer */
         --footer-h1-font-size: 39px;
@@ -366,7 +345,20 @@
     }
 
     #section3-phones {
-        height: 18rem;
+        width: 100%;
+        height: 35rem;
+    }
+
+    .section3-phone {
+        width: 100%;
+    }
+
+    #section3 iframe {
+        width: 80%;
+        height: 15.4rem;
+        transform: translate(2rem, 0.8rem);
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px;
     }
 
     #section3-phones-user-list {

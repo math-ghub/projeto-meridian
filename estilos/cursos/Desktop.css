@@ -51,7 +51,9 @@
 
     /* Section3 */
     --section3-box-user: url("../../imagens/user.png");
-    --section3-phones: url("../../imagens/cursos_pacientes.png");
+    --section3-phone: url("../../imagens/cursos_celular.svg");
+    --section3-phone2: url("../../imagens/cursos_celular2.svg");
+    --section3-phone3: url("../../imagens/cursos_celular3.svg");
     --section3-warning: url("../../imagens/warning.png");
 
     /* Footer */
@@ -658,10 +660,52 @@ main {
 
 #section3-phones {
     height: 40rem;
-    background-image: var(--section3-phones);
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.section3-phone {
+    height: 100%;
+    width: 25rem;
+    max-width: 20rem;
     background-position: center;
+    background-image: var(--section3-phone);
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+#section3 iframe {
+    width: 90%;
+    height: 17.7rem;
+    transform: translate(1rem, 0.8rem);
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+
+.section3-phone:nth-of-type(1) {
+    background-image: var(--section3-phone2);
+    transform: translateX(2.4rem);
+}
+
+.section3-phone:nth-of-type(2) {
+    background-image: var(--section3-phone);
+    z-index: 2;
+}
+
+.section3-phone:nth-of-type(3) {
+    background-image: var(--section3-phone3);
+    transform: translateX(-2.4rem);
+}
+
+.section3-phone:nth-of-type(odd) {
+    height: 95%;
+}
+
+.section3-phone:nth-of-type(odd) iframe {
+    width: 85% !important;
+    height: 16.77rem !important;
+    transform: translate(1.5rem, 0.8rem) !important;
 }
 
 #section3-phones-user-list {
@@ -689,6 +733,12 @@ main {
     background-color: var(--cor-5);
     z-index: 1;
 }
+
+.section3-phones-user-list-user:nth-of-type(1){content: url("https://lh3.googleusercontent.com/a-/ALV-UjXbOz6T4FQfWxAIFMWCB4rXWx9xFsKbeKrCDu69gnemqlIN04mu=w60-h60-p-rp-mo-br100");}
+.section3-phones-user-list-user:nth-of-type(2){content: url("https://lh3.googleusercontent.com/a-/ALV-UjWfxVmFPgnDXWXhSM8TYmUezKkMMQaXJwR-tW81lPehfvTMucf8=w60-h60-p-rp-mo-br100");}
+.section3-phones-user-list-user:nth-of-type(3){content: url("https://lh3.googleusercontent.com/a-/ALV-UjUAOKiZx7xjNH003-5_d3KAQtoPgRbdxllPBt1sw4pAa-Ljw8Xf9A=w60-h60-p-rp-mo-ba4-br100");}
+.section3-phones-user-list-user:nth-of-type(4){content: url("https://lh3.googleusercontent.com/a-/ALV-UjV-9ugF841mEY96pZAnyZYdsuF6GwRuBR3STQ2IKRf58_8X-VpADQ=w60-h60-p-rp-mo-br100");}
+.section3-phones-user-list-user:nth-of-type(5){content: url("https://lh3.googleusercontent.com/a-/ALV-UjU3NS7NieNZOeXag2gYkXweHJg50yjzBBDNmbqDXS-Wn-1Ecv0=w60-h60-p-rp-mo-br100");}
 
 .section3-phones-user-list-user:nth-of-type(n + 2) {
     transform: translateX(calc(-2rem * var(--user-index)));
@@ -803,7 +853,7 @@ main {
 
 #section3-light3 {
     position: absolute;
-    right: -45rem;
+    right: -60rem;
     transform: translateY(70rem);
 }
 
