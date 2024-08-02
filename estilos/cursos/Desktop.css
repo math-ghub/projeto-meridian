@@ -676,11 +676,10 @@ main {
 }
 
 #section3 iframe {
-    width: 90%;
-    height: 17.7rem;
+    width: 89.7%;
+    height: 96%;
     transform: translate(1rem, 0.8rem);
-    border-top-left-radius: 40px;
-    border-top-right-radius: 40px;
+    border-radius: 40px;
 }
 
 .section3-phone:nth-of-type(1) {
@@ -704,7 +703,7 @@ main {
 
 .section3-phone:nth-of-type(odd) iframe {
     width: 85% !important;
-    height: 16.77rem !important;
+    height: 96% !important;
     transform: translate(1.5rem, 0.8rem) !important;
 }
 
@@ -721,7 +720,7 @@ main {
     font-family: var(--font-1);
     font-size: var(--font-1-p-size);
     font-weight: bold;
-    transform: translateX(12rem);
+    transform: translateX(13rem);
     position: absolute;
 }
 
@@ -882,18 +881,31 @@ footer h1 {
 }
 
 .footer-text-box {
-    border: 1px solid black;
-    padding: 0.4rem;
     width: 90%;
     margin: auto;
     margin-bottom: 1rem;
     max-width: 34rem;
+}
+
+
+.footer-text-box summary {
+    font-size: var(--footer-p-font-size);
     padding: 10px;
+    border: 1px solid black;
+    text-indent: 60px;
+    list-style: none;
+}
+
+.footer-text-box summary:hover {
+    cursor: pointer;
 }
 
 .footer-text-box p {
-    font-size: var(--footer-p-font-size);
-    text-indent: 60px;
+    font-size: calc(var(--footer-p-font-size) - 4px);
+    text-indent: 10px;
+    text-align: justify;
+    width: 90%;
+    margin: 8px auto 0 auto;
 }
 
 .footer-text-box::before {
@@ -904,10 +916,15 @@ footer h1 {
     height: 1.6rem;
     border-radius: 50%;
     background-color: var(--cor-1);
-    transform: translateY(-1.5rem);
+    transform: translate(-48%, -50%);
     background-image: var(--down-arrow);
     background-size: 60%;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center 6px;
     rotate: -90deg;
+}
+
+.footer-text-box[open]::before {
+    transform: translate(-50%, 48%);
+    rotate: 0deg;
 }

@@ -354,11 +354,10 @@
     }
 
     #section3 iframe {
-        width: 80%;
-        height: 15.4rem;
-        transform: translate(2rem, 0.8rem);
-        border-top-left-radius: 40px;
-        border-top-right-radius: 40px;
+        width: 78.5%;
+        height: 95.5%;
+        transform: translate(2.12rem, 0.8rem);
+        border-radius: 35px;
     }
 
     #section3-phones-user-list {
@@ -423,8 +422,14 @@
         width: 85%;
     }
 
+    .footer-text-box summary {
+        text-indent: 5px;
+        text-align: center;
+    }
+
     .footer-text-box p {
         text-indent: 10px;
+        font-size: calc(var(--footer-p-font-size) - 1px);
     }
 }
 
