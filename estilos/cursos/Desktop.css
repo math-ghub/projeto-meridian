@@ -889,6 +889,7 @@ footer h1 {
 
 
 .footer-text-box summary {
+    position: relative;
     font-size: var(--footer-p-font-size);
     padding: 10px;
     border: 1px solid black;
@@ -908,7 +909,7 @@ footer h1 {
     margin: 8px auto 0 auto;
 }
 
-.footer-text-box::before {
+.footer-text-box summary::before {
     content: "";
     display: block;
     position: absolute;
@@ -916,7 +917,8 @@ footer h1 {
     height: 1.6rem;
     border-radius: 50%;
     background-color: var(--cor-1);
-    transform: translate(-48%, -50%);
+    top: 50%;
+    transform: translate(50%, -90%);
     background-image: var(--down-arrow);
     background-size: 60%;
     background-repeat: no-repeat;
@@ -924,7 +926,7 @@ footer h1 {
     rotate: -90deg;
 }
 
-.footer-text-box[open]::before {
-    transform: translate(-50%, 48%);
+.footer-text-box[open] summary::before {
+    transform: translate(-90%, -50%);
     rotate: 0deg;
 }
