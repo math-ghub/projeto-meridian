@@ -11,7 +11,7 @@ closeButton.addEventListener("click", () => {
     setState(false);
 })
 
-function setState(v: boolean) {
+function setState(v: boolean): void {
     menuState = v;
     if (menuState === false) {
         selectionMenu.classList.remove("open");

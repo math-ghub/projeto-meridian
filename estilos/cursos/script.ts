@@ -5,7 +5,7 @@ const resizeObserver = new ResizeObserver(obj => {
     resizeBlock(obj);
 })
 
-function resizeBlock(obj: ResizeObserverEntry[]) {
+function resizeBlock(obj: ResizeObserverEntry[]): void {
     section2_ignore_block.style.height = obj[0].contentRect.height + "px";
 }
 
