@@ -9,6 +9,11 @@
     src: url(../../fonts/Raleway/Raleway-VariableFont_wght.ttf);
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 :root {
     /* Paleta de Cores */
     --cor-1: rgb(106, 128, 59);
@@ -35,7 +40,6 @@
     --hero-image: url("../../imagens/michelle.png");
     --hero-check: url("../../imagens/check.png");
     --hero-arrow: url("../../imagens/next.png");
-    --hero-logos: url("../../imagens/logo_seguranca.svg");
     --hero-section-padding: 0 4rem;
 
     --hero-grid-max-width: 650px;
@@ -72,16 +76,6 @@ main {
     padding: var(--hero-section-padding);
     background-image: var(--hero-background);
     height: 50rem;
-}
-
-#hero-logos {
-    background-image: var(--hero-logos);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 70%;
-    margin: 10px auto 0 4.5rem;
-    height: 5rem;
 }
 
 .container-text {

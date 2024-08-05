@@ -5,10 +5,6 @@
 }
 
 @media screen and (max-width: 1125px) {
-    #hero-logos {
-        margin-left: 1rem;
-    }
-    
     .section3-list-box-big {
         display: none;
     }
@@ -60,11 +56,6 @@
         margin: auto;
         transform: translate(5rem, -2rem);
         mask-image: linear-gradient(to bottom, black 75%, transparent 99%);
-    }
-
-    #hero-logos {
-        margin: auto;
-        transform: translateY(-4rem);
     }
 
     #hero-light1 {
